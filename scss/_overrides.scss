@@ -1,0 +1,219 @@
+$teal: #32bfca;
+$yellow: #f4d130;
+$lightgrey: #f9f8f4;
+$darkgrey: #666666;
+$white: #FFF;
+
+$montserrat: 'Montserrat', sans-serif;
+$roboto: 'Roboto Slab', serif;
+
+$main-text-color: $darkgrey;
+$main-header-color: $white;
+$background-color: $lightgrey;
+$secondary-background-color: $teal;
+$header-typeface: $montserrat;
+$text-typeface: $roboto;
+$primary-color: $teal;
+$secondary-header-color: $darkgrey;
+$secondary-color: $yellow;
+
+
+body {
+  background-color: $background-color;
+}
+
+h1 {
+  font-family : $header-typeface;
+  font-weight : bold;
+  font-size : 72px;
+  color : $main-header-color;
+  background-color: $secondary-color;
+  text-align: center;
+  display: inline-block;
+  clear: both;
+}
+
+.button{
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-space: 2px;
+  color: white;
+  padding: 10px 20px 11px;
+  border-radius: 2px;
+  text-aligh: center;
+  font-size: 15px;  
+  background-clip: padding-box;
+  box-shadow: 0 4px 0 rgba(38,148,150,.8);
+  background-color: #63bdbd; // Old browsers
+  @include filter-gradient(#63bdbd, #31bfca, vertical); // IE6-9
+  @include background-image(linear-gradient(top, #63bdbd 0%,#31bfca 100%));
+}
+
+h2 {
+  font-family : $header-typeface;
+  font-weight : bold;
+  font-size : 48px;
+  color: $secondary-header-color;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: $text-typeface;
+  font-size : 24px;
+  color : $main-text-color;
+}
+
+h4 {
+  font-size : 24px;
+  text-transform : uppercase;
+  color : $main-header-color;
+}
+
+.featured-fund {
+  margin-bottom: 25px;
+}
+
+.featured-fund p {
+  font-size: 15px;
+  font-weight: thin;
+  color: white;
+}
+
+.featured-fund-container {
+  background-color: $secondary-color;
+  padding: 30px 0; 
+
+  h2{
+    color: $main-header-color;
+  }
+}
+
+.banner-image {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+a {
+  font-family : $montserrat;
+  font-size : 16px;
+  color : $main-text-color;
+  font-weight: thin;
+}
+
+.button-group li {
+  margin: 20px;
+}
+
+.raise-money, .donate-now{
+  margin: 90px 0;
+}
+
+footer {
+  background-color: $secondary-background-color;
+
+  p{
+    color: $white;
+  }
+}
+
+.signup{
+  background-color: $yellow;
+  
+
+  p{
+    font-size: 20px;
+    color: white;
+
+  }
+
+  h2{
+    color: white;
+  }
+}
+
+figure {
+  margin: 0px;
+  position: relative;
+}
+
+figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+
+}
+
+figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  color: #ed4e6e;
+  background: rgb(54, 25, 25);
+  background: rgba(54, 25, 25, .4);
+}
+
+figcaption h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+figcaption span:before {
+  content: 'by ';
+}
+
+figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 2px;
+  display: inline-block;
+  background: #ed4e6e;
+  color: #fff;
+}
+
+/* Caption Style 3 */
+.cs-style-3 figure {
+  overflow: hidden;
+}
+
+.cs-style-3 figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.cs-style-3 figcaption {
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0.0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
