@@ -7790,7 +7790,7 @@ h4 {
 
 /* line 72, ../scss/_overrides.scss */
 .featured-fund {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 /* line 76, ../scss/_overrides.scss */
@@ -7814,11 +7814,12 @@ h4 {
 .banner-image {
   background-image: url("../images/hero.png");
   background-size: cover;
+  max-width: 1000px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-/* line 98, ../scss/_overrides.scss */
+/* line 99, ../scss/_overrides.scss */
 a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -7826,53 +7827,55 @@ a {
   font-weight: thin;
 }
 
-/* line 105, ../scss/_overrides.scss */
+/* line 106, ../scss/_overrides.scss */
 .button-group li {
   margin: 20px;
 }
 
-/* line 109, ../scss/_overrides.scss */
+/* line 110, ../scss/_overrides.scss */
 .raise-money, .donate-now {
   margin: 90px 0;
 }
 
-/* line 113, ../scss/_overrides.scss */
+/* line 114, ../scss/_overrides.scss */
 footer {
   background-color: #32bfca;
+  padding: 20px 0;
 }
-/* line 116, ../scss/_overrides.scss */
+/* line 118, ../scss/_overrides.scss */
 footer p {
   color: white;
 }
 
-/* line 121, ../scss/_overrides.scss */
-.signup {
+/* line 123, ../scss/_overrides.scss */
+.slide-out-menu {
   background-color: #f4d130;
 }
-/* line 125, ../scss/_overrides.scss */
-.signup p {
+/* line 127, ../scss/_overrides.scss */
+.slide-out-menu p {
   font-size: 20px;
   color: white;
+  line-height: 1;
 }
-/* line 131, ../scss/_overrides.scss */
-.signup h2 {
+/* line 133, ../scss/_overrides.scss */
+.slide-out-menu h2 {
   color: white;
 }
 
-/* line 136, ../scss/_overrides.scss */
+/* line 138, ../scss/_overrides.scss */
 figure {
   margin: 0px;
   position: relative;
 }
 
-/* line 141, ../scss/_overrides.scss */
+/* line 143, ../scss/_overrides.scss */
 figure img {
   max-width: 100%;
   display: block;
   position: relative;
 }
 
-/* line 148, ../scss/_overrides.scss */
+/* line 150, ../scss/_overrides.scss */
 figcaption {
   position: absolute;
   top: 0;
@@ -7883,19 +7886,19 @@ figcaption {
   background: rgba(54, 25, 25, 0.4);
 }
 
-/* line 158, ../scss/_overrides.scss */
+/* line 160, ../scss/_overrides.scss */
 figcaption h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
 
-/* line 164, ../scss/_overrides.scss */
+/* line 166, ../scss/_overrides.scss */
 figcaption span:before {
   content: 'by ';
 }
 
-/* line 168, ../scss/_overrides.scss */
+/* line 170, ../scss/_overrides.scss */
 figcaption a {
   text-align: center;
   padding: 5px 10px;
@@ -7906,19 +7909,19 @@ figcaption a {
 }
 
 /* Caption Style 3 */
-/* line 178, ../scss/_overrides.scss */
+/* line 180, ../scss/_overrides.scss */
 .cs-style-3 figure {
   overflow: hidden;
 }
 
-/* line 182, ../scss/_overrides.scss */
+/* line 184, ../scss/_overrides.scss */
 .cs-style-3 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 188, ../scss/_overrides.scss */
+/* line 190, ../scss/_overrides.scss */
 .cs-style-3 figcaption {
   height: 100%;
   width: 100%;
@@ -7934,7 +7937,7 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 204, ../scss/_overrides.scss */
+/* line 206, ../scss/_overrides.scss */
 .no-touch .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
@@ -7947,9 +7950,171 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 215, ../scss/_overrides.scss */
+/* line 217, ../scss/_overrides.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+/* line 225, ../scss/_overrides.scss */
+.st-container,
+.st-pusher,
+.st-content {
+  height: 100%;
+}
+
+/* line 229, ../scss/_overrides.scss */
+.st-content {
+  overflow-y: scroll;
+  background: #f9f8f4;
+}
+
+/* line 235, ../scss/_overrides.scss */
+.st-content,
+.st-content-inner {
+  position: relative;
+}
+
+/* line 239, ../scss/_overrides.scss */
+.st-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 244, ../scss/_overrides.scss */
+.st-pusher {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 253, ../scss/_overrides.scss */
+.st-pusher::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* line 266, ../scss/_overrides.scss */
+.st-menu-open .st-pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 274, ../scss/_overrides.scss */
+.st-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 400px;
+  height: 100%;
+  background: #f4d130;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 287, ../scss/_overrides.scss */
+.st-menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 300, ../scss/_overrides.scss */
+.st-menu-open .st-menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* Effect 2: Reveal */
+/* line 311, ../scss/_overrides.scss */
+.st-effect-2.st-menu-open .st-pusher {
+  -webkit-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-400px, 0, 0);
+}
+
+/* line 316, ../scss/_overrides.scss */
+.st-effect-2.st-menu {
+  z-index: 1;
+}
+
+/* line 320, ../scss/_overrides.scss */
+.st-effect-2.st-menu-open .st-effect-2.st-menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 326, ../scss/_overrides.scss */
+.st-effect-2.st-menu::after {
+  display: none;
+}
+
+/* Effect 3: Reveal */
+/* line 331, ../scss/_overrides.scss */
+.st-effect-3.st-menu-open .st-pusher {
+  -webkit-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-400px, 0, 0);
+}
+
+/* line 336, ../scss/_overrides.scss */
+.st-effect-3.st-menu {
+  z-index: 1;
+}
+
+/* line 340, ../scss/_overrides.scss */
+.st-effect-3.st-menu-open .st-effect-3.st-menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 346, ../scss/_overrides.scss */
+.st-effect-3.st-menu::after {
+  display: none;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+/* line 352, ../scss/_overrides.scss */
+.no-csstransforms3d .st-pusher,
+.no-js .st-pusher {
+  padding-left: 300px;
+}
+
+/* line 356, ../scss/_overrides.scss */
+input[type="text"] {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 362, ../scss/_overrides.scss */
+footer p {
+  margin-bottom: 0;
 }

@@ -28,7 +28,7 @@
 	function init() {
 
 		var container = document.getElementById( 'st-container' ),
-			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
+			link = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > a' ) ),
 			// event type (if mobile use touch events)
 			eventtype = mobilecheck() ? 'touchstart' : 'click',
 			resetMenu = function() {
@@ -41,7 +41,7 @@
 				}
 			};
 
-		buttons.forEach( function( el, i ) {
+		link.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );
 
 			el.addEventListener( eventtype, function( ev ) {
@@ -61,3 +61,12 @@
 	init();
 
 })();
+
+$('.sidemenu').click(function() {
+	$('.st-content').css('overflow-y', 'hidden');
+});
+
+$('.st-pusher').click(function() {
+	$('.st-content').css('overflow-y', 'scroll');
+});
+
