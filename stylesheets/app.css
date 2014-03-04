@@ -7726,12 +7726,17 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 21, ../scss/_overrides.scss */
+/* line 23, ../scss/_overrides.scss */
 body {
   background-color: #f9f8f4;
 }
 
-/* line 25, ../scss/_overrides.scss */
+/* line 27, ../scss/_overrides.scss */
+h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* line 31, ../scss/_overrides.scss */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -7743,7 +7748,7 @@ h1 {
   clear: both;
 }
 
-/* line 36, ../scss/_overrides.scss */
+/* line 42, ../scss/_overrides.scss */
 .button {
   text-transform: uppercase;
   font-weight: normal;
@@ -7765,7 +7770,7 @@ h1 {
   background-image: linear-gradient(top, #63bdbd 0%, #31bfca 100%);
 }
 
-/* line 52, ../scss/_overrides.scss */
+/* line 58, ../scss/_overrides.scss */
 h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -7774,43 +7779,43 @@ h2 {
   text-transform: uppercase;
 }
 
-/* line 60, ../scss/_overrides.scss */
+/* line 66, ../scss/_overrides.scss */
 p {
   font-family: "Roboto Slab", serif;
   font-size: 24px;
   color: #666666;
 }
 
-/* line 66, ../scss/_overrides.scss */
+/* line 72, ../scss/_overrides.scss */
 h4 {
   font-size: 24px;
   text-transform: uppercase;
   color: white;
 }
 
-/* line 72, ../scss/_overrides.scss */
+/* line 78, ../scss/_overrides.scss */
 .featured-fund {
   margin-bottom: 27px;
 }
 
-/* line 76, ../scss/_overrides.scss */
+/* line 82, ../scss/_overrides.scss */
 .featured-fund p {
   font-size: 15px;
   font-weight: thin;
   color: white;
 }
 
-/* line 82, ../scss/_overrides.scss */
+/* line 88, ../scss/_overrides.scss */
 .featured-fund-container {
   background-color: #f4d130;
   padding: 30px 0;
 }
-/* line 86, ../scss/_overrides.scss */
+/* line 92, ../scss/_overrides.scss */
 .featured-fund-container h2 {
   color: white;
 }
 
-/* line 91, ../scss/_overrides.scss */
+/* line 97, ../scss/_overrides.scss */
 .banner-image {
   background-image: url("../images/hero.png");
   background-size: cover;
@@ -7819,7 +7824,7 @@ h4 {
   padding-bottom: 200px;
 }
 
-/* line 99, ../scss/_overrides.scss */
+/* line 105, ../scss/_overrides.scss */
 a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -7827,55 +7832,55 @@ a {
   font-weight: thin;
 }
 
-/* line 106, ../scss/_overrides.scss */
+/* line 112, ../scss/_overrides.scss */
 .button-group li {
   margin: 20px;
 }
 
-/* line 110, ../scss/_overrides.scss */
+/* line 116, ../scss/_overrides.scss */
 .raise-money, .donate-now {
   margin: 90px 0;
 }
 
-/* line 114, ../scss/_overrides.scss */
+/* line 120, ../scss/_overrides.scss */
 footer {
   background-color: #32bfca;
   padding: 20px 0;
 }
-/* line 118, ../scss/_overrides.scss */
+/* line 124, ../scss/_overrides.scss */
 footer p {
   color: white;
 }
 
-/* line 123, ../scss/_overrides.scss */
+/* line 129, ../scss/_overrides.scss */
 .slide-out-menu {
   background-color: #f4d130;
 }
-/* line 127, ../scss/_overrides.scss */
+/* line 133, ../scss/_overrides.scss */
 .slide-out-menu p {
   font-size: 20px;
   color: white;
   line-height: 1;
 }
-/* line 133, ../scss/_overrides.scss */
+/* line 139, ../scss/_overrides.scss */
 .slide-out-menu h2 {
   color: white;
 }
 
-/* line 138, ../scss/_overrides.scss */
+/* line 144, ../scss/_overrides.scss */
 figure {
   margin: 0px;
   position: relative;
 }
 
-/* line 143, ../scss/_overrides.scss */
+/* line 149, ../scss/_overrides.scss */
 figure img {
   max-width: 100%;
   display: block;
   position: relative;
 }
 
-/* line 150, ../scss/_overrides.scss */
+/* line 156, ../scss/_overrides.scss */
 figcaption {
   position: absolute;
   top: 0;
@@ -7886,19 +7891,19 @@ figcaption {
   background: rgba(54, 25, 25, 0.4);
 }
 
-/* line 160, ../scss/_overrides.scss */
+/* line 166, ../scss/_overrides.scss */
 figcaption h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
 
-/* line 166, ../scss/_overrides.scss */
+/* line 172, ../scss/_overrides.scss */
 figcaption span:before {
   content: 'by ';
 }
 
-/* line 170, ../scss/_overrides.scss */
+/* line 176, ../scss/_overrides.scss */
 figcaption a {
   text-align: center;
   padding: 5px 10px;
@@ -7909,19 +7914,19 @@ figcaption a {
 }
 
 /* Caption Style 3 */
-/* line 180, ../scss/_overrides.scss */
+/* line 186, ../scss/_overrides.scss */
 .cs-style-3 figure {
   overflow: hidden;
 }
 
-/* line 184, ../scss/_overrides.scss */
+/* line 190, ../scss/_overrides.scss */
 .cs-style-3 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 190, ../scss/_overrides.scss */
+/* line 196, ../scss/_overrides.scss */
 .cs-style-3 figcaption {
   height: 100%;
   width: 100%;
@@ -7937,7 +7942,7 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 206, ../scss/_overrides.scss */
+/* line 212, ../scss/_overrides.scss */
 .no-touch .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
@@ -7950,39 +7955,39 @@ figcaption a {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 217, ../scss/_overrides.scss */
+/* line 223, ../scss/_overrides.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
 
-/* line 225, ../scss/_overrides.scss */
+/* line 231, ../scss/_overrides.scss */
 .st-container,
 .st-pusher,
 .st-content {
   height: 100%;
 }
 
-/* line 229, ../scss/_overrides.scss */
+/* line 235, ../scss/_overrides.scss */
 .st-content {
   overflow-y: scroll;
   background: #f9f8f4;
 }
 
-/* line 235, ../scss/_overrides.scss */
+/* line 241, ../scss/_overrides.scss */
 .st-content,
 .st-content-inner {
   position: relative;
 }
 
-/* line 239, ../scss/_overrides.scss */
+/* line 245, ../scss/_overrides.scss */
 .st-container {
   position: relative;
   overflow: hidden;
 }
 
-/* line 244, ../scss/_overrides.scss */
+/* line 250, ../scss/_overrides.scss */
 .st-pusher {
   position: relative;
   left: 0;
@@ -7992,7 +7997,7 @@ figcaption a {
   transition: transform 0.5s;
 }
 
-/* line 253, ../scss/_overrides.scss */
+/* line 259, ../scss/_overrides.scss */
 .st-pusher::after {
   position: absolute;
   top: 0;
@@ -8006,7 +8011,7 @@ figcaption a {
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
-/* line 266, ../scss/_overrides.scss */
+/* line 272, ../scss/_overrides.scss */
 .st-menu-open .st-pusher::after {
   width: 100%;
   height: 100%;
@@ -8015,7 +8020,7 @@ figcaption a {
   transition: opacity 0.5s;
 }
 
-/* line 274, ../scss/_overrides.scss */
+/* line 280, ../scss/_overrides.scss */
 .st-menu {
   position: absolute;
   top: 0;
@@ -8029,7 +8034,7 @@ figcaption a {
   transition: all 0.5s;
 }
 
-/* line 287, ../scss/_overrides.scss */
+/* line 293, ../scss/_overrides.scss */
 .st-menu::after {
   position: absolute;
   top: 0;
@@ -8043,7 +8048,7 @@ figcaption a {
   transition: opacity 0.5s;
 }
 
-/* line 300, ../scss/_overrides.scss */
+/* line 306, ../scss/_overrides.scss */
 .st-menu-open .st-menu::after {
   width: 0;
   height: 0;
@@ -8053,84 +8058,84 @@ figcaption a {
 }
 
 /* Effect 2: Reveal */
-/* line 311, ../scss/_overrides.scss */
+/* line 317, ../scss/_overrides.scss */
 .st-effect-2.st-menu-open .st-pusher {
   -webkit-transform: translate3d(-400px, 0, 0);
   transform: translate3d(-400px, 0, 0);
 }
 
-/* line 316, ../scss/_overrides.scss */
+/* line 322, ../scss/_overrides.scss */
 .st-effect-2.st-menu {
   z-index: 1;
 }
 
-/* line 320, ../scss/_overrides.scss */
+/* line 326, ../scss/_overrides.scss */
 .st-effect-2.st-menu-open .st-effect-2.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 326, ../scss/_overrides.scss */
+/* line 332, ../scss/_overrides.scss */
 .st-effect-2.st-menu::after {
   display: none;
 }
 
 /* Effect 3: Reveal */
-/* line 331, ../scss/_overrides.scss */
+/* line 337, ../scss/_overrides.scss */
 .st-effect-3.st-menu-open .st-pusher {
   -webkit-transform: translate3d(-400px, 0, 0);
   transform: translate3d(-400px, 0, 0);
 }
 
-/* line 336, ../scss/_overrides.scss */
+/* line 342, ../scss/_overrides.scss */
 .st-effect-3.st-menu {
   z-index: 1;
 }
 
-/* line 340, ../scss/_overrides.scss */
+/* line 346, ../scss/_overrides.scss */
 .st-effect-3.st-menu-open .st-effect-3.st-menu {
   visibility: visible;
   -webkit-transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
 }
 
-/* line 346, ../scss/_overrides.scss */
+/* line 352, ../scss/_overrides.scss */
 .st-effect-3.st-menu::after {
   display: none;
 }
 
 /* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* line 352, ../scss/_overrides.scss */
+/* line 358, ../scss/_overrides.scss */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;
 }
 
-/* line 356, ../scss/_overrides.scss */
+/* line 362, ../scss/_overrides.scss */
 input[type="text"] {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 362, ../scss/_overrides.scss */
+/* line 368, ../scss/_overrides.scss */
 footer p {
   margin-bottom: 0;
 }
 
-/* line 366, ../scss/_overrides.scss */
+/* line 372, ../scss/_overrides.scss */
 .header {
   background-color: #f4d130;
   padding: 35px 0;
   margin-bottom: 20px;
 }
-/* line 371, ../scss/_overrides.scss */
+/* line 377, ../scss/_overrides.scss */
 .header h2 {
   color: white;
 }
 
-/* line 376, ../scss/_overrides.scss */
+/* line 382, ../scss/_overrides.scss */
 .charity-container {
   background-color: white;
   margin-bottom: 20px;
@@ -8138,7 +8143,7 @@ footer p {
   box-shadow: 1px 1px 5px 0 #C7C7C7;
   height: 540px;
 }
-/* line 383, ../scss/_overrides.scss */
+/* line 389, ../scss/_overrides.scss */
 .charity-container h4 {
   color: #32bfca;
   font-size: 16px;
@@ -8147,18 +8152,105 @@ footer p {
   margin: 0;
   font-weight: bold;
 }
-/* line 392, ../scss/_overrides.scss */
+/* line 398, ../scss/_overrides.scss */
 .charity-container p {
   padding: 5px 15px 15px 15px;
   font-size: 12px;
   margin-bottom: 0;
 }
-/* line 399, ../scss/_overrides.scss */
+/* line 405, ../scss/_overrides.scss */
 .charity-container a {
   margin: 0 0 10px 15px;
 }
 
-/* line 406, ../scss/_overrides.scss */
+/* line 412, ../scss/_overrides.scss */
 ul.pagination li.current a, .sub-nav dd.active a {
   background: #32bfca;
+}
+
+/* line 417, ../scss/_overrides.scss */
+.header p {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* line 423, ../scss/_overrides.scss */
+.profile {
+  margin-bottom: 15px;
+}
+/* line 426, ../scss/_overrides.scss */
+.profile p {
+  font-size: 15px;
+}
+
+/* line 432, ../scss/_overrides.scss */
+.dashboard h4 {
+  color: #666666;
+  text-transform: none;
+  font-size: 25px;
+  line-height: 1;
+}
+/* line 439, ../scss/_overrides.scss */
+.dashboard p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+/* line 445, ../scss/_overrides.scss */
+.charity-owner {
+  color: #666666;
+  background-color: #eeeeee;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+}
+/* line 454, ../scss/_overrides.scss */
+.charity-owner h3 {
+  color: #666666;
+  font-size: 40px;
+}
+
+/* line 460, ../scss/_overrides.scss */
+.donate-sum {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #f9f8f4;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+}
+/* line 468, ../scss/_overrides.scss */
+.donate-sum h2 {
+  color: white;
+  font-size: 72px;
+  line-height: 1;
+}
+/* line 474, ../scss/_overrides.scss */
+.donate-sum h3 {
+  font-size: 60px;
+  line-height: 1;
+  color: white;
+  margin: 20px;
+  text-transform: uppercase;
+}
+/* line 482, ../scss/_overrides.scss */
+.donate-sum h5, .donate-sum h6 {
+  color: #666666;
+  line-height: 1;
+}
+/* line 487, ../scss/_overrides.scss */
+.donate-sum p {
+  color: #666666;
+  font-weight: 100;
+}
+
+/* line 494, ../scss/_overrides.scss */
+.odd {
+  background-color: #32bfca;
+}
+
+/* line 498, ../scss/_overrides.scss */
+.even {
+  background-color: #f4d130;
 }

@@ -3,6 +3,7 @@ $yellow: #f4d130;
 $lightgrey: #f9f8f4;
 $darkgrey: #666666;
 $white: #FFF;
+$mediumgrey: #eee;
 
 $montserrat: 'Montserrat', sans-serif;
 $roboto: 'Roboto Slab', serif;
@@ -18,8 +19,13 @@ $secondary-header-color: $darkgrey;
 $secondary-color: $yellow;
 
 
+
 body {
   background-color: $background-color;
+}
+
+h2,h3,h4,h5,h6{
+  font-family : $header-typeface;
 }
 
 h1 {
@@ -407,3 +413,88 @@ ul.pagination li.current a, .sub-nav dd.active a{
   background: $teal;
 }
 
+.header{
+  p{
+    font-size: 20px;
+    font-weight: 100;
+  }
+}
+
+.profile{
+  margin-bottom: 15px;
+
+  p{
+    font-size: 15px;
+  }
+}
+
+.dashboard{
+  h4{
+    color: $darkgrey;
+    text-transform: none;
+    font-size: 25px;
+    line-height: 1;
+  }
+
+  p{
+    font-size: 17px;
+    font-weight: 100;
+  }
+}
+
+.charity-owner{
+  color: $darkgrey;
+  background-color: $mediumgrey;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7; 
+
+  h3{
+    color: $darkgrey;
+    font-size: 40px;
+  }
+}
+
+.donate-sum{
+  
+  padding: 20px;
+  margin-bottom: 20px;
+  color: $lightgrey;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7; 
+
+  h2{
+    color: white;
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  h3{
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  h5, h6{
+    color: $darkgrey;
+    line-height: 1;
+  }
+
+  p{
+    color: $darkgrey;
+    font-weight: 100;
+  }
+
+}
+
+.odd{
+  background-color: $teal;
+}
+
+.even{
+  background-color: $yellow;
+}
