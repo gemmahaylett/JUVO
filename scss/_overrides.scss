@@ -362,3 +362,48 @@ input[type="text"]{
 footer p{
   margin-bottom:0;
 }
+
+.header {
+  background-color: $secondary-color;
+  padding: 35px 0; 
+  margin-bottom: 20px;
+
+  h2{
+    color: $white;
+  }
+}
+
+.charity-container {
+  background-color: $white; 
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  height: 540px;
+
+  h4{
+    color:$teal;
+    font-size: 16px; 
+    padding: 15px 15px 5px 15px;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  p{
+    padding: 5px 15px 15px 15px;
+    font-size: 12px;
+    margin-bottom: 0;
+    
+  }
+
+  a{
+    margin: 0 0 10px 15px;
+  }
+
+
+}
+
+ul.pagination li.current a, .sub-nav dd.active a{
+  background: $teal;
+}
+

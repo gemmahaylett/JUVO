@@ -8118,3 +8118,47 @@ input[type="text"] {
 footer p {
   margin-bottom: 0;
 }
+
+/* line 366, ../scss/_overrides.scss */
+.header {
+  background-color: #f4d130;
+  padding: 35px 0;
+  margin-bottom: 20px;
+}
+/* line 371, ../scss/_overrides.scss */
+.header h2 {
+  color: white;
+}
+
+/* line 376, ../scss/_overrides.scss */
+.charity-container {
+  background-color: white;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  height: 540px;
+}
+/* line 383, ../scss/_overrides.scss */
+.charity-container h4 {
+  color: #32bfca;
+  font-size: 16px;
+  padding: 15px 15px 5px 15px;
+  margin-bottom: 0;
+  margin: 0;
+  font-weight: bold;
+}
+/* line 392, ../scss/_overrides.scss */
+.charity-container p {
+  padding: 5px 15px 15px 15px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+/* line 399, ../scss/_overrides.scss */
+.charity-container a {
+  margin: 0 0 10px 15px;
+}
+
+/* line 406, ../scss/_overrides.scss */
+ul.pagination li.current a, .sub-nav dd.active a {
+  background: #32bfca;
+}

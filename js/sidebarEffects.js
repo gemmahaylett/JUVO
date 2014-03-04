@@ -62,11 +62,3 @@
 
 })();
 
-$('.sidemenu').click(function() {
-	$('.st-content').css('overflow-y', 'hidden');
-});
-
-$('.st-pusher').click(function() {
-	$('.st-content').css('overflow-y', 'scroll');
-});
-
