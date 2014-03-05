@@ -27,3 +27,9 @@ $('#charity-list li a').click(function() {
    }
    return false;
 });
+
+$(function(){
+     
+    $('#Grid').mixitup();
+     
+});

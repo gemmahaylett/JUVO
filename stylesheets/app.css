@@ -8164,7 +8164,7 @@ footer p {
 }
 
 /* line 412, ../scss/_overrides.scss */
-ul.pagination li.current a, .sub-nav dd.active a {
+ul.pagination li.current a, .sub-nav li.active a {
   background: #32bfca;
 }
 
@@ -8184,20 +8184,25 @@ ul.pagination li.current a, .sub-nav dd.active a {
 }
 
 /* line 432, ../scss/_overrides.scss */
-.dashboard h4 {
+.dashboard h4, .charity h4 {
   color: #666666;
   text-transform: none;
   font-size: 25px;
   line-height: 1;
 }
 /* line 439, ../scss/_overrides.scss */
-.dashboard p {
+.dashboard p, .charity p {
   font-size: 17px;
   font-weight: 100;
 }
 
 /* line 445, ../scss/_overrides.scss */
-.charity-owner {
+.charity {
+  padding: 10px 35px;
+}
+
+/* line 449, ../scss/_overrides.scss */
+.charity-owner, .comments {
   color: #666666;
   background-color: #eeeeee;
   padding-top: 20px;
@@ -8206,13 +8211,13 @@ ul.pagination li.current a, .sub-nav dd.active a {
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
-/* line 454, ../scss/_overrides.scss */
-.charity-owner h3 {
+/* line 458, ../scss/_overrides.scss */
+.charity-owner h3, .comments h3 {
   color: #666666;
   font-size: 40px;
 }
 
-/* line 460, ../scss/_overrides.scss */
+/* line 464, ../scss/_overrides.scss */
 .donate-sum {
   padding: 20px;
   margin-bottom: 20px;
@@ -8220,13 +8225,13 @@ ul.pagination li.current a, .sub-nav dd.active a {
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
-/* line 468, ../scss/_overrides.scss */
+/* line 472, ../scss/_overrides.scss */
 .donate-sum h2 {
   color: white;
   font-size: 72px;
   line-height: 1;
 }
-/* line 474, ../scss/_overrides.scss */
+/* line 478, ../scss/_overrides.scss */
 .donate-sum h3 {
   font-size: 60px;
   line-height: 1;
@@ -8234,23 +8239,45 @@ ul.pagination li.current a, .sub-nav dd.active a {
   margin: 20px;
   text-transform: uppercase;
 }
-/* line 482, ../scss/_overrides.scss */
+/* line 486, ../scss/_overrides.scss */
 .donate-sum h5, .donate-sum h6 {
   color: #666666;
   line-height: 1;
 }
-/* line 487, ../scss/_overrides.scss */
+/* line 491, ../scss/_overrides.scss */
 .donate-sum p {
   color: #666666;
   font-weight: 100;
 }
 
-/* line 494, ../scss/_overrides.scss */
+/* line 498, ../scss/_overrides.scss */
 .odd {
   background-color: #32bfca;
 }
 
-/* line 498, ../scss/_overrides.scss */
+/* line 502, ../scss/_overrides.scss */
 .even {
   background-color: #f4d130;
+}
+
+/* line 506, ../scss/_overrides.scss */
+#Grid .mix {
+  opacity: 0;
+  display: none;
+}
+
+/* line 511, ../scss/_overrides.scss */
+.comments {
+  background-color: white;
+}
+
+/* line 518, ../scss/_overrides.scss */
+.tabs dd a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 526, ../scss/_overrides.scss */
+#panel2-1 .row {
+  margin: 15px 0;
 }

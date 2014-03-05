@@ -17,7 +17,7 @@ $text-typeface: $roboto;
 $primary-color: $teal;
 $secondary-header-color: $darkgrey;
 $secondary-color: $yellow;
-
+$lightness: $teal;
 
 
 body {
@@ -409,7 +409,7 @@ footer p{
 
 }
 
-ul.pagination li.current a, .sub-nav dd.active a{
+ul.pagination li.current a, .sub-nav li.active a{
   background: $teal;
 }
 
@@ -428,7 +428,7 @@ ul.pagination li.current a, .sub-nav dd.active a{
   }
 }
 
-.dashboard{
+.dashboard, .charity{
   h4{
     color: $darkgrey;
     text-transform: none;
@@ -442,7 +442,11 @@ ul.pagination li.current a, .sub-nav dd.active a{
   }
 }
 
-.charity-owner{
+.charity{
+  padding: 10px 35px
+}
+
+.charity-owner, .comments{
   color: $darkgrey;
   background-color: $mediumgrey;
   padding-top: 20px;
@@ -497,4 +501,30 @@ ul.pagination li.current a, .sub-nav dd.active a{
 
 .even{
   background-color: $yellow;
+}
+
+#Grid .mix{
+    opacity: 0;
+    display: none;
+}
+
+.comments{
+  background-color: $white;
+}
+
+.tabs {
+
+  dd{
+    a {
+      font-family: $montserrat;
+      text-transform: uppercase;
+    }
+  }
+}
+
+#panel2-1{
+  .row{
+    margin: 15px 0;
+  }
+  
 }
