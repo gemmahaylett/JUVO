@@ -513,12 +513,9 @@ ul.pagination li.current a, .sub-nav li.active a{
 }
 
 .tabs {
-
-  dd{
-    a {
-      font-family: $montserrat;
-      text-transform: uppercase;
-    }
+  dd > a {
+    font-family: $montserrat;
+    text-transform: uppercase;
   }
 }
 
@@ -527,4 +524,13 @@ ul.pagination li.current a, .sub-nav li.active a{
     margin: 15px 0;
   }
   
+}
+
+.comments {
+  img {
+    display:inline;
+    float:left;
+    width:8em;
+    margin-right:1em;
+  }
 }
