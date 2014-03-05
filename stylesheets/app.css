@@ -8271,13 +8271,21 @@ ul.pagination li.current a, .sub-nav li.active a {
   background-color: white;
 }
 
-/* line 518, ../scss/_overrides.scss */
-.tabs dd a {
+/* line 516, ../scss/_overrides.scss */
+.tabs dd > a {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 526, ../scss/_overrides.scss */
+/* line 523, ../scss/_overrides.scss */
 #panel2-1 .row {
   margin: 15px 0;
+}
+
+/* line 530, ../scss/_overrides.scss */
+.comments img {
+  display: inline;
+  float: left;
+  width: 8em;
+  margin-right: 1em;
 }
