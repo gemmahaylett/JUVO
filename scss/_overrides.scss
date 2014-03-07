@@ -572,6 +572,7 @@ ul.pagination li.current a, .sub-nav li.active a{
   position: relative;
   float: left;
   background-color: white;
+  margin-bottom:2em;
 }
 
 .left-container:after{
@@ -593,6 +594,7 @@ position: relative;
 float: right;
 width: 42%;
  background-color: white;
+ margin:2em 0;
 }
 
 .right-container:after{
@@ -618,6 +620,9 @@ width: 42%;
     margin-left: -31px;
     top: 5px;
 }
+.left-container .stepNum {
+  left: 490px;
+}
 
 textarea{
   margin: 0;
@@ -625,4 +630,19 @@ textarea{
 
 #shortDesc{
   margin-top: 100px;
+}
+#fundStory {
+  textarea {
+    height:250px;
+  }
+}
+#create-fund:before {
+  position:absolute;
+  content:"";
+  background-color:$darkgrey;
+  left:50%;
+  top:5px;
+  height:100%;
+  width:4px;
+  margin-left:2px;
 }
