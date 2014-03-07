@@ -8324,9 +8324,10 @@ ul.pagination li.current a, .sub-nav li.active a {
   position: relative;
   float: left;
   background-color: white;
+  margin-bottom: 2em;
 }
 
-/* line 577, ../scss/_overrides.scss */
+/* line 578, ../scss/_overrides.scss */
 .left-container:after {
   content: "";
   position: absolute;
@@ -8340,15 +8341,16 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 591, ../scss/_overrides.scss */
+/* line 592, ../scss/_overrides.scss */
 .right-container {
   position: relative;
   float: right;
   width: 42%;
   background-color: white;
+  margin: 2em 0;
 }
 
-/* line 598, ../scss/_overrides.scss */
+/* line 600, ../scss/_overrides.scss */
 .right-container:after {
   content: "";
   position: absolute;
@@ -8362,7 +8364,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 611, ../scss/_overrides.scss */
+/* line 613, ../scss/_overrides.scss */
 .stepNum {
   right: 450px;
   position: absolute;
@@ -8374,12 +8376,34 @@ ul.pagination li.current a, .sub-nav li.active a {
   top: 5px;
 }
 
-/* line 622, ../scss/_overrides.scss */
+/* line 623, ../scss/_overrides.scss */
+.left-container .stepNum {
+  left: 490px;
+}
+
+/* line 627, ../scss/_overrides.scss */
 textarea {
   margin: 0;
 }
 
-/* line 626, ../scss/_overrides.scss */
+/* line 631, ../scss/_overrides.scss */
 #shortDesc {
   margin-top: 100px;
+}
+
+/* line 635, ../scss/_overrides.scss */
+#fundStory textarea {
+  height: 250px;
+}
+
+/* line 639, ../scss/_overrides.scss */
+#create-fund:before {
+  position: absolute;
+  content: "";
+  background-color: #666666;
+  left: 50%;
+  top: 5px;
+  height: 100%;
+  width: 4px;
+  margin-left: 2px;
 }
