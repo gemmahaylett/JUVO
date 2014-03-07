@@ -8289,3 +8289,92 @@ ul.pagination li.current a, .sub-nav li.active a {
   width: 8em;
   margin-right: 1em;
 }
+
+/* line 539, ../scss/_overrides.scss */
+.tabs dd.active a {
+  box-shadow: 0;
+}
+
+/* line 545, ../scss/_overrides.scss */
+#create-fund h5 {
+  background: #32bfca;
+  color: white;
+  padding: 10px;
+}
+/* line 551, ../scss/_overrides.scss */
+#create-fund p {
+  color: #666666;
+  font-weight: 100;
+  font-size: 18px;
+  padding: 0 10px;
+}
+/* line 558, ../scss/_overrides.scss */
+#create-fund span {
+  padding: 20px 25px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #666666;
+  color: white;
+  display: inline-block;
+}
+
+/* line 570, ../scss/_overrides.scss */
+.left-container {
+  width: 42%;
+  position: relative;
+  float: left;
+  background-color: white;
+}
+
+/* line 577, ../scss/_overrides.scss */
+.left-container:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: -10px;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
+  border-color: transparent #32bfca;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+/* line 591, ../scss/_overrides.scss */
+.right-container {
+  position: relative;
+  float: right;
+  width: 42%;
+  background-color: white;
+}
+
+/* line 598, ../scss/_overrides.scss */
+.right-container:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent #32bfca;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+/* line 611, ../scss/_overrides.scss */
+.stepNum {
+  right: 450px;
+  position: absolute;
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin-left: -31px;
+  top: 5px;
+}
+
+/* line 622, ../scss/_overrides.scss */
+textarea {
+  margin: 0;
+}

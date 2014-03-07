@@ -534,3 +534,91 @@ ul.pagination li.current a, .sub-nav li.active a{
     margin-right:1em;
   }
 }
+
+
+.tabs dd.active a{
+  box-shadow: 0;
+}
+
+#create-fund{
+
+  h5{
+    background: $teal;
+    color: white;
+    padding: 10px;
+  }
+
+  p{
+    color: $darkgrey;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 0 10px;
+  }
+
+  span{
+  padding: 20px 25px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+
+  background-color: $darkgrey;
+  color: white;
+  display: inline-block;
+  }
+
+}
+
+.left-container{
+  width: 42%;
+  position: relative;
+  float: left;
+  background-color: white;
+}
+
+.left-container:after{
+content: "";
+position: absolute;
+top: 15px;
+right: -10px;
+border-style: solid;
+border-width: 12px 0 12px 12px;
+border-color: transparent $teal;
+display: block;
+width: 0;
+z-index: 1;
+}
+
+
+.right-container {
+position: relative;
+float: right;
+width: 42%;
+ background-color: white;
+}
+
+.right-container:after{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent $teal;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.stepNum{
+    right: 450px;
+    position: absolute;
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    display: block;
+    margin-left: -31px;
+    top: 5px;
+}
+
+textarea{
+  margin: 0;
+}
