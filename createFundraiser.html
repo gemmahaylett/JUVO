@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>Create A Fundraiser</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/basic.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -42,8 +45,9 @@
    
     <div id="nameFund" class="left-container">
       <span class="stepNum">1</span>
-      <div>
+      
         <h5>Name your fundraiser</h5>
+        <div class="createFundContent">
         <p>This is the name that your fundraiser will be known as. Fundraiser names are limited to 70 characters</p>
         <input type="text" placeholder="Your Fundraier Title..." />
       </div>
@@ -51,37 +55,51 @@
     
     <div id="shortDesc" class="right-container">
       <span class="stepNum">2</span>
-      <h5>Enter a short description</h5>
-      <p>This is your elevator pitch. Descriptions are limited to 150 characters</p>
-      <textarea placeholder="Elevator pitch"></textarea>
+      
+        <h5>Enter a short description</h5>
+        <div class="createFundContent">
+        <p>This is your elevator pitch. Descriptions are limited to 150 characters</p>
+        <textarea placeholder="Elevator pitch"></textarea>
+      </div>
     </div>
     
     <!-- Step 3 and Step 4 -->
     <div id="selCharity" class="left-container">
       <span class="stepNum">3</span>
+     
         <h5>Select a charity</h5>
+         <div class="createFundContent">
         <p>Enter the name of the charity or person the money will go towards</p>
         <input type="text" placeholder="Charity or Person Name" />
+      </div>
     </div>
 
     <div id="fundStory" class="right-container">
       <span class="stepNum">4</span>
+      
         <h5>Enter your story</h5>
+        <div class="createFundContent">
         <p>This is where you get up close and personal. You can share why you are starting this fundraiser and what reaching your goal will accomplish.</p>
         <textarea rows="200" columns="5" placeholder="Once upon a time" ></textarea>
+      </div>
     </div>
 
     <div id="goalAmount" class="left-container">
       <span class="stepNum">5</span>
+      
         <h5>Enter goal amount</h5>
+        <div class="createFundContent">
         <p>This is where you get up close and personal. You can share why you are starting this fundraiser and what reaching your goal will accomplish.</p>
         <input type="text" placeholder="Amount" />
+      </div>
     </div>
     
     <!-- Step 5 and Step 6 -->
     <div id="fundDate" class="left-container">
       <span class="stepNum">6</span>
+
       <h5>Enter in end date</h5>
+            <div class="createFundContent">
       <p>Enter the date the fundraiser will end. All fundraisers end at 11:59 PST on the selcted date</p>
       <div class="row">
       <div class="large-4 columns">
@@ -115,18 +133,25 @@
       </label>
       </div>
     </div>
+    </div>
   </div>
 
   <div id="fundPhotos" class="right-container">
+
     <span class="stepNum">7</span>
       <h5>Upload Photos</h5>
+          <div class="createFundContent">
       <p>You can upload up to 4 pictures on your fundraiser pages</p>
+    <form action="/file-upload" class="dropzone" id="charity-gallery"></form>
+    </div>
   </div>
     
    <!-- Step 8 -->
    <div id="shareFund" class="left-container">
+
      <span class="stepNum">8</span>
       <h5>Share with your friends</h5>
+          <div class="createFundContent">
       <p>Read all about it! Share on your favorite social media site</p>
       <div class="row">
          <div class="large-12 columns">
@@ -135,6 +160,7 @@
             <a href="#" class="tiny button">e</a>
          </div>
       </div>
+    </div>
   </div>
   
    <div class="row">
@@ -146,6 +172,16 @@
  </div> <!-- end 12 large column -->
    </div> <!-- end row -->
 
-   
-   
+<footer>
+      <p class="text-center">&copy; Made by Gemma Haylett.</p>
+  </footer>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <script src="bower_components/foundation/js/foundation.min.js"></script>
+   <script src="js/app.js"></script>
+   <script src="js/jquery.mixitup.min.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/dropzone.js"></script>
+  </body>
+</html>
  

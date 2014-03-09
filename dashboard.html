@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <script src="js/Chart.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
@@ -36,7 +37,7 @@
                 <h2>Dashboard</h2>
              </div>
              <div class="large-4 columns">
-                <a href="#" class="large button">Create a Fundraiser</a>
+                <a href="createFundraiser.html" class="large button">Create a Fundraiser</a>
              </div>
          </div>
          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
@@ -74,8 +75,27 @@
         <a href="#" class="medium button">Update Fundraiser</a>
       </div>
     <div class="large-3 columns">
-        <img src="http://placehold.it/400x515&text=[img]">
+      <div class="charity-status">
+        <canvas id="canvas2" height="280" width="215"></canvas>
+        <script>
+
+    var doughnutData1 = [
+        {
+          value: 20,
+          color:"#c9ae3f"
+        },
+        {
+          value : 80,
+          color : "#f4d130"
+        },
+      
+      ];
+
+  var myDoughnut1 = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData1);
+  
+  </script>
         <h4>$2,000 of $10,000 raised</h4>
+      </div>
     </div>
   </div>
 </div>
@@ -93,8 +113,27 @@
         <a href="#" class="medium button">Update Fundraiser</a>
       </div>
       <div class="large-3 columns">
-        <img src="http://placehold.it/400x515&text=[img]">
+        <div class="charity-status">
+        <canvas id="canvas" height="280" width="215"></canvas>
+        <script>
+
+    var doughnutData2 = [
+        {
+          value: 20,
+          color:"#c9ae3f"
+        },
+        {
+          value : 80,
+          color : "#f4d130"
+        },
+      
+      ];
+
+  var myDoughnut2 = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData2);
+  
+  </script>
         <h4>$2,000 of $10,000 raised</h4>
+      </div>
       </div>
   </div>
 </div>
@@ -133,5 +172,7 @@
   <footer>
       <p class="text-center">&copy; Made by Gemma Haylett.</p>
   </footer>
+  
+  <script src="js/script.js"></script>
   </body>
 </html>

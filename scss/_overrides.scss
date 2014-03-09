@@ -18,6 +18,7 @@ $primary-color: $teal;
 $secondary-header-color: $darkgrey;
 $secondary-color: $yellow;
 $lightness: $teal;
+$timeline-color: #d9d9d9;
 
 
 body {
@@ -141,45 +142,41 @@ footer {
   }
 }
 
-figure {
-  margin: 0px;
-  position: relative;
-}
 
-figure img {
-  max-width: 100%;
-  display: block;
-  position: relative;
 
-}
+.featured-fund-container{
+  figure {
+    margin: 0px;
+    position: relative;
+    img {
+      max-width: 100%;
+      display: block;
+      position: relative;
+    }
+  } 
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: rgb(54, 25, 25);
+    background: rgba(54, 25, 25, .4);
 
-figcaption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 20px;
-  color: #ed4e6e;
-  background: rgb(54, 25, 25);
-  background: rgba(54, 25, 25, .4);
-}
+    h4 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
 
-figcaption h4 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-
-figcaption span:before {
-  content: 'by ';
-}
-
-figcaption a {
-  text-align: center;
-  padding: 5px 10px;
-  border-radius: 2px;
-  display: inline-block;
-  background: #ed4e6e;
-  color: #fff;
+    a {
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      background: $teal;
+      color: #fff;
+    }
+  }
 }
 
 /* Caption Style 3 */
@@ -359,10 +356,12 @@ figcaption a {
   padding-left: 300px;
 }
 
-input[type="text"]{
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.slide-out-menu{
+  input[type="text"]{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 
 footer p{
@@ -432,7 +431,7 @@ ul.pagination li.current a, .sub-nav li.active a{
   h4{
     color: $darkgrey;
     text-transform: none;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1;
   }
 
@@ -442,6 +441,9 @@ ul.pagination li.current a, .sub-nav li.active a{
   }
 }
 
+
+
+
 .charity{
   padding: 10px 35px
 }
@@ -450,7 +452,7 @@ ul.pagination li.current a, .sub-nav li.active a{
   color: $darkgrey;
   background-color: $mediumgrey;
   padding-top: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   margin-bottom: 20px;
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7; 
@@ -459,6 +461,16 @@ ul.pagination li.current a, .sub-nav li.active a{
     color: $darkgrey;
     font-size: 40px;
   }
+}
+
+.charity-status{
+
+  h4{
+    position: relative;
+    top: -40px
+  }
+
+  height: 0;
 }
 
 .donate-sum{
@@ -542,25 +554,26 @@ ul.pagination li.current a, .sub-nav li.active a{
 
 #create-fund{
 
+  margin-top: 25px;
   h5{
     background: $teal;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    margin: 0;
   }
 
   p{
     color: $darkgrey;
     font-weight: 100;
-    font-size: 18px;
-    padding: 0 10px;
+    font-size: 15px;
   }
 
   span{
-  padding: 20px 25px;
+  padding: 22px 26px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 
-  background-color: $darkgrey;
+  background-color: $timeline-color;
   color: white;
   display: inline-block;
   }
@@ -573,12 +586,14 @@ ul.pagination li.current a, .sub-nav li.active a{
   float: left;
   background-color: white;
   margin-bottom:2em;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
 .left-container:after{
 content: "";
 position: absolute;
-top: 15px;
+top: 18px;
 right: -10px;
 border-style: solid;
 border-width: 12px 0 12px 12px;
@@ -595,6 +610,8 @@ float: right;
 width: 42%;
  background-color: white;
  margin:2em 0;
+ -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
 .right-container:after{
@@ -639,10 +656,152 @@ textarea{
 #create-fund:before {
   position:absolute;
   content:"";
-  background-color:$darkgrey;
+  background-color:$timeline-color;
   left:50%;
   top:5px;
   height:100%;
-  width:4px;
+  width:6px;
   margin-left:2px;
+}
+
+.createFundContent{
+  padding: 10px 15px 15px 15px;
+}
+
+#charity-gallery{
+  span{
+    border-radius: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: $roboto;
+    background-color: transparent;
+    color: $darkgrey;
+    padding: 0;
+  }
+}
+
+canvas{
+  position: relative;
+  top: -30px;
+}
+
+.donate-container{
+  background-color: white;
+  padding: 10px 10px 2px 10px;
+  margin-bottom: 20px;
+  width: 230px;
+  height: 375px;
+  h4{
+    top: -60px;
+    position: relative
+  }
+}
+
+.tabs-content > .content {
+  padding: 0;
+}
+
+.header{
+  h2{
+    display: inline-block;
+  }
+  .button{
+    display: inline-block;
+    top: 15px;
+    margin: 0;
+    float: right;
+  }
+  p{
+    display: block;
+  }
+}
+
+.social{
+
+  .button {
+    box-shadow: none;
+    padding: 24px 25px;
+    margin: 0;
+  }
+  
+
+  .facebook{
+    background: url(../images/64-facebook.png) no-repeat; 
+    background-size: 50px;
+  }
+
+  .twitter{
+    background: url(../images/64-twitter.png) no-repeat; 
+    background-size: 50px;
+  }
+
+  .googleplus{
+    background: url(../images/64-googleplus.png) no-repeat; 
+    background-size: 50px;
+  }
+
+}
+
+.reveal-modal .deletePhoto {
+  @extend .close-reveal-modal;
+  right: 25px;
+  color: $darkgrey;
+}
+
+#edit-gallery{
+  height: 280px;
+  width: 300px;
+}
+
+#editGalleryModal{
+  .button{
+    margin-top: 10px;
+  }
+  img{
+    margin-bottom: 10px;
+  }
+
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: rgb(54, 25, 25);
+    background: rgba(54, 25, 25, .4);
+
+    a {
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      background: $teal;
+      color: #fff;
+    }
+  }
+}
+
+.example-orbit{
+  position:relative;
+}
+
+.accordion dd > a{
+  display: inline-block;
+  background:$teal;
+  color: white;
+}
+
+.accordion dd > a:hover{
+  display: inline-block;
+  background:$teal;
+  color: white;
+}
+
+#edit-gallery-button {
+  position: absolute;
+  top: 30px;
+  right: 130px;
+}
+
+.accordion dd.active a {
+background: $teal;
 }
