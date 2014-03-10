@@ -1,0 +1,281 @@
+<html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics</title>
+    <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript">
+</script>
+    <script src="js/Chart.js" type="text/javascript">
+</script>
+    <link rel="stylesheet" href="stylesheets/basic.css" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="stylesheets/app.css" type="text/css" />
+    <script src="bower_components/modernizr/modernizr.js" type="text/javascript">
+</script>
+<body>
+   <div class="row">
+      <div class="large-3 columns">
+         <a href="index.html"><img src=
+            "http://placehold.it/400x100&amp;text=Logo"></a>
+      </div>
+      <div class="large-9 columns">
+         <ul class="right button-group">
+            <li><a href="createFundraiser.html">Create a <br>FUNDRAISER</a></li>
+            <li><a href="browseCharities.html">Browse <br>CHARITIES</a></li>
+            <li><a href="index.html">Logout</a></li>
+         </ul>
+      </div>
+   </div>
+   <!-- Charity Header -->
+   <div class="header">
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Statistics</h2>
+         </div>
+      </div>
+   </div>
+
+   <div class="row stat-chart">
+         <div class="large-12 columns">
+            <h2 class="text-center">Girls in Technology</h2>
+         </div>
+      </div>
+   
+   
+       <div class="stat-chart">
+      <div class="row">
+         <div class="large-12 columns">
+         <h3>Number of Donations</h3>
+         <canvas id="canvasLine" height="450" width="960"></canvas>
+	<script>
+
+		var lineChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [65,59,90,81,56,55,40]
+				}
+			]
+
+		}
+      
+   var options = {
+				
+	//Boolean - If we show the scale above the chart data			
+	scaleOverlay : false,
+	
+	//Boolean - If we want to override with a hard coded scale
+	scaleOverride : false,
+	
+	//** Required if scaleOverride is true **
+	//Number - The number of steps in a hard coded scale
+	scaleSteps : null,
+	//Number - The value jump in the hard coded scale
+	scaleStepWidth : null,
+	//Number - The scale starting value
+	scaleStartValue : null,
+
+	//String - Colour of the scale line	
+	scaleLineColor : "rgba(0,0,0,.1)",
+	
+	//Number - Pixel width of the scale line	
+	scaleLineWidth : 1,
+
+	//Boolean - Whether to show labels on the scale	
+	scaleShowLabels : true,
+	
+	//Interpolated JS string - can access value
+	scaleLabel : "<%=value%>",
+	
+	//String - Scale label font declaration for the scale label
+	scaleFontFamily : "'Arial'",
+	
+	//Number - Scale label font size in pixels	
+	scaleFontSize : 12,
+	
+	//String - Scale label font weight style	
+	scaleFontStyle : "normal",
+	
+	//String - Scale label font colour	
+	scaleFontColor : "#666",	
+	
+	///Boolean - Whether grid lines are shown across the chart
+	scaleShowGridLines : true,
+	
+	//String - Colour of the grid lines
+	scaleGridLineColor : "rgba(0,0,0,.05)",
+	
+	//Number - Width of the grid lines
+	scaleGridLineWidth : 1,	
+	
+	//Boolean - Whether the line is curved between points
+	bezierCurve : false,
+	
+	//Boolean - Whether to show a dot for each point
+	pointDot : true,
+	
+	//Number - Radius of each point dot in pixels
+	pointDotRadius : 3,
+	
+	//Number - Pixel width of point dot stroke
+	pointDotStrokeWidth : 1,
+	
+	//Boolean - Whether to show a stroke for datasets
+	datasetStroke : true,
+	
+	//Number - Pixel width of dataset stroke
+	datasetStrokeWidth : 2,
+	
+	//Boolean - Whether to fill the dataset with a colour
+	datasetFill : true,
+	
+	//Boolean - Whether to animate the chart
+	animation : true,
+
+	//Number - Number of animation steps
+	animationSteps : 60,
+	
+	//String - Animation easing effect
+	animationEasing : "easeOutQuart",
+
+	//Function - Fires when the animation is complete
+	onAnimationComplete : null
+	
+}
+
+	var myLine = new Chart(document.getElementById("canvasLine").getContext("2d")).Line(lineChartData, options);
+
+	</script>
+          </div>
+      </div>
+   </div>
+   
+   <div class="stat-chart">
+      <div class="row">
+         <div class="large-12 columns">
+         <h3>Number of shares</h3>
+            <canvas id="canvas" height="200" width="960"></canvas>
+	<script>
+
+		var barChartData = {
+			labels : ["January","February","March","April","May","June","July"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : [65,59,90,81,56,55,40]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					data : [28,48,40,19,96,27,100]
+				},
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : [18,42,60,89,76,17,50]
+				}
+			]
+		}
+      
+      var options = {
+         scaleOverlay : false,
+	
+         //Boolean - If we want to override with a hard coded scale
+         scaleOverride : false,
+
+         //** Required if scaleOverride is true **
+         //Number - The number of steps in a hard coded scale
+         scaleSteps : null,
+         //Number - The value jump in the hard coded scale
+         scaleStepWidth : null,
+         //Number - The scale starting value
+         scaleStartValue : null,
+
+         //String - Colour of the scale line	
+         scaleLineColor : "rgba(0,0,0,.1)",
+
+         //Number - Pixel width of the scale line	
+         scaleLineWidth : 1,
+
+         //Boolean - Whether to show labels on the scale	
+         scaleShowLabels : true,
+
+         //Interpolated JS string - can access value
+         scaleLabel : "<%=value%>",
+
+         //String - Scale label font declaration for the scale label
+         scaleFontFamily : "'Arial'",
+
+         //Number - Scale label font size in pixels	
+         scaleFontSize : 12,
+
+         //String - Scale label font weight style	
+         scaleFontStyle : "normal",
+
+         //String - Scale label font colour	
+         scaleFontColor : "#666",	
+
+         ///Boolean - Whether grid lines are shown across the chart
+         scaleShowGridLines : false,
+
+         //Boolean - If there is a stroke on each bar	
+         barShowStroke : true,
+
+         //Number - Pixel width of the bar stroke	
+         barStrokeWidth : 2,
+
+         //Number - Spacing between each of the X value sets
+         barValueSpacing : 5,
+
+         //Number - Spacing between data sets within X values
+         barDatasetSpacing : 1,
+
+         //Boolean - Whether to animate the chart
+         animation : true,
+
+         //Number - Number of animation steps
+         animationSteps : 60,
+
+         //String - Animation easing effect
+         animationEasing : "easeOutQuart",
+
+         //Function - Fires when the animation is complete
+         onAnimationComplete : null
+      }
+
+	var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData, options);
+
+	</script>
+         </div>
+      </div>
+   </div>
+   
+   <div class="row stat-chart">
+      <div class="large-6 columns">
+         <h3>Total Funds Raised</h3>
+         <h2>$9,362.74</h2>
+      </div>
+      <div class="large-6 columns">
+         <h3>Days Left for Fundraiser</h3>
+         <h2>134</h2>
+      </div>
+   </div>
+ 
+<footer class="text-center">
+      <p>&copy; Made by Gemma Haylett.</p>
+  </footer>
+  
+<script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript">
+</script><script src="bower_components/foundation/js/foundation.min.js" type="text/javascript">
+</script><script src="js/app.js" type="text/javascript">
+</script><script src="js/script.js" type="text/javascript">
+</script><script src="js/dropzone.js" type="text/javascript">
+</script>
+  </body>
+</html>

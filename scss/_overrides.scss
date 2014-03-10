@@ -56,6 +56,10 @@ h1 {
   @include background-image(linear-gradient(top, #63bdbd 0%,#31bfca 100%));
 }
 
+a:hover{
+  color: $teal;
+}
+
 h2 {
   font-family : $header-typeface;
   font-weight : bold;
@@ -375,48 +379,58 @@ footer p{
 
   h2{
     color: $white;
+    display: inline-block;
+  }
+
+  p{
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+  }
+
+  .button{
+    display: inline-block;
+    top: 15px;
+    margin-top: -15px;
+    float: right;
   }
 }
 
 .charity-container {
   background-color: $white; 
   margin-bottom: 20px;
+  padding: 10px 10px 0 10px;
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
-  height: 540px;
+  height: 500px;
+  position: relative;
 
   h4{
     color:$teal;
     font-size: 16px; 
-    padding: 15px 15px 5px 15px;
+    padding: 15px 0px 5px 0px;
     margin-bottom: 0;
     margin: 0;
     font-weight: bold;
   }
 
   p{
-    padding: 5px 15px 15px 15px;
+    padding: 5px 0px 15px 0px;
     font-size: 12px;
     margin-bottom: 0;
+    
     
   }
 
   a{
-    margin: 0 0 10px 15px;
+    margin: 0 0 10px 0px;
+    bottom: 8px;
+    position: absolute;
   }
-
-
 }
 
 ul.pagination li.current a, .sub-nav li.active a{
   background: $teal;
-}
-
-.header{
-  p{
-    font-size: 20px;
-    font-weight: 100;
-  }
 }
 
 .profile{
@@ -441,8 +455,14 @@ ul.pagination li.current a, .sub-nav li.active a{
   }
 }
 
-
-
+.owner-dashboard{
+  background-color: $white; 
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  height: 302px;
+  position: relative;
+}
 
 .charity{
   padding: 10px 35px
@@ -451,11 +471,7 @@ ul.pagination li.current a, .sub-nav li.active a{
 .charity-owner, .comments{
   color: $darkgrey;
   background-color: $mediumgrey;
-  padding-top: 20px;
-  padding-bottom: 25px;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7; 
+  padding: 15px 15px 5px 25px;
 
   h3{
     color: $darkgrey;
@@ -465,9 +481,17 @@ ul.pagination li.current a, .sub-nav li.active a{
 
 .charity-status{
 
+  h2{
+    position: absolute;
+    color: #32bfca;
+    top: 95px;
+    left: 87px;
+    font-size: 35px;
+  }
+
   h4{
-    position: relative;
-    top: -40px
+    position: absolute;
+    top: 240px
   }
 
   height: 0;
@@ -552,9 +576,10 @@ ul.pagination li.current a, .sub-nav li.active a{
   box-shadow: 0;
 }
 
-#create-fund{
+#create-fund, #create-profile{
 
   margin-top: 25px;
+
   h5{
     background: $teal;
     color: white;
@@ -585,33 +610,40 @@ ul.pagination li.current a, .sub-nav li.active a{
   position: relative;
   float: left;
   background-color: white;
-  margin-bottom:2em;
+  margin-bottom:4em;
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+
+}
+
+.left-container, .right-container{
+  input[type="text"], select{
+    margin: 0;
+  }
 }
 
 .left-container:after{
-content: "";
-position: absolute;
-top: 18px;
-right: -10px;
-border-style: solid;
-border-width: 12px 0 12px 12px;
-border-color: transparent $teal;
-display: block;
-width: 0;
-z-index: 1;
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -10px;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;
+  border-color: transparent $teal;
+  display: block;
+  width: 0;
+  z-index: 1;
 }
 
 
 .right-container {
-position: relative;
-float: right;
-width: 42%;
- background-color: white;
- margin:2em 0;
- -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  position: relative;
+  float: right;
+  width: 42%;
+  background-color: white;
+  margin:2em 0;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
 .right-container:after{
@@ -628,15 +660,16 @@ box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
 .stepNum{
-    right: 450px;
-    position: absolute;
-    cursor: pointer;
-    width: 62px;
-    height: 62px;
-    display: block;
-    margin-left: -31px;
-    top: 5px;
+  right: 450px;
+  position: absolute;
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin-left: -31px;
+  top: 5px;
 }
+
 .left-container .stepNum {
   left: 490px;
 }
@@ -645,44 +678,60 @@ textarea{
   margin: 0;
 }
 
-#shortDesc{
+#shortDesc, #profileDesc{
   margin-top: 100px;
 }
-#fundStory {
+
+#fundStory{
   textarea {
     height:250px;
   }
 }
-#create-fund:before {
+
+#profileDesc{
+  textarea {
+    height:150px;
+  }
+}
+
+
+#create-fund:before, #create-profile:before {
   position:absolute;
   content:"";
   background-color:$timeline-color;
   left:50%;
-  top:5px;
-  height:100%;
+  top:30px;
+  height:95%;
   width:6px;
   margin-left:2px;
 }
 
-.createFundContent{
+.createFundContent, .createProfileContent{
   padding: 10px 15px 15px 15px;
 }
 
-#charity-gallery{
+#charity-gallery, #profile-gallery{
+  height: 300px;
+
   span{
     border-radius: 0;
-    text-align: center;
     font-size: 20px;
     font-family: $roboto;
     background-color: transparent;
     color: $darkgrey;
     padding: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
 
-canvas{
-  position: relative;
-  top: -30px;
+.donate-container, .charity-status{
+  canvas{
+    position: relative;
+    top: -30px;
+    right: 3px;
+  }
 }
 
 .donate-container{
@@ -691,29 +740,26 @@ canvas{
   margin-bottom: 20px;
   width: 230px;
   height: 375px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+
+  h2{
+    position: absolute;
+    color: #32bfca;
+    top: 175px;
+    left: 81px;
+    font-size: 35px;
+  }
+
   h4{
-    top: -60px;
-    position: relative
+    top: 320px;
+    position: absolute;
   }
 }
 
 .tabs-content > .content {
   padding: 0;
-}
-
-.header{
-  h2{
-    display: inline-block;
-  }
-  .button{
-    display: inline-block;
-    top: 15px;
-    margin: 0;
-    float: right;
-  }
-  p{
-    display: block;
-  }
 }
 
 .social{
@@ -798,10 +844,55 @@ canvas{
 
 #edit-gallery-button {
   position: absolute;
-  top: 30px;
+  top: 160px;
   right: 130px;
 }
 
 .accordion dd.active a {
 background: $teal;
+}
+
+.stat-chart{
+  margin-bottom: 20px;
+
+  h3{
+    margin: 10px 0;
+    color: $teal;
+  }
+  
+}
+
+.center{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.sub-nav li.active a:hover{
+  background-color: $teal;
+}
+
+#donateModal{
+  h2{
+    color: $teal;
+    margin-bottom: 10px;
+  }
+
+  textarea{
+    height:150px;
+    margin-bottom: 25px;
+  }
+}
+
+#profilePhoto{
+  margin-top: 100px;
+}
+
+.content{
+  .button{
+    margin-top: 15px;
+  }
+
+  textarea{
+    height: 250px;
+  }
 }

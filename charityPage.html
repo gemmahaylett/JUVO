@@ -13,14 +13,14 @@
   <body>
         <div class="row">
     <div class="large-3 columns">
-      <img src="http://placehold.it/400x100&text=Logo" />
+      <a href="index.html"><img src=
+            "http://placehold.it/400x100&amp;text=Logo"></a>
     </div>
     <div class="large-9 columns">
       <ul class="right button-group">
-      <li><a href="#">Start a <br>FUNDRAISER</a></li>
+      <li><a href="createFundraiser.html">Create a <br>FUNDRAISER</a></li>
       <li><a href="browseCharities.html">Browse <br>CHARITIES</a></li>
-      <li><a href="#">Sign In</a></li>
-      <li><a href="#">Sign Up</a></li>
+      <li><a href="index.html">Logout</a></li>
       </ul>
      </div>
    </div>
@@ -90,6 +90,7 @@
   var myDoughnut2 = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData2);
   
   </script>
+        <h2 class="text-center">20%</h2>
         <h4 class="text-center">$2,000 of $10,000 raised</h4>
               </div>
             <div class="social">
@@ -168,43 +169,34 @@
               <li class="arrow"><a href="">&raquo;</a></li>
             </ul>
           </div>
-         <div class="content" id="panel2-2">
+         <div id="panel2-2">
             <div class="row">
-               <div class="large-2 columns">
-                  <p>April 5, 2013</p>
-               </div>
-               <div class="large-10 columns">
-                  <h4>Fundraising Status</h4>
+               <div class="large-12 columns">
+                  <h3>Almost There!</h3>
+                  <h4>Sunday, January 5, 2014</h4>
                   <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
                </div>
             </div>
             <div class="row">
-               <div class="large-2 columns">
-                  <p>April 5, 2013</p>
-               </div>
-               <div class="large-10 columns">
-                  <h4>Fundraising Status</h4>
-                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+               <div class="large-12 columns">
+                  <h3>Fundraising Dinner at Chevy's</h3>
+                  <h4>Wednesday, October 12, 2013</h4>
+                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
                </div>
             </div>
             <div class="row">
-               <div class="large-2 columns">
-                  <p>April 5, 2013</p>
-               </div>
-               <div class="large-10 columns">
-                  <h4>Fundraising Status</h4>
-                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
+               <div class="large-12 columns">
+                  <h3>Raffle Details</h3>
+                  <h4>Saturday, June 24, 2013</h4>
+                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
                </div>
             </div>
             <div class="row">
-               <div class="large-2 columns">
-                  <p>April 5, 2013</p>
+               <div class="large-12 columns">
+                  <h3>Kick Off</h3>
+                  <h4>Friday, April 5, 2013</h4>
+                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
                </div>
-               <div class="large-10 columns">
-                  <h4>Fundraising Status</h4>
-                  <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.Bacon ipsum dolor sit amet nulla ham qui sint exercitation  eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong.</p>
-               </div>
-
             </div>
             <ul class="pagination right">
               <li class="arrow unavailable"><a href="">&laquo;</a></li>
@@ -223,26 +215,21 @@
       </div>
    
    <!-- Donate Modal -->
-   <div id="donateModal" class="reveal-modal small" data-reveal>
-      <h2>Donate Now</h2>
+   <div id="donateModal" class="reveal-modal medium" data-reveal>
+        <h2 class="text-center">Donate Now</h2>
       <div class="row">
          <div class="large-12 columns">
+            <input type="text" placeholder="First Name" />    
+            <input type="text" placeholder="Last Name" />
             <input type="text" placeholder="Amount" />
-            <div class="row">
-               <div class="large-6 columns">
-               <input type="text" placeholder="First Name" />
-               </div>
-               <div class="large-6 columns">
-               <input type="text" placeholder="Last Name" />
-               </div>
-            </div>   
+          </div>
+        </div>   
             <fieldset>
-                  <legend>Credit Card Information</legend>
-            <input type="text" placeholder="Credit Card Number" />
-            <div class="row">
-               <div class="large-6 columns">
-               <div class="row">
-                  <div class="large-6 columns">
+            <legend>Credit Card Information</legend>
+            <div class="large-12 columns">
+              <input type="text" placeholder="Credit Card Number" />
+            </div>
+              <div class="large-3 columns">
                <label>Month
                  <select>
                    <option value="Jan">Jan</option>
@@ -252,7 +239,7 @@
                  </select>
                </label>
                </div>
-                  <div class="large-6 columns">
+               <div class="large-3 columns">
                <label>Year
                  <select>
                    <option value="2014">2014</option>
@@ -262,23 +249,14 @@
                  </select>
                </label>
                </div>
-               </div>
-
-               </div>
                <div class="large-6 columns">
-               <input type="text" placeholder="CV" />
-               </div>
-               
-               
-                             
-            </div>           
- </fieldset>        
+                  <label>CV
+                  <input type="text" placeholder="CV" />
+                  </label>
+               </div>                          
+          </fieldset>        
          <textarea rows="30" placeholder="Shout-out" ></textarea> 
          <a href="#" class="large button">DONATE NOW</a>
-         </div>
-         
-      </div>
-      
       <a class="close-reveal-modal">&#215;</a>
    </div>
  
