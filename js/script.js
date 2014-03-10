@@ -31,7 +31,7 @@ $('#charity-list li a').click(function() {
 $('#hide-comment1').click(function(){
    var comment_status = $('#hide-comment1').html();
 
-   if(comment_status == 'Hide Comment'){
+   if(comment_status == 'Hide <br>Comment'){
       $('#comment-content1 p').css('color', '#D6D6D6');
       $('#comment-content1 h4').css('color', '#D6D6D6');
       $('#comment-content1 img').css('opacity', '0.4');
@@ -41,14 +41,14 @@ $('#hide-comment1').click(function(){
       $('#comment-content1 p').css('color', '#666666');
       $('#comment-content1 h4').css('color', '#666666');
       $('#comment-content1 img').css('opacity', '1.0');
-      $('#hide-comment1').html('Hide Comment');
+      $('#hide-comment1').html('Hide <br>Comment');
    }
 });
 
 $('#hide-comment2').click(function(){
    var comment_status = $('#hide-comment2').html();
 
-   if(comment_status == 'Hide Comment'){
+   if(comment_status == 'Hide <br>Comment'){
       $('#comment-content2 p').css('color', '#D6D6D6');
       $('#comment-content2 h4').css('color', '#D6D6D6');
       $('#comment-content2 img').css('opacity', '0.4');
@@ -58,14 +58,14 @@ $('#hide-comment2').click(function(){
       $('#comment-content2 p').css('color', '#666666');
       $('#comment-content2 h4').css('color', '#666666');
       $('#comment-content2 img').css('opacity', '1.0');
-      $('#hide-comment2').html('Hide Comment');
+      $('#hide-comment2').html('Hide <br>Comment');
    }
 });
 
 $('#hide-comment3').click(function(){
    var comment_status = $('#hide-comment3').html();
 
-   if(comment_status == 'Hide Comment'){
+   if(comment_status == 'Hide <br>Comment'){
       $('#comment-content3 p').css('color', '#D6D6D6');
       $('#comment-content3 h4').css('color', '#D6D6D6');
       $('#comment-content3 img').css('opacity', '0.4');
@@ -75,14 +75,14 @@ $('#hide-comment3').click(function(){
       $('#comment-content3 p').css('color', '#666666');
       $('#comment-content3 h4').css('color', '#666666');
       $('#comment-content3 img').css('opacity', '1.0');
-      $('#hide-comment3').html('Hide Comment');
+      $('#hide-comment3').html('Hide <br>Comment');
    }
 });
 
 $('#hide-comment4').click(function(){
    var comment_status = $('#hide-comment4').html();
 
-   if(comment_status == 'Hide Comment'){
+   if(comment_status == 'Hide <br>Comment'){
       $('#comment-content4 p').css('color', '#D6D6D6');
       $('#comment-content4 h4').css('color', '#D6D6D6');
       $('#comment-content4 img').css('opacity', '0.4');
@@ -92,7 +92,7 @@ $('#hide-comment4').click(function(){
       $('#comment-content4 p').css('color', '#666666');
       $('#comment-content4 h4').css('color', '#666666');
       $('#comment-content4 img').css('opacity', '1.0');
-      $('#hide-comment4').html('Hide Comment');
+      $('#hide-comment4').html('Hide <br>Comment');
    }
 });
 

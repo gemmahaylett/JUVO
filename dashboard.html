@@ -6,9 +6,11 @@
     <title>Dashboard</title>
     <script src="js/Chart.js"></script>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/basic.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
+
 
   </head>
   <body>
@@ -54,7 +56,7 @@
       <img src="images/128.jpg">
     </div>
     <div class="large-10 columns">
-      <h2>Neal Caffery</h2>
+      <h2>Neal Caffery</h2><a href="#" data-reveal-id="profileModal" class="medium button">Edit Profile</a>
       <h4>Member Since: March 16, 2014</h4>
       <h4>Location: New York, NY</h4>
       <p>Bacon ipsum dolor sit amet t-bone pork chop flank, swine tenderloin pork belly turducken drumstick pork pastrami. Prosciutto doner sausage strip steak tail sirloin. Pig boudin tri-tip sausage chicken porchetta tenderloin tongue bacon hamburger ribeye leberkas. </p>
@@ -170,13 +172,77 @@
       </div>
     </div>
 </div>
+
+<!-- Donate Modal -->
+   <div id="profileModal" class="reveal-modal medium" data-reveal>
+        <h2 class="text-center">Edit Profile</h2>
+      <div class="row">
+         <div class="large-12 columns">
+            <label>Location</label>
+            <input type="text" placeholder="New York, CA" />    
+            <label>Tell us about yourself</label>
+            <textarea rows="30" placeholder="Bacon ipsum dolor sit amet t-bone pork chop flank, swine tenderloin pork belly turducken drumstick pork pastrami. Prosciutto doner sausage strip steak tail sirloin. Pig boudin tri-tip sausage chicken porchetta tenderloin tongue bacon hamburger ribeye leberkas." ></textarea> 
+            <label>Select Charity Preferences</label>
+            <input type="text" placeholder="Charity Preferences" />
+            <fieldset>
+            <legend>Enter your birthdate</legend>
+            <div class="row">
+          <div class="large-4 columns">
+          <label>Month
+            <select>
+              <option value="Jan">Jan</option>
+              <option value="Feb">Feb</option>
+              <option value="Mar">Mar</option>
+              <option value="Apr">Apr</option>
+            </select>
+          </label>
+          </div>
+          <div class="large-4 columns">
+          <label>Day
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </label>
+          </div>
+          <div class="large-4 columns end">
+          <label>Year
+            <select>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+            </select>
+          </label>
+          </div>
+      </div>
+              </fieldset>
+      <label>Upload new Profile Picture</label>
+      <form action="/file-upload" class="dropzone" id="profile-gallery"></form>
+          </div>
+        </div> 
+        
+
+    <div class="row">
+         <div class="large-12 columns">
+         <a href="#" class="medium button">Save</a>
+          <a href="#" class="medium button">Cancel</a>
+       </div>
+     </div>
+      <a class="close-reveal-modal">&#215;</a>
+   </div>
  
   <!-- Footer -->
   
   <footer>
       <p class="text-center">&copy; Made by Gemma Haylett.</p>
   </footer>
-  
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+   <script src="bower_components/foundation/js/foundation.min.js"></script>
+   <script src="js/app.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/dropzone.js"></script>
   </body>
 </html>

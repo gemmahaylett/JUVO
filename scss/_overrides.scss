@@ -442,6 +442,7 @@ ul.pagination li.current a, .sub-nav li.active a{
 }
 
 .dashboard, .charity{
+
   h4{
     color: $darkgrey;
     text-transform: none;
@@ -453,6 +454,11 @@ ul.pagination li.current a, .sub-nav li.active a{
     font-size: 17px;
     font-weight: 100;
   }
+}
+
+.comments{
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
 .owner-dashboard{
@@ -474,7 +480,7 @@ ul.pagination li.current a, .sub-nav li.active a{
   padding: 15px 15px 5px 25px;
 
   h3{
-    color: $darkgrey;
+    color: $teal;
     font-size: 40px;
   }
 }
@@ -871,7 +877,7 @@ background: $teal;
   background-color: $teal;
 }
 
-#donateModal{
+#donateModal, #editCharityModal, #editUpdateModal, #profileModal{
   h2{
     color: $teal;
     margin-bottom: 10px;
@@ -880,6 +886,12 @@ background: $teal;
   textarea{
     height:150px;
     margin-bottom: 25px;
+  }
+}
+
+#editCharityModal{
+  .shortDescText{
+    height:30px;
   }
 }
 
@@ -895,4 +907,34 @@ background: $teal;
   textarea{
     height: 250px;
   }
+
+  p{
+    margin-bottom: 0;
+  }
 }
+
+.hide-comment{
+  height: 45px;
+  width: 130px;
+}
+
+.update{
+  margin-bottom: 25px;
+}
+
+.profile{
+  position: relative;
+
+  a{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+#profileModal{
+  .button{
+    margin-top: 15px;
+  }
+}
+
