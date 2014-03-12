@@ -390,9 +390,6 @@ footer p{
 
   .button{
     display: inline-block;
-    top: 15px;
-    margin-top: -15px;
-    float: right;
   }
 }
 
@@ -600,14 +597,15 @@ ul.pagination li.current a, .sub-nav li.active a{
   }
 
   .right-container, .left-container{
-    span{
-      padding: 22px 26px;
-      -webkit-border-radius: 50%;
-      border-radius: 50%;
+    
+    span.stepNum{
+        padding: 22px 26px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
 
-      background-color: $timeline-color;
-      color: white;
-      display: inline-block;
+        background-color: $timeline-color;
+        color: white;
+        display: inline-block;
     }
   }
 
@@ -742,6 +740,8 @@ textarea{
     background-color: transparent;
     color: $darkgrey;
     padding: 100px 55px;
+    display: block;
+    text-align: center;
   }
   }
 }

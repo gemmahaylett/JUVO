@@ -8137,12 +8137,9 @@ footer p {
 /* line 391, ../scss/_overrides.scss */
 .header .button {
   display: inline-block;
-  top: 15px;
-  margin-top: -15px;
-  float: right;
 }
 
-/* line 399, ../scss/_overrides.scss */
+/* line 396, ../scss/_overrides.scss */
 .charity-container {
   background-color: white;
   margin-bottom: 20px;
@@ -8152,7 +8149,7 @@ footer p {
   height: 500px;
   position: relative;
 }
-/* line 408, ../scss/_overrides.scss */
+/* line 405, ../scss/_overrides.scss */
 .charity-container h4 {
   color: #32bfca;
   font-size: 16px;
@@ -8161,53 +8158,53 @@ footer p {
   margin: 0;
   font-weight: bold;
 }
-/* line 417, ../scss/_overrides.scss */
+/* line 414, ../scss/_overrides.scss */
 .charity-container p {
   padding: 5px 0px 15px 0px;
   font-size: 12px;
   margin-bottom: 0;
 }
-/* line 425, ../scss/_overrides.scss */
+/* line 422, ../scss/_overrides.scss */
 .charity-container a {
   margin: 0 0 10px 0px;
   bottom: 8px;
   position: absolute;
 }
 
-/* line 432, ../scss/_overrides.scss */
+/* line 429, ../scss/_overrides.scss */
 ul.pagination li.current a, .sub-nav li.active a {
   background: #32bfca;
 }
 
-/* line 436, ../scss/_overrides.scss */
+/* line 433, ../scss/_overrides.scss */
 .profile {
   margin-bottom: 15px;
 }
-/* line 439, ../scss/_overrides.scss */
+/* line 436, ../scss/_overrides.scss */
 .profile p {
   font-size: 15px;
 }
 
-/* line 446, ../scss/_overrides.scss */
+/* line 443, ../scss/_overrides.scss */
 .dashboard h4, .charity h4 {
   color: #666666;
   text-transform: none;
   font-size: 20px;
   line-height: 1;
 }
-/* line 453, ../scss/_overrides.scss */
+/* line 450, ../scss/_overrides.scss */
 .dashboard p, .charity p {
   font-size: 17px;
   font-weight: 100;
 }
 
-/* line 459, ../scss/_overrides.scss */
+/* line 456, ../scss/_overrides.scss */
 .comments {
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
-/* line 464, ../scss/_overrides.scss */
+/* line 461, ../scss/_overrides.scss */
 .owner-dashboard {
   background-color: white;
   margin-bottom: 20px;
@@ -8217,28 +8214,28 @@ ul.pagination li.current a, .sub-nav li.active a {
   position: relative;
 }
 
-/* line 473, ../scss/_overrides.scss */
+/* line 470, ../scss/_overrides.scss */
 .charity {
   padding: 10px 35px;
 }
 
-/* line 477, ../scss/_overrides.scss */
+/* line 474, ../scss/_overrides.scss */
 .charity-owner, .comments {
   color: #666666;
   background-color: #eeeeee;
   padding: 15px 15px 5px 25px;
 }
-/* line 482, ../scss/_overrides.scss */
+/* line 479, ../scss/_overrides.scss */
 .charity-owner h3, .comments h3 {
   color: #32bfca;
   font-size: 40px;
 }
 
-/* line 488, ../scss/_overrides.scss */
+/* line 485, ../scss/_overrides.scss */
 .charity-status {
   height: 0;
 }
-/* line 490, ../scss/_overrides.scss */
+/* line 487, ../scss/_overrides.scss */
 .charity-status h2 {
   position: absolute;
   color: #32bfca;
@@ -8246,13 +8243,13 @@ ul.pagination li.current a, .sub-nav li.active a {
   left: 87px;
   font-size: 35px;
 }
-/* line 498, ../scss/_overrides.scss */
+/* line 495, ../scss/_overrides.scss */
 .charity-status h4 {
   position: absolute;
   top: 240px;
 }
 
-/* line 506, ../scss/_overrides.scss */
+/* line 503, ../scss/_overrides.scss */
 .donate-sum {
   padding: 20px;
   margin-bottom: 20px;
@@ -8260,13 +8257,13 @@ ul.pagination li.current a, .sub-nav li.active a {
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
-/* line 514, ../scss/_overrides.scss */
+/* line 511, ../scss/_overrides.scss */
 .donate-sum h2 {
   color: white;
   font-size: 72px;
   line-height: 1;
 }
-/* line 520, ../scss/_overrides.scss */
+/* line 517, ../scss/_overrides.scss */
 .donate-sum h3 {
   font-size: 60px;
   line-height: 1;
@@ -8274,50 +8271,50 @@ ul.pagination li.current a, .sub-nav li.active a {
   margin: 20px;
   text-transform: uppercase;
 }
-/* line 528, ../scss/_overrides.scss */
+/* line 525, ../scss/_overrides.scss */
 .donate-sum h5, .donate-sum h6 {
   color: #666666;
   line-height: 1;
 }
-/* line 533, ../scss/_overrides.scss */
+/* line 530, ../scss/_overrides.scss */
 .donate-sum p {
   color: #666666;
   font-weight: 100;
 }
 
-/* line 540, ../scss/_overrides.scss */
+/* line 537, ../scss/_overrides.scss */
 .odd {
   background-color: #32bfca;
 }
 
-/* line 544, ../scss/_overrides.scss */
+/* line 541, ../scss/_overrides.scss */
 .even {
   background-color: #f4d130;
 }
 
-/* line 548, ../scss/_overrides.scss */
+/* line 545, ../scss/_overrides.scss */
 #Grid .mix {
   opacity: 0;
   display: none;
 }
 
-/* line 553, ../scss/_overrides.scss */
+/* line 550, ../scss/_overrides.scss */
 .comments {
   background-color: white;
 }
 
-/* line 558, ../scss/_overrides.scss */
+/* line 555, ../scss/_overrides.scss */
 .tabs dd > a {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
 
-/* line 565, ../scss/_overrides.scss */
+/* line 562, ../scss/_overrides.scss */
 #panel2-1 .row {
   margin: 15px 0;
 }
 
-/* line 572, ../scss/_overrides.scss */
+/* line 569, ../scss/_overrides.scss */
 .comments img {
   display: inline;
   float: left;
@@ -8325,30 +8322,30 @@ ul.pagination li.current a, .sub-nav li.active a {
   margin-right: 1em;
 }
 
-/* line 581, ../scss/_overrides.scss */
+/* line 578, ../scss/_overrides.scss */
 .tabs dd.active a {
   box-shadow: 0;
 }
 
-/* line 585, ../scss/_overrides.scss */
+/* line 582, ../scss/_overrides.scss */
 #create-fund, #create-profile {
   margin-top: 25px;
 }
-/* line 589, ../scss/_overrides.scss */
+/* line 586, ../scss/_overrides.scss */
 #create-fund h5, #create-profile h5 {
   background: #32bfca;
   color: white;
   padding: 15px;
   margin: 0;
 }
-/* line 596, ../scss/_overrides.scss */
+/* line 593, ../scss/_overrides.scss */
 #create-fund p, #create-profile p {
   color: #666666;
   font-weight: 100;
   font-size: 15px;
 }
-/* line 603, ../scss/_overrides.scss */
-#create-fund .right-container span, #create-fund .left-container span, #create-profile .right-container span, #create-profile .left-container span {
+/* line 601, ../scss/_overrides.scss */
+#create-fund .right-container span.stepNum, #create-fund .left-container span.stepNum, #create-profile .right-container span.stepNum, #create-profile .left-container span.stepNum {
   padding: 22px 26px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
@@ -8357,7 +8354,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   display: inline-block;
 }
 
-/* line 616, ../scss/_overrides.scss */
+/* line 614, ../scss/_overrides.scss */
 .left-container {
   width: 42%;
   position: relative;
@@ -8368,12 +8365,12 @@ ul.pagination li.current a, .sub-nav li.active a {
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
-/* line 628, ../scss/_overrides.scss */
+/* line 626, ../scss/_overrides.scss */
 .left-container input[type="text"], .left-container select, .right-container input[type="text"], .right-container select {
   margin: 0;
 }
 
-/* line 633, ../scss/_overrides.scss */
+/* line 631, ../scss/_overrides.scss */
 .left-container:after {
   content: "";
   position: absolute;
@@ -8387,7 +8384,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 647, ../scss/_overrides.scss */
+/* line 645, ../scss/_overrides.scss */
 .right-container {
   position: relative;
   float: right;
@@ -8398,7 +8395,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
-/* line 657, ../scss/_overrides.scss */
+/* line 655, ../scss/_overrides.scss */
 .right-container:after {
   content: "";
   position: absolute;
@@ -8412,7 +8409,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 670, ../scss/_overrides.scss */
+/* line 668, ../scss/_overrides.scss */
 .stepNum {
   right: 450px;
   position: absolute;
@@ -8424,32 +8421,32 @@ ul.pagination li.current a, .sub-nav li.active a {
   top: 5px;
 }
 
-/* line 681, ../scss/_overrides.scss */
+/* line 679, ../scss/_overrides.scss */
 .left-container .stepNum {
   left: 490px;
 }
 
-/* line 685, ../scss/_overrides.scss */
+/* line 683, ../scss/_overrides.scss */
 textarea {
   margin: 0;
 }
 
-/* line 689, ../scss/_overrides.scss */
+/* line 687, ../scss/_overrides.scss */
 #shortDesc, #profileDesc {
   margin-top: 100px;
 }
 
-/* line 694, ../scss/_overrides.scss */
+/* line 692, ../scss/_overrides.scss */
 #fundStory textarea {
   height: 250px;
 }
 
-/* line 700, ../scss/_overrides.scss */
+/* line 698, ../scss/_overrides.scss */
 #profileDesc textarea {
   height: 150px;
 }
 
-/* line 706, ../scss/_overrides.scss */
+/* line 704, ../scss/_overrides.scss */
 #create-fund:before, #create-profile:before {
   position: absolute;
   content: "";
@@ -8461,25 +8458,25 @@ textarea {
   margin-left: 2px;
 }
 
-/* line 717, ../scss/_overrides.scss */
+/* line 715, ../scss/_overrides.scss */
 .createFundContent, .createProfileContent {
   padding: 10px 15px 15px 15px;
 }
 
-/* line 721, ../scss/_overrides.scss */
+/* line 719, ../scss/_overrides.scss */
 #profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery {
   height: 300px;
 }
-/* line 725, ../scss/_overrides.scss */
+/* line 723, ../scss/_overrides.scss */
 #profile-gallery .dz-error-mark span, #edit-profile-gallery .dz-error-mark span, #charity-gallery .dz-error-mark span, #edit-gallery .dz-error-mark span {
   padding: 0;
 }
-/* line 731, ../scss/_overrides.scss */
+/* line 729, ../scss/_overrides.scss */
 #profile-gallery .dz-error-message span, #edit-profile-gallery .dz-error-message span, #charity-gallery .dz-error-message span, #edit-gallery .dz-error-message span {
   font-size: 12px;
   padding: 0;
 }
-/* line 738, ../scss/_overrides.scss */
+/* line 736, ../scss/_overrides.scss */
 #profile-gallery .dz-message span, #edit-profile-gallery .dz-message span, #charity-gallery .dz-message span, #edit-gallery .dz-message span {
   border-radius: 0;
   font-size: 20px;
@@ -8487,6 +8484,8 @@ textarea {
   background-color: transparent;
   color: #666666;
   padding: 100px 55px;
+  display: block;
+  text-align: center;
 }
 
 /* line 749, ../scss/_overrides.scss */
