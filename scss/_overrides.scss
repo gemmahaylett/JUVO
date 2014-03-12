@@ -82,12 +82,12 @@ h4 {
 
 .featured-fund {
   margin-bottom: 27px;
-}
-
-.featured-fund p {
-  font-size: 15px;
-  font-weight: thin;
-  color: white;
+  
+  p{
+     font-size: 15px;
+     font-weight: thin;
+     color: white;
+  }
 }
 
 .featured-fund-container {
@@ -97,6 +97,44 @@ h4 {
   h2{
     color: $main-header-color;
   }
+  
+  figure {
+    margin: 0px;
+    position: relative;
+    img {
+      max-width: 100%;
+      display: block;
+      position: relative;
+    }
+  } 
+  figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background: rgb(54, 25, 25);
+    background: rgba(54, 25, 25, .4);
+
+    h4 {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+    }
+
+    a {
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 2px;
+      display: inline-block;
+      background: $teal;
+      color: #fff;
+    }
+  }
+}
+
+
+.featured-fund-container{
+
 }
 
 .banner-image {
@@ -133,7 +171,6 @@ footer {
 
 .slide-out-menu{
   background-color: $yellow;
-  
 
   p{
     font-size: 20px;
@@ -143,43 +180,6 @@ footer {
 
   h2{
     color: white;
-  }
-}
-
-
-
-.featured-fund-container{
-  figure {
-    margin: 0px;
-    position: relative;
-    img {
-      max-width: 100%;
-      display: block;
-      position: relative;
-    }
-  } 
-  figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    background: rgb(54, 25, 25);
-    background: rgba(54, 25, 25, .4);
-
-    h4 {
-      margin: 0;
-      padding: 0;
-      color: #fff;
-    }
-
-    a {
-      text-align: center;
-      padding: 5px 10px;
-      border-radius: 2px;
-      display: inline-block;
-      background: $teal;
-      color: #fff;
-    }
   }
 }
 
@@ -599,14 +599,16 @@ ul.pagination li.current a, .sub-nav li.active a{
     font-size: 15px;
   }
 
-  span{
-  padding: 22px 26px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  .right-container, .left-container{
+    span{
+      padding: 22px 26px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
 
-  background-color: $timeline-color;
-  color: white;
-  display: inline-block;
+      background-color: $timeline-color;
+      color: white;
+      display: inline-block;
+    }
   }
 
 }
@@ -716,20 +718,37 @@ textarea{
   padding: 10px 15px 15px 15px;
 }
 
-#charity-gallery, #profile-gallery{
+#profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery{
   height: 300px;
 
+  .dz-error-mark{
+    span{
+      padding: 0;
+    }
+  }
+
+.dz-error-message{
+  span{
+    font-size: 12px;
+    padding:0;
+  }
+}
+
+  .dz-message{
   span{
     border-radius: 0;
     font-size: 20px;
     font-family: $roboto;
     background-color: transparent;
     color: $darkgrey;
-    padding: 0;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 100px 55px;
   }
+  }
+}
+
+#edit-gallery{
+  height: 355px;
+  padding: 0;
 }
 
 .donate-container, .charity-status{
@@ -800,10 +819,6 @@ textarea{
   color: $darkgrey;
 }
 
-#edit-gallery{
-  height: 280px;
-  width: 300px;
-}
 
 #editGalleryModal{
   .button{
@@ -877,7 +892,7 @@ background: $teal;
   background-color: $teal;
 }
 
-#donateModal, #editCharityModal, #editUpdateModal, #profileModal{
+#donateModal, #editCharityModal, #editUpdateModal, #profileModal, #editGalleryModal{
   h2{
     color: $teal;
     margin-bottom: 10px;
@@ -937,4 +952,5 @@ background: $teal;
     margin-top: 15px;
   }
 }
+
 
