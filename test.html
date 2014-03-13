@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charity Page</title>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="js/Chart.js"></script>
+    <script src="js/jquery.js"></script> 
+<script src="js/moment.min.js"></script> 
+<script src="js/combodate.js"></script> 
     <link rel="stylesheet" href="stylesheets/basic.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
@@ -28,52 +30,14 @@
    </div>
 
    <div class="row">
-          <div class="large-12 columns">
-          <h2>Edit Gallery</h2>
-          <div class="large-6 columns">
-             <form action="/file-upload" class="dropzone" id="edit-gallery"></form>
-          </div>
- 
-          <div class="large-6 columns">
-            <div class="row cs-style-3">
-              
-              <div class="large-6 columns">
-                <figure>
-                 <img src="images/fund1-big.jpg">
-                 <figcaption>
-              <a href="#" class="button">Delete</a>
-            </figcaption>
-                          </figure>
-              </div>
-
- 
-              <div class="large-6 columns">
-                 <img src="images/fund1-big.jpg">
-              <a href="#" class="deletePhoto">x</a>
-              </div>
-          </div>
-            
-          <div class="row">
-              <div class="large-6 columns">
-                 <img src="images/fund1-big.jpg">
-              <a href="#" class="deletePhoto">x</a>
-              </div>
- 
-              <div class="large-6 columns">
-                 <img src="images/fund1-big.jpg">
-              <a href="#" class="deletePhoto">x</a>
-              </div>
-          </div>
-          </div>
-          <div class="row">
-          <div class="large-12 columns">
-          <a href="#" class="medium button">Save</a>
-          <a href="#" class="medium button">Cancel</a>
-        </div>
-      </div>
-          <a class="close-reveal-modal">&#215;</a>
-        </div>
-      </div>
+         <input id="test" name="date_of_birth" value="15-05-1984" data-format="DD-MM-YYYY" data-template="D MMM YYYY"> 
+         <script>
+         $('#test').combodate({
+    minYear: 1975,
+    maxYear: 2013,
+    minuteStep: 10
+});   </script>
+  </div>
 
 
   <footer class="text-center">

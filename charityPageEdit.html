@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charity Page</title>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script> 
+    <script src="js/combodate.js"></script> 
     <link rel="stylesheet" href="stylesheets/basic.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
@@ -14,8 +16,8 @@
   <body>
         <div class="row">
     <div class="large-3 columns">
-      <a href="index.html"><img src=
-            "http://placehold.it/400x100&amp;text=Logo"></a>
+      <a href="index.html"><img class="logo" src=
+            "images/logo.png"></a>
     </div>
     <div class="large-9 columns">
       <ul class="right button-group">
@@ -32,8 +34,14 @@
 <div class="header">
    <div class="row">
       <div class="large-12 columns">
-         <h2>Girls in Technology</h2>
-         <a href="#" data-reveal-id="editCharityModal" class="medium button">Edit Details</a>
+        <div class="row">
+             <div class="large-9 columns">
+                <h2>Girls in Technology</h2>
+             </div>
+             <div class="large-3 columns">
+                <a href="#" data-reveal-id="editCharityModal" class="large button">Edit Charity</a>
+             </div>
+         </div>
          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
       </div>
    </div>
@@ -65,7 +73,7 @@
     </div>
   </li>
 </ul>
-<a href="#" data-reveal-id="editGalleryModal" id="edit-gallery-button" class="medium button">Edit Gallery</a>
+<a href="#" data-reveal-id="editGalleryModal" id="edit-gallery-button" class="large button">Edit Gallery</a>
   
     </div>
     <div class="large-4 columns">
@@ -163,10 +171,10 @@
           </div>
          <div id="panel2-2" class="content">
             <div class="row">
-               <div class="large-12 columns">
+               <div class="large-12 columns ">
                   <dl class="accordion" data-accordion>
                   <dd>
-                    <a href="#panel1" class="small button right">Create Update</a>
+                    <a href="#panel1" id="createUpdate" class="small button right">Create Update</a>
                     <div id="panel1" class="content">
                       <h2>Create New Update</h2>
                           <input type="text" placeholder="Enter Update Title" />
@@ -177,7 +185,8 @@
                   </dd>
                 </dl>
                </div>
-             </div>
+            </div>
+
                <div class="large-12 columns">
                   <h3>Almost There!</h3>
                   <h4>Sunday, January 5, 2014</h4>
@@ -206,6 +215,7 @@
                   <a href="#" id="edit-status1" class="medium button" data-reveal-id="editUpdateModal">Edit</a>
                   <a id="edit-status1" class="medium button">Delete</a>
                </div>
+
             <ul class="pagination right">
               <li class="arrow unavailable"><a href="">&laquo;</a></li>
               <li class="current"><a href="">1</a></li>
@@ -217,8 +227,7 @@
               <li><a href="">13</a></li>
               <li class="arrow"><a href="">&raquo;</a></li>
             </ul>
-         </div>
-        
+                                                 </div>
          </div>
       </div>
    
@@ -237,19 +246,18 @@
    </div> 
 
    <!-- Edit Gallery Modal -->
-  <div id="editGalleryModal" class="reveal-modal large" data-reveal>
+  <div id="editGalleryModal" class="reveal-modal medium" data-reveal>
   <div class="row">
   <div class="large-12 columns">
-  <h2>Edit Gallery</h2>
+  <h2 class"text-center">Edit Gallery</h2>
 
   <div class="row">
-    <div class="large-6 columns">
+    <div class="large-12 columns">
       <form action="/file-upload" class="dropzone" id="edit-gallery"></form>
     </div>
 
-    <div class="large-6 columns">
-      <ul class="large-block-grid-2">
-        <div class="cs-style-3">
+    <div class="large-12 columns">
+      <ul class="large-block-grid-4 cs-style-3">
           <li>
           <figure>
             <img src="images/fund1-big.jpg">
@@ -258,11 +266,33 @@
               </figcaption>
           </figure>
           </li>
-        </div>
 
-        <li><img src="images/fund1-big.jpg"></li>
-        <li><img src="images/fund1-big.jpg"></li>
-        <li><img src="images/fund1-big.jpg"></li>
+          <li>
+          <figure>
+            <img src="images/fund1-big.jpg">
+              <figcaption>
+                <a href="#" class="tiny button">Delete</a>
+              </figcaption>
+          </figure>
+          </li>
+
+          <li>
+          <figure>
+            <img src="images/fund1-big.jpg">
+              <figcaption>
+                <a href="#" class="tiny button">Delete</a>
+              </figcaption>
+          </figure>
+          </li>
+
+          <li>
+          <figure>
+            <img src="images/fund1-big.jpg">
+              <figcaption>
+                <a href="#" class="tiny button">Delete</a>
+              </figcaption>
+          </figure>
+          </li>
       </ul>
     </div>
   </div>
@@ -280,7 +310,7 @@
   </div>
 
   <!-- Edit Charity Details Modal -->
-   <div id="editCharityModal" class="reveal-modal large" data-reveal>
+   <div id="editCharityModal" class="reveal-modal x-large" data-reveal>
       <div class="row">
         <div class="large-12 columns">
           <h2>Edit Fundraiser Details</h2>
@@ -291,36 +321,19 @@
           <label>Detailed Description</label>
           <textarea placeholder="Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit." ></textarea>
        <div class="row">
-        <div class="large-4 columns">
-          <label>Month
-        <select>
-          <option value="Jan">Jan</option>
-          <option value="Feb">Feb</option>
-          <option value="Mar">Mar</option>
-          <option value="Apr">Apr</option>
-        </select>
-      </label>
-    </div>
-    <div class="large-4 columns">
-      <label>Day
-        <select>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </label>
-    </div>
-    <div class="large-4 columns">
-      <label>Year
-        <select>
-          <option value="2014">2014</option>
-          <option value="2015">2015</option>
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-        </select>
-      </label>
-    </div>
+        <fieldset>
+            <legend>Edit deadline</legend>
+            <div class="row">
+          <div class="large-6 large-centered columns">
+      <input id="deadlineEditCombo" data-format="MM-DD-YYYY" data-template="MMM D YYYY" name="date" value="09-01-2013">
+         <script>
+         $('#deadlineEditCombo').combodate({
+            minYear: 2013,
+            maxYear: 2025
+        });
+         </script>
+      </div>
+              </fieldset>
     <div class="large-12 columns">
       <label>Charity Name</label>
           <input type="text" placeholder="Girlstart" />
@@ -341,7 +354,6 @@
       <p>&copy; Made by Gemma Haylett.</p>
   </footer>
   <script src="js/Chart.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
    <script src="bower_components/foundation/js/foundation.min.js"></script>
    <script src="js/app.js"></script>
    <script src="js/dropzone.js"></script>

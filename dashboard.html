@@ -6,6 +6,9 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/basic.css" />
+     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+     <script src="js/moment.min.js"></script> 
+    <script src="js/combodate.js"></script> 
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -15,8 +18,8 @@
   <body>
         <div class="row">
     <div class="large-3 columns">
-      <a href="index.html"><img src=
-            "http://placehold.it/400x100&amp;text=Logo"></a>
+      <a href="index.html"><img class="logo" src=
+            "images/logo.png"></a>
     </div>
     <div class="large-9 columns">
       <ul class="right button-group">
@@ -152,39 +155,17 @@
             <fieldset>
             <legend>Enter your birthdate</legend>
             <div class="row">
-          <div class="large-4 columns">
-          <label>Month
-            <select>
-              <option value="Jan">Jan</option>
-              <option value="Feb">Feb</option>
-              <option value="Mar">Mar</option>
-              <option value="Apr">Apr</option>
-            </select>
-          </label>
-          </div>
-          <div class="large-4 columns">
-          <label>Day
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-            </select>
-          </label>
-          </div>
-          <div class="large-4 columns end">
-          <label>Year
-            <select>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-              <option value="2017">2017</option>
-            </select>
-          </label>
-          </div>
+          <div class="large-6 large-centered columns">
+      <input id="birthDateEditCombo" data-format="MM-DD-YYYY" data-template="MMM D YYYY" name="date" value="09-01-2013">
+         <script>
+         $('#birthDateEditCombo').combodate({
+            minYear: 1900,
+            maxYear: 2013
+        });
+         </script>
       </div>
               </fieldset>
-      <label>Upload new Profile Picture</label>
+      <label>Upload new profile picture</label>
   
       <form action="/file-upload" class="dropzone" id="edit-profile-gallery"></form>
           </div>
@@ -205,7 +186,6 @@
   <footer>
       <p class="text-center">&copy; Made by Gemma Haylett.</p>
   </footer>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/foundation/js/foundation.min.js"></script>
   <script src="js/Chart.js"></script>
   <script src="js/app.js"></script>

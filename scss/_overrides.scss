@@ -38,6 +38,9 @@ h1 {
   text-align: center;
   display: inline-block;
   clear: both;
+  margin-top: 200px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .button{
@@ -137,12 +140,8 @@ h4 {
 
 }
 
-.banner-image {
-  background-image: url("../images/hero.png");
-  background-size: cover;
-  max-width:1000px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+.hero{
+  height: 600px;
 }
 
 a {
@@ -186,6 +185,14 @@ footer {
 /* Caption Style 3 */
 .cs-style-3 figure {
   overflow: hidden;
+}
+
+#editGalleryModal{
+  .cs-style-3 figure {
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+  }
 }
 
 .cs-style-3 figure img {
@@ -487,7 +494,7 @@ ul.pagination li.current a, .sub-nav li.active a{
   h2{
     position: absolute;
     color: #32bfca;
-    top: 95px;
+    top: 85px;
     left: 87px;
     font-size: 35px;
   }
@@ -717,7 +724,7 @@ textarea{
 }
 
 #profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery{
-  height: 300px;
+  height: 355px;
 
   .dz-error-mark{
     span{
@@ -734,21 +741,19 @@ textarea{
 
   .dz-message{
   span{
-    border-radius: 0;
     font-size: 20px;
-    font-family: $roboto;
-    background-color: transparent;
-    color: $darkgrey;
-    padding: 100px 55px;
     display: block;
     text-align: center;
+    color: $darkgrey;
+    padding-top: 140px;
+    font-family: $roboto;
   }
-  }
+}
 }
 
 #edit-gallery{
-  height: 355px;
-  padding: 0;
+  heigth: 255px;
+  margin-bottom: 20px;
 }
 
 .donate-container, .charity-status{
@@ -780,6 +785,10 @@ textarea{
   h4{
     top: 320px;
     position: absolute;
+  }
+
+  .button{
+    margin-left: 3px;
   }
 }
 
@@ -865,12 +874,16 @@ textarea{
 
 #edit-gallery-button {
   position: absolute;
-  top: 160px;
-  right: 130px;
+  top: 140px;
+  right: 80px;
 }
 
 .accordion dd.active a {
 background: $teal;
+}
+
+#createUpdate.button{
+    margin: 27px 15px 0 0;
 }
 
 .stat-chart{
@@ -917,6 +930,7 @@ background: $teal;
 .content{
   .button{
     margin-top: 15px;
+    margin-right: 0px;
   }
 
   textarea{
@@ -953,4 +967,10 @@ background: $teal;
   }
 }
 
+label, legend{
+  font-family: $roboto;
+}
 
+.logo{
+  margin-top: 10px;
+}

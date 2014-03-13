@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create A Fundraiser</title>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="js/moment.min.js"></script> 
+    <script src="js/combodate.js"></script> 
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/basic.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -13,8 +16,8 @@
   <body>
   <div class="row">
     <div class="large-3 columns">
-      <a href="index.html"><img src=
-            "http://placehold.it/400x100&amp;text=Logo"></a>
+      <a href="index.html"><img class="logo" src=
+            "images/logo.png"></a>
     </div>
     <div class="large-9 columns">
       <ul class="right button-group">
@@ -100,38 +103,17 @@
       <span class="stepNum">6</span>
 
       <h5>Enter in end date</h5>
-            <div class="createFundContent">
+      <div class="createFundContent">
       <p>Enter the date the fundraiser will end. All fundraisers end at 11:59 PST on the selcted date</p>
       <div class="row">
-      <div class="large-4 columns">
-      <label>Month
-        <select>
-          <option value="Jan">Jan</option>
-          <option value="Feb">Feb</option>
-          <option value="Mar">Mar</option>
-          <option value="Apr">Apr</option>
-        </select>
-      </label>
-      </div>
-      <div class="large-4 columns">
-      <label>Day
-        <select>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
-      </label>
-      </div>
-      <div class="large-4 columns end">
-      <label>Year
-        <select>
-          <option value="2014">2014</option>
-          <option value="2015">2015</option>
-          <option value="2016">2016</option>
-          <option value="2017">2017</option>
-        </select>
-      </label>
+      <div class="large-6 large-centered columns">
+      <input id="fundDateCombo" data-format="MM-DD-YYYY" data-template="MMM D YYYY" name="date" value="09-01-2013">
+         <script>
+         $('#fundDateCombo').combodate({
+            minYear: 2013,
+            maxYear: 2025
+        });
+         </script>
       </div>
     </div>
     </div>
@@ -178,13 +160,10 @@
 <footer>
       <p class="text-center">&copy; Made by Gemma Haylett.</p>
   </footer>
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
    <script src="bower_components/foundation/js/foundation.min.js"></script>
-   <script src="js/app.js"></script>
-   <script src="js/jquery.mixitup.min.js"></script>
-   <script src="js/script.js"></script>
+   
    <script src="js/dropzone.js"></script>
+   <script src="js/app.js"></script>
   </body>
 </html>
  
