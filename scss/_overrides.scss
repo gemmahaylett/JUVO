@@ -582,10 +582,12 @@ ul.pagination li.current a, .sub-nav li.active a{
 }
 
 
-.tabs dd.active a{
-  box-shadow: 0;
+.tabs dd.active {
+  z-index:1;
+  a{
+    box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
+  }
 }
-
 #create-fund, #create-profile{
 
   margin-top: 25px;
@@ -973,4 +975,13 @@ label, legend{
 
 .logo{
   margin-top: 10px;
+}
+.month {
+  width:45%;
+}
+.day{
+  width:20%;
+}
+.year {
+  width:32%;
 }

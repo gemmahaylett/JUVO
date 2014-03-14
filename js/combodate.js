@@ -60,7 +60,7 @@
                 }
             }, this));
             
-            this.$widget.find('select').css('width', 'auto');
+            this.$widget.find('select').css('width', '');
                                        
             // hide original input and insert widget                                       
             this.$element.hide().after(this.$widget);
