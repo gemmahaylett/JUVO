@@ -8329,28 +8329,32 @@ ul.pagination li.current a, .sub-nav li.active a {
 }
 
 /* line 585, ../scss/_overrides.scss */
+.tabs dd.active {
+  z-index: 1;
+}
+/* line 587, ../scss/_overrides.scss */
 .tabs dd.active a {
-  box-shadow: 0;
+  box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
 }
 
-/* line 589, ../scss/_overrides.scss */
+/* line 591, ../scss/_overrides.scss */
 #create-fund, #create-profile {
   margin-top: 25px;
 }
-/* line 593, ../scss/_overrides.scss */
+/* line 595, ../scss/_overrides.scss */
 #create-fund h5, #create-profile h5 {
   background: #32bfca;
   color: white;
   padding: 15px;
   margin: 0;
 }
-/* line 600, ../scss/_overrides.scss */
+/* line 602, ../scss/_overrides.scss */
 #create-fund p, #create-profile p {
   color: #666666;
   font-weight: 100;
   font-size: 15px;
 }
-/* line 608, ../scss/_overrides.scss */
+/* line 610, ../scss/_overrides.scss */
 #create-fund .right-container span.stepNum, #create-fund .left-container span.stepNum, #create-profile .right-container span.stepNum, #create-profile .left-container span.stepNum {
   padding: 22px 26px;
   -webkit-border-radius: 50%;
@@ -8360,7 +8364,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   display: inline-block;
 }
 
-/* line 621, ../scss/_overrides.scss */
+/* line 623, ../scss/_overrides.scss */
 .left-container {
   width: 42%;
   position: relative;
@@ -8371,12 +8375,12 @@ ul.pagination li.current a, .sub-nav li.active a {
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
-/* line 633, ../scss/_overrides.scss */
+/* line 635, ../scss/_overrides.scss */
 .left-container input[type="text"], .left-container select, .right-container input[type="text"], .right-container select {
   margin: 0;
 }
 
-/* line 638, ../scss/_overrides.scss */
+/* line 640, ../scss/_overrides.scss */
 .left-container:after {
   content: "";
   position: absolute;
@@ -8390,7 +8394,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 652, ../scss/_overrides.scss */
+/* line 654, ../scss/_overrides.scss */
 .right-container {
   position: relative;
   float: right;
@@ -8401,7 +8405,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
 
-/* line 662, ../scss/_overrides.scss */
+/* line 664, ../scss/_overrides.scss */
 .right-container:after {
   content: "";
   position: absolute;
@@ -8415,7 +8419,7 @@ ul.pagination li.current a, .sub-nav li.active a {
   z-index: 1;
 }
 
-/* line 675, ../scss/_overrides.scss */
+/* line 677, ../scss/_overrides.scss */
 .stepNum {
   right: 450px;
   position: absolute;
@@ -8427,32 +8431,32 @@ ul.pagination li.current a, .sub-nav li.active a {
   top: 5px;
 }
 
-/* line 686, ../scss/_overrides.scss */
+/* line 688, ../scss/_overrides.scss */
 .left-container .stepNum {
   left: 490px;
 }
 
-/* line 690, ../scss/_overrides.scss */
+/* line 692, ../scss/_overrides.scss */
 textarea {
   margin: 0;
 }
 
-/* line 694, ../scss/_overrides.scss */
+/* line 696, ../scss/_overrides.scss */
 #shortDesc, #profileDesc {
   margin-top: 100px;
 }
 
-/* line 699, ../scss/_overrides.scss */
+/* line 701, ../scss/_overrides.scss */
 #fundStory textarea {
   height: 250px;
 }
 
-/* line 705, ../scss/_overrides.scss */
+/* line 707, ../scss/_overrides.scss */
 #profileDesc textarea {
   height: 150px;
 }
 
-/* line 711, ../scss/_overrides.scss */
+/* line 713, ../scss/_overrides.scss */
 #create-fund:before, #create-profile:before {
   position: absolute;
   content: "";
@@ -8464,25 +8468,25 @@ textarea {
   margin-left: 2px;
 }
 
-/* line 722, ../scss/_overrides.scss */
+/* line 724, ../scss/_overrides.scss */
 .createFundContent, .createProfileContent {
   padding: 10px 15px 15px 15px;
 }
 
-/* line 726, ../scss/_overrides.scss */
+/* line 728, ../scss/_overrides.scss */
 #profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery {
   height: 355px;
 }
-/* line 730, ../scss/_overrides.scss */
+/* line 732, ../scss/_overrides.scss */
 #profile-gallery .dz-error-mark span, #edit-profile-gallery .dz-error-mark span, #charity-gallery .dz-error-mark span, #edit-gallery .dz-error-mark span {
   padding: 0;
 }
-/* line 736, ../scss/_overrides.scss */
+/* line 738, ../scss/_overrides.scss */
 #profile-gallery .dz-error-message span, #edit-profile-gallery .dz-error-message span, #charity-gallery .dz-error-message span, #edit-gallery .dz-error-message span {
   font-size: 12px;
   padding: 0;
 }
-/* line 743, ../scss/_overrides.scss */
+/* line 745, ../scss/_overrides.scss */
 #profile-gallery .dz-message span, #edit-profile-gallery .dz-message span, #charity-gallery .dz-message span, #edit-gallery .dz-message span {
   font-size: 20px;
   display: block;
@@ -8492,20 +8496,20 @@ textarea {
   font-family: "Roboto Slab", serif;
 }
 
-/* line 754, ../scss/_overrides.scss */
+/* line 756, ../scss/_overrides.scss */
 #edit-gallery {
   heigth: 255px;
   margin-bottom: 20px;
 }
 
-/* line 760, ../scss/_overrides.scss */
+/* line 762, ../scss/_overrides.scss */
 .donate-container canvas, .charity-status canvas {
   position: relative;
   top: -30px;
   right: 3px;
 }
 
-/* line 767, ../scss/_overrides.scss */
+/* line 769, ../scss/_overrides.scss */
 .donate-container {
   background-color: white;
   padding: 10px 10px 2px 10px;
@@ -8516,7 +8520,7 @@ textarea {
   -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
   box-shadow: 1px 1px 5px 0 #C7C7C7;
 }
-/* line 777, ../scss/_overrides.scss */
+/* line 779, ../scss/_overrides.scss */
 .donate-container h2 {
   position: absolute;
   color: #32bfca;
@@ -8524,58 +8528,58 @@ textarea {
   left: 81px;
   font-size: 35px;
 }
-/* line 785, ../scss/_overrides.scss */
+/* line 787, ../scss/_overrides.scss */
 .donate-container h4 {
   top: 320px;
   position: absolute;
 }
-/* line 790, ../scss/_overrides.scss */
+/* line 792, ../scss/_overrides.scss */
 .donate-container .button {
   margin-left: 3px;
 }
 
-/* line 795, ../scss/_overrides.scss */
+/* line 797, ../scss/_overrides.scss */
 .tabs-content > .content {
   padding: 0;
 }
 
-/* line 801, ../scss/_overrides.scss */
+/* line 803, ../scss/_overrides.scss */
 .social .button {
   box-shadow: none;
   padding: 24px 25px;
   margin: 0;
 }
-/* line 808, ../scss/_overrides.scss */
+/* line 810, ../scss/_overrides.scss */
 .social .facebook {
   background: url(../images/64-facebook.png) no-repeat;
   background-size: 50px;
 }
-/* line 813, ../scss/_overrides.scss */
+/* line 815, ../scss/_overrides.scss */
 .social .twitter {
   background: url(../images/64-twitter.png) no-repeat;
   background-size: 50px;
 }
-/* line 818, ../scss/_overrides.scss */
+/* line 820, ../scss/_overrides.scss */
 .social .googleplus {
   background: url(../images/64-googleplus.png) no-repeat;
   background-size: 50px;
 }
 
-/* line 825, ../scss/_overrides.scss */
+/* line 827, ../scss/_overrides.scss */
 .reveal-modal .deletePhoto {
   right: 25px;
   color: #666666;
 }
 
-/* line 833, ../scss/_overrides.scss */
+/* line 835, ../scss/_overrides.scss */
 #editGalleryModal .button {
   margin-top: 10px;
 }
-/* line 836, ../scss/_overrides.scss */
+/* line 838, ../scss/_overrides.scss */
 #editGalleryModal img {
   margin-bottom: 10px;
 }
-/* line 840, ../scss/_overrides.scss */
+/* line 842, ../scss/_overrides.scss */
 #editGalleryModal figcaption {
   position: absolute;
   top: 0;
@@ -8584,7 +8588,7 @@ textarea {
   background: #361919;
   background: rgba(54, 25, 25, 0.4);
 }
-/* line 848, ../scss/_overrides.scss */
+/* line 850, ../scss/_overrides.scss */
 #editGalleryModal figcaption a {
   text-align: center;
   padding: 5px 10px;
@@ -8594,131 +8598,146 @@ textarea {
   color: #fff;
 }
 
-/* line 859, ../scss/_overrides.scss */
+/* line 861, ../scss/_overrides.scss */
 .example-orbit {
   position: relative;
 }
 
-/* line 863, ../scss/_overrides.scss */
+/* line 865, ../scss/_overrides.scss */
 .accordion dd > a {
   display: inline-block;
   background: #32bfca;
   color: white;
 }
 
-/* line 869, ../scss/_overrides.scss */
+/* line 871, ../scss/_overrides.scss */
 .accordion dd > a:hover {
   display: inline-block;
   background: #32bfca;
   color: white;
 }
 
-/* line 875, ../scss/_overrides.scss */
+/* line 877, ../scss/_overrides.scss */
 #edit-gallery-button {
   position: absolute;
   top: 140px;
   right: 80px;
 }
 
-/* line 881, ../scss/_overrides.scss */
+/* line 883, ../scss/_overrides.scss */
 .accordion dd.active a {
   background: #32bfca;
 }
 
-/* line 885, ../scss/_overrides.scss */
+/* line 887, ../scss/_overrides.scss */
 #createUpdate.button {
   margin: 27px 15px 0 0;
 }
 
-/* line 889, ../scss/_overrides.scss */
+/* line 891, ../scss/_overrides.scss */
 .stat-chart {
   margin-bottom: 20px;
 }
-/* line 892, ../scss/_overrides.scss */
+/* line 894, ../scss/_overrides.scss */
 .stat-chart h3 {
   margin: 10px 0;
   color: #32bfca;
 }
 
-/* line 899, ../scss/_overrides.scss */
+/* line 901, ../scss/_overrides.scss */
 .center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 904, ../scss/_overrides.scss */
+/* line 906, ../scss/_overrides.scss */
 .sub-nav li.active a:hover {
   background-color: #32bfca;
 }
 
-/* line 909, ../scss/_overrides.scss */
+/* line 911, ../scss/_overrides.scss */
 #donateModal h2, #editCharityModal h2, #editUpdateModal h2, #profileModal h2, #editGalleryModal h2 {
   color: #32bfca;
   margin-bottom: 10px;
 }
-/* line 914, ../scss/_overrides.scss */
+/* line 916, ../scss/_overrides.scss */
 #donateModal textarea, #editCharityModal textarea, #editUpdateModal textarea, #profileModal textarea, #editGalleryModal textarea {
   height: 150px;
   margin-bottom: 25px;
 }
 
-/* line 921, ../scss/_overrides.scss */
+/* line 923, ../scss/_overrides.scss */
 #editCharityModal .shortDescText {
   height: 30px;
 }
 
-/* line 926, ../scss/_overrides.scss */
+/* line 928, ../scss/_overrides.scss */
 #profilePhoto {
   margin-top: 100px;
 }
 
-/* line 931, ../scss/_overrides.scss */
+/* line 933, ../scss/_overrides.scss */
 .content .button {
   margin-top: 15px;
   margin-right: 0px;
 }
-/* line 936, ../scss/_overrides.scss */
+/* line 938, ../scss/_overrides.scss */
 .content textarea {
   height: 250px;
 }
-/* line 940, ../scss/_overrides.scss */
+/* line 942, ../scss/_overrides.scss */
 .content p {
   margin-bottom: 0;
 }
 
-/* line 945, ../scss/_overrides.scss */
+/* line 947, ../scss/_overrides.scss */
 .hide-comment {
   height: 45px;
   width: 130px;
 }
 
-/* line 950, ../scss/_overrides.scss */
+/* line 952, ../scss/_overrides.scss */
 .update {
   margin-bottom: 25px;
 }
 
-/* line 954, ../scss/_overrides.scss */
+/* line 956, ../scss/_overrides.scss */
 .profile {
   position: relative;
 }
-/* line 957, ../scss/_overrides.scss */
+/* line 959, ../scss/_overrides.scss */
 .profile a {
   position: absolute;
   right: 10px;
   top: 10px;
 }
 
-/* line 965, ../scss/_overrides.scss */
+/* line 967, ../scss/_overrides.scss */
 #profileModal .button {
   margin-top: 15px;
 }
 
-/* line 970, ../scss/_overrides.scss */
+/* line 972, ../scss/_overrides.scss */
 label, legend {
   font-family: "Roboto Slab", serif;
 }
 
-/* line 974, ../scss/_overrides.scss */
+/* line 976, ../scss/_overrides.scss */
 .logo {
   margin-top: 10px;
+}
+
+/* line 979, ../scss/_overrides.scss */
+.month {
+  width: 45%;
+}
+
+/* line 982, ../scss/_overrides.scss */
+.day {
+  width: 20%;
+}
+
+/* line 985, ../scss/_overrides.scss */
+.year {
+  width: 32%;
 }
