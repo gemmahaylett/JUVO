@@ -346,7 +346,7 @@ if ($("#canvasBar").length > 0){
   var myLine = new Chart(document.getElementById("canvasBar").getContext("2d")).Bar(barChartData, options);
 }
 
-$(".hero").backstretch("images/hero.png");
+$(".hero").backstretch("images/hero.jpg");
 
 
 
