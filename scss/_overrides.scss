@@ -1,3 +1,14 @@
+//
+// Name: Juvo
+// Website URI: http://gemmahaylett.github.io/JUVO/
+// Author: Gemma Haylett
+// Author URI: http://www.gemmahaylett.com
+//
+
+//-----------------------------------------------------------------------------------
+//  1.0 Reset
+//-----------------------------------------------------------------------------------
+
 $teal: #32bfca;
 $yellow: #f4d130;
 $lightgrey: #f9f8f4;
@@ -20,13 +31,25 @@ $secondary-color: $yellow;
 $lightness: $teal;
 $timeline-color: #d9d9d9;
 
+//-----------------------------------------------------------------------------------
+//  2.0 General Styles
+//-----------------------------------------------------------------------------------
 
 body {
   background-color: $background-color;
 }
 
-h2,h3,h4,h5,h6{
+// --- Headings --- 
+
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family : $header-typeface;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -43,7 +66,40 @@ h1 {
   margin-bottom: 20px;
 }
 
-.button{
+h2 {
+  font-family : $header-typeface;
+  font-weight : bold;
+  font-size : 48px;
+  color: $secondary-header-color;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size : 24px;
+  text-transform : uppercase;
+  color : $main-header-color;
+}
+
+// --- Text Elements ---
+
+p {
+  font-family: $text-typeface;
+  font-size : 24px;
+  color : $main-text-color;
+  margin-bottom: 1.25rem;
+}
+
+ul{
+  margin-bottom: 1.25rem;
+}
+
+// --- Links ---
+
+a:hover {
+  color: $teal;
+}
+
+.button {
   text-transform: uppercase;
   font-weight: normal;
   letter-space: 2px;
@@ -53,63 +109,106 @@ h1 {
   text-aligh: center;
   font-size: 15px;  
   background-clip: padding-box;
-  box-shadow: 0 4px 0 rgba(38,148,150,.8);
+  box-shadow: 0px 4px 0px rgba(38,148,150,.8);
   background-color: #63bdbd; // Old browsers
   @include filter-gradient(#63bdbd, #31bfca, vertical); // IE6-9
   @include background-image(linear-gradient(top, #63bdbd 0%,#31bfca 100%));
 }
 
-a:hover{
-  color: $teal;
-}
-
-h2 {
-  font-family : $header-typeface;
-  font-weight : bold;
-  font-size : 48px;
-  color: $secondary-header-color;
-  text-transform: uppercase;
-}
-
-p {
-  font-family: $text-typeface;
-  font-size : 24px;
+a {
+  font-family : $montserrat;
+  font-size : 16px;
   color : $main-text-color;
+  font-weight: thin;
 }
 
-h4 {
-  font-size : 24px;
-  text-transform : uppercase;
-  color : $main-header-color;
+// --- Footer ---
+
+footer {
+  background-color: $secondary-background-color;
+  padding: 20px 0;
+
+  p{
+    color: $white;
+    margin-bottom:0;
+  }
 }
+
+.header {
+  background-color: $secondary-color;
+  padding: 35px 0px; 
+  margin-bottom: 20px;
+
+  h2 {
+    color: $white;
+    display: inline-block;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+  }
+
+  .button {
+    display: inline-block;
+  }
+}
+
+label, 
+legend {
+  font-family: $roboto;
+}
+
+//-----------------------------------------------------------------------------------
+//  4.0 Navigation Bar
+//-----------------------------------------------------------------------------------
+
+.logo {
+  margin-top: 10px;
+}
+
+.button-group li {
+  margin: 20px;
+}
+
+//-----------------------------------------------------------------------------------
+//  5.0 Homepage Styles
+//-----------------------------------------------------------------------------------
 
 .featured-fund {
   margin-bottom: 27px;
   
-  p{
+  p {
      font-size: 15px;
      font-weight: thin;
      color: white;
   }
 }
 
+.highlights{
+  margin: 90px 0px;
+}
+
 .featured-fund-container {
   background-color: $secondary-color;
   padding: 30px 0; 
 
-  h2{
+  h2 {
     color: $main-header-color;
   }
   
   figure {
     margin: 0px;
     position: relative;
+
     img {
       max-width: 100%;
       display: block;
       position: relative;
     }
   } 
+
   figcaption {
     position: absolute;
     top: 0;
@@ -135,103 +234,519 @@ h4 {
   }
 }
 
-
-.featured-fund-container{
-
-}
-
-.hero{
+.hero {
   height: 600px;
 }
 
-a {
-  font-family : $montserrat;
-  font-size : 16px;
-  color : $main-text-color;
-  font-weight: thin;
+//-----------------------------------------------------------------------------------
+//  6.0 Dashboard
+//-----------------------------------------------------------------------------------
+
+.owner-dashboard {
+  background-color: $white; 
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  height: 302px;
+  position: relative;
 }
 
-.button-group li {
-  margin: 20px;
-}
+.charity-owner, 
+.comments {
+  color: $darkgrey;
+  background-color: $mediumgrey;
+  padding: 15px 15px 5px 25px;
 
-.raise-money, .donate-now{
-  margin: 90px 0;
-}
-
-footer {
-  background-color: $secondary-background-color;
-  padding: 20px 0;
-
-  p{
-    color: $white;
+  h3{
+    color: $teal;
+    font-size: 40px;
   }
 }
 
-.slide-out-menu{
-  background-color: $yellow;
+.profile {
+  position: relative;
+
+  a {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+//-----------------------------------------------------------------------------------
+//  6.0 Charity Profile View and Edit Styles
+//-----------------------------------------------------------------------------------
+
+.charity {
+  padding: 10px 35px
+}
+
+.charity-container {
+  background-color: $white; 
+  margin-bottom: 20px;
+  padding: 10px 10px 0px 10px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  height: 500px;
+  position: relative;
+
+  h4 {
+    color:$teal;
+    font-size: 16px; 
+    padding: 15px 0px 5px 0px;
+    margin: 0px;
+    font-weight: bold;
+  }
+
+  p {
+    padding: 5px 0px 15px 0px;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+
+  a {
+    margin: 0px 0px 10px 0px;
+    bottom: 8px;
+    position: absolute;
+  }
+}
+
+.charity-status {
+  h2 {
+    position: absolute;
+    color: #32bfca;
+    top: 85px;
+    left: 87px;
+    font-size: 35px;
+  }
+
+  h4 {
+    position: absolute;
+    top: 240px
+  }
+
+  height: 0;
+}
+
+.donate-sum {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: $lightgrey;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7; 
+
+  h2{
+    color: white;
+    font-size: 72px;
+    line-height: 1;
+  }
+
+  h3{
+    font-size: 60px;
+    line-height: 1;
+    color: white;
+    margin: 20px;
+    text-transform: uppercase;
+  }
+
+  h5, h6{
+    color: $darkgrey;
+    line-height: 1;
+  }
 
   p{
+    color: $darkgrey;
+    font-weight: 100;
+  }
+
+}
+
+.donate-container {
+  background-color: white;
+  padding: 10px 10px 2px 10px;
+  margin-bottom: 20px;
+  width: 230px;
+  height: 375px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+
+  h2 {
+    position: absolute;
+    color: #32bfca;
+    top: 175px;
+    left: 81px;
+    font-size: 35px;
+  }
+
+  h4 {
+    top: 320px;
+    position: absolute;
+  }
+
+  .button{
+    margin-left: 3px;
+  }
+}
+
+.social {
+
+  .button {
+    box-shadow: none;
+    padding: 24px 25px;
+    margin: 0px;
+  }
+  
+  .facebook {
+    background: url(../images/64-facebook.png) no-repeat; 
+    background-size: 50px;
+  }
+
+  .twitter {
+    background: url(../images/64-twitter.png) no-repeat; 
+    background-size: 50px;
+  }
+
+  .googleplus {
+    background: url(../images/64-googleplus.png) no-repeat; 
+    background-size: 50px;
+  }
+
+}
+
+// --- Gallery Styles ---
+
+#edit-gallery {
+  heigth: 255px;
+  margin-bottom: 20px;
+}
+
+#profile-gallery, 
+#edit-profile-gallery, 
+#charity-gallery, 
+#edit-gallery {
+  height: 355px;
+
+  .dz-error-mark {
+    span {
+      padding: 0px;
+    }
+  }
+
+  .dz-error-message {
+    span {
+      font-size: 12px;
+      padding: 0px;
+    }
+  }
+
+  .dz-message {
+    span {
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      color: $darkgrey;
+      padding-top: 140px;
+      font-family: $roboto;
+    }
+  }
+}
+
+.reveal-modal .deletePhoto {
+  @extend .close-reveal-modal;
+  right: 25px;
+  color: $darkgrey;
+}
+
+#edit-gallery-button {
+  position: absolute;
+  top: 140px;
+  right: 80px;
+}
+
+// --- Container for charity update status ---
+
+.update {
+  margin-bottom: 25px;
+}
+
+// Pagination
+
+ul.pagination li.current a, 
+.sub-nav li.active a {
+  background: $teal;
+}
+
+.profile {
+  margin-bottom: 15px;
+
+  p {
+    font-size: 15px;
+  }
+}
+
+// Update & Comment Section
+
+.comments {
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  background-color: $white;
+
+  img {
+    display:inline;
+    float:left;
+    width:8em;
+    margin-right:1em;
+  }
+}
+
+.hide-comment {
+  height: 45px;
+  width: 130px;
+}
+
+// Accordion for Creating Updates 
+
+.accordion dd > a {
+  display: inline-block;
+  background:$teal;
+  color: white;
+}
+
+.accordion dd > a:hover {
+  display: inline-block;
+  background:$teal;
+  color: white;
+}
+
+.accordion dd.active a {
+  background: $teal;
+}
+
+#create-update.button {
+  margin: 27px 15px 0px 0px;
+}
+
+.dashboard, 
+.charity {
+  h4 {
+    color: $darkgrey;
+    text-transform: none;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 17px;
+    font-weight: 100;
+  }
+}
+
+
+//-----------------------------------------------------------------------------------
+//  6.0 Create Fundraiser
+//-----------------------------------------------------------------------------------
+
+.odd {
+  background-color: $teal;
+}
+
+.even {
+  background-color: $yellow;
+}
+
+#Grid .mix {
+  opacity: 0;
+  display: none;
+}
+
+.tabs {
+  dd > a {
+    font-family: $montserrat;
+    text-transform: uppercase;
+  }
+}
+
+#create-fund, 
+#create-profile {
+  margin-top: 25px;
+
+  h5{
+    background: $teal;
+    color: white;
+    padding: 15px;
+    margin: 0px;
+  }
+
+  p{
+    color: $darkgrey;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  .right-container, 
+  .left-container {
+    span.step-num {
+      padding: 22px 26px;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background-color: $timeline-color;
+      color: white;
+      display: inline-block;
+    }
+  }
+}
+
+.left-container, 
+.right-container {
+  input[type="text"], 
+  select{
+    margin: 0;
+  }
+}
+
+.left-container {
+  width: 42%;
+  position: relative;
+  float: left;
+  background-color: white;
+  margin-bottom:4em;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+
+.left-container:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -10px;
+  border-style: solid;
+  border-width: 12px 0px 12px 12px;
+  border-color: transparent $teal;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.right-container {
+  position: relative;
+  float: right;
+  width: 42%;
+  background-color: white;
+  margin:2em 0;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+
+.right-container:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  border-style: solid;
+  border-width: 12px 12px 12px 0px;
+  border-color: transparent $teal;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+.step-num {
+  right: 450px;
+  position: absolute;
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin-left: -31px;
+  top: 5px;
+}
+
+.left-container .step-num {
+  left: 490px;
+}
+
+textarea {
+  margin: 0;
+}
+
+#short-desc, 
+#profile-desc {
+  margin-top: 100px;
+}
+
+#fund-story {
+  textarea {
+    height:250px;
+  }
+}
+
+#profile-desc {
+  textarea {
+    height:150px;
+  }
+}
+
+#profile-photo {
+  margin-top: 100px;
+}
+
+#create-fund:before, 
+#create-profile:before {
+  position:absolute;
+  content:"";
+  background-color:$timeline-color;
+  left:50%;
+  top:30px;
+  height:95%;
+  width:6px;
+  margin-left:2px;
+}
+
+.create-fund-content, 
+.create-profile-content {
+  padding: 10px 15px 15px 15px;
+}
+
+.content {
+  .button {
+    margin-top: 15px;
+    margin-right: 0px;
+  }
+
+  textarea {
+    height: 250px;
+  }
+
+  p{
+    margin-bottom: 0px;
+  }
+}
+
+//-----------------------------------------------------------------------------------
+//  3.0 Java Script Library Styles
+//-----------------------------------------------------------------------------------
+
+// --- Homepage Sign In/Sign Out Container ---
+
+.slide-out-menu {
+  background-color: $yellow;
+
+  p {
     font-size: 20px;
     color: white;
     line-height: 1;
   }
 
-  h2{
+  h2 {
     color: white;
   }
-}
 
-/* Caption Style 3 */
-.cs-style-3 figure {
-  overflow: hidden;
-}
-
-#editGalleryModal{
-  .cs-style-3 figure {
-    overflow: hidden;
-    margin: 0;
-    position: relative;
+  input[type="text"] {
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
   }
-}
-
-.cs-style-3 figure img {
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.cs-style-3 figcaption {
-  height: 100%;
-  width: 100%;
-  top: auto;
-  bottom: 0;
-  opacity: 0.0;
-  -webkit-transform: translateY(100%);
-  -moz-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-  transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-.no-touch .cs-style-3 figure:hover figcaption,
-.cs-style-3 figure.cs-hover figcaption {
-  opacity: 1;
-  -webkit-transform: translateY(0px);
-  -moz-transform: translateY(0px);
-  -ms-transform: translateY(0px);
-  transform: translateY(0px);
-  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-  transition: transform 0.4s, opacity 0.1s;
-}
-
-.cs-style-3 figcaption a {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
 }
 
 .st-container,
@@ -319,9 +834,8 @@ footer {
   transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
 }
 
+// --- Sign In Slideout affect ---
 
-
-/* Effect 2: Reveal */
 .st-effect-2.st-menu-open .st-pusher {
   -webkit-transform: translate3d(-400px, 0, 0);
   transform: translate3d(-400px, 0, 0);
@@ -341,7 +855,8 @@ footer {
   display: none;
 }
 
-/* Effect 3: Reveal */
+// --- Sign Up Slideout affect --- 
+
 .st-effect-3.st-menu-open .st-pusher {
   -webkit-transform: translate3d(-400px, 0, 0);
   transform: translate3d(-400px, 0, 0);
@@ -361,480 +876,94 @@ footer {
   display: none;
 }
 
-/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+// --- Caption Style 3 for Featured Fundraiser overlay animation ---
+
+.cs-style-3 figure {
+  overflow: hidden;
+}
+
+.cs-style-3 figure img {
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+
+.cs-style-3 figcaption {
+  height: 100%;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0.0;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
+  transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+.no-touch .cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
+  -moz-transition: -moz-transform 0.4s, opacity 0.1s;
+  transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+// Fallback example for browsers that don't support 3D transforms (and no JS fallback)
+
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;
 }
 
-.slide-out-menu{
-  input[type="text"]{
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-}
+// --- Modal Styles ---
 
-footer p{
-  margin-bottom:0;
-}
+#donate-modal, 
+#edit-charity-modal, 
+#edit-update-modal, 
+#profile-modal, 
+#edit-gallery-modal {
 
-.header {
-  background-color: $secondary-color;
-  padding: 35px 0; 
-  margin-bottom: 20px;
-
-  h2{
-    color: $white;
-    display: inline-block;
-  }
-
-  p{
-    font-size: 20px;
-    font-weight: 100;
-    display: block;
-  }
-
-  .button{
-    display: inline-block;
-  }
-}
-
-.charity-container {
-  background-color: $white; 
-  margin-bottom: 20px;
-  padding: 10px 10px 0 10px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-  height: 500px;
-  position: relative;
-
-  h4{
-    color:$teal;
-    font-size: 16px; 
-    padding: 15px 0px 5px 0px;
-    margin-bottom: 0;
-    margin: 0;
-    font-weight: bold;
-  }
-
-  p{
-    padding: 5px 0px 15px 0px;
-    font-size: 12px;
-    margin-bottom: 0;
-    
-    
-  }
-
-  a{
-    margin: 0 0 10px 0px;
-    bottom: 8px;
-    position: absolute;
-  }
-}
-
-ul.pagination li.current a, .sub-nav li.active a{
-  background: $teal;
-}
-
-.profile{
-  margin-bottom: 15px;
-
-  p{
-    font-size: 15px;
-  }
-}
-
-.dashboard, .charity{
-
-  h4{
-    color: $darkgrey;
-    text-transform: none;
-    font-size: 20px;
-    line-height: 1;
-  }
-
-  p{
-    font-size: 17px;
-    font-weight: 100;
-  }
-}
-
-.comments{
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-
-.owner-dashboard{
-  background-color: $white; 
-  margin-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-  height: 302px;
-  position: relative;
-}
-
-.charity{
-  padding: 10px 35px
-}
-
-.charity-owner, .comments{
-  color: $darkgrey;
-  background-color: $mediumgrey;
-  padding: 15px 15px 5px 25px;
-
-  h3{
+  h2 {
     color: $teal;
-    font-size: 40px;
-  }
-}
-
-.charity-status{
-
-  h2{
-    position: absolute;
-    color: #32bfca;
-    top: 85px;
-    left: 87px;
-    font-size: 35px;
+    margin-bottom: 10px;
   }
 
-  h4{
-    position: absolute;
-    top: 240px
-  }
-
-  height: 0;
-}
-
-.donate-sum{
-  
-  padding: 20px;
-  margin-bottom: 20px;
-  color: $lightgrey;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7; 
-
-  h2{
-    color: white;
-    font-size: 72px;
-    line-height: 1;
-  }
-
-  h3{
-    font-size: 60px;
-    line-height: 1;
-    color: white;
-    margin: 20px;
-    text-transform: uppercase;
-  }
-
-  h5, h6{
-    color: $darkgrey;
-    line-height: 1;
-  }
-
-  p{
-    color: $darkgrey;
-    font-weight: 100;
-  }
-
-}
-
-.odd{
-  background-color: $teal;
-}
-
-.even{
-  background-color: $yellow;
-}
-
-#Grid .mix{
-    opacity: 0;
-    display: none;
-}
-
-.comments{
-  background-color: $white;
-}
-
-.tabs {
-  dd > a {
-    font-family: $montserrat;
-    text-transform: uppercase;
-  }
-}
-
-#panel2-1{
-  .row{
-    margin: 15px 0;
-  }
-  
-}
-
-.comments {
-  img {
-    display:inline;
-    float:left;
-    width:8em;
-    margin-right:1em;
-  }
-}
-
-
-.tabs dd.active {
-  z-index:1;
-  a{
-    box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
-  }
-}
-#create-fund, #create-profile{
-
-  margin-top: 25px;
-
-  h5{
-    background: $teal;
-    color: white;
-    padding: 15px;
-    margin: 0;
-  }
-
-  p{
-    color: $darkgrey;
-    font-weight: 100;
-    font-size: 15px;
-  }
-
-  .right-container, .left-container{
-    
-    span.stepNum{
-        padding: 22px 26px;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-
-        background-color: $timeline-color;
-        color: white;
-        display: inline-block;
-    }
-  }
-
-}
-
-.left-container{
-  width: 42%;
-  position: relative;
-  float: left;
-  background-color: white;
-  margin-bottom:4em;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-
-}
-
-.left-container, .right-container{
-  input[type="text"], select{
-    margin: 0;
-  }
-}
-
-.left-container:after{
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: -10px;
-  border-style: solid;
-  border-width: 12px 0 12px 12px;
-  border-color: transparent $teal;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-
-.right-container {
-  position: relative;
-  float: right;
-  width: 42%;
-  background-color: white;
-  margin:2em 0;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-
-.right-container:after{
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: -10px;
-  border-style: solid;
-  border-width: 12px 12px 12px 0;
-  border-color: transparent $teal;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-.stepNum{
-  right: 450px;
-  position: absolute;
-  cursor: pointer;
-  width: 62px;
-  height: 62px;
-  display: block;
-  margin-left: -31px;
-  top: 5px;
-}
-
-.left-container .stepNum {
-  left: 490px;
-}
-
-textarea{
-  margin: 0;
-}
-
-#shortDesc, #profileDesc{
-  margin-top: 100px;
-}
-
-#fundStory{
-  textarea {
-    height:250px;
-  }
-}
-
-#profileDesc{
   textarea {
     height:150px;
+    margin-bottom: 25px;
   }
 }
 
-
-#create-fund:before, #create-profile:before {
-  position:absolute;
-  content:"";
-  background-color:$timeline-color;
-  left:50%;
-  top:30px;
-  height:95%;
-  width:6px;
-  margin-left:2px;
-}
-
-.createFundContent, .createProfileContent{
-  padding: 10px 15px 15px 15px;
-}
-
-#profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery{
-  height: 355px;
-
-  .dz-error-mark{
-    span{
-      padding: 0;
-    }
-  }
-
-.dz-error-message{
-  span{
-    font-size: 12px;
-    padding:0;
+#edit-charity-modal {
+  .shortDescText{
+    height:30px;
   }
 }
 
-  .dz-message{
-  span{
-    font-size: 20px;
-    display: block;
-    text-align: center;
-    color: $darkgrey;
-    padding-top: 140px;
-    font-family: $roboto;
-  }
-}
-}
-
-#edit-gallery{
-  heigth: 255px;
-  margin-bottom: 20px;
-}
-
-.donate-container, .charity-status{
-  canvas{
-    position: relative;
-    top: -30px;
-    right: 3px;
-  }
-}
-
-.donate-container{
-  background-color: white;
-  padding: 10px 10px 2px 10px;
-  margin-bottom: 20px;
-  width: 230px;
-  height: 375px;
-  position: relative;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-
-  h2{
-    position: absolute;
-    color: #32bfca;
-    top: 175px;
-    left: 81px;
-    font-size: 35px;
-  }
-
-  h4{
-    top: 320px;
-    position: absolute;
-  }
-
-  .button{
-    margin-left: 3px;
-  }
-}
-
-.tabs-content > .content {
-  padding: 0;
-}
-
-.social{
-
-  .button {
-    box-shadow: none;
-    padding: 24px 25px;
+#edit-gallery-modal {
+  .cs-style-3 figure {
+    overflow: hidden;
     margin: 0;
-  }
-  
-
-  .facebook{
-    background: url(../images/64-facebook.png) no-repeat; 
-    background-size: 50px;
+    position: relative;
   }
 
-  .twitter{
-    background: url(../images/64-twitter.png) no-repeat; 
-    background-size: 50px;
-  }
-
-  .googleplus{
-    background: url(../images/64-googleplus.png) no-repeat; 
-    background-size: 50px;
-  }
-
-}
-
-.reveal-modal .deletePhoto {
-  @extend .close-reveal-modal;
-  right: 25px;
-  color: $darkgrey;
-}
-
-
-#editGalleryModal{
   .button{
     margin-top: 10px;
   }
+
   img{
     margin-bottom: 10px;
   }
@@ -858,130 +987,73 @@ textarea{
   }
 }
 
-.example-orbit{
-  position:relative;
-}
-
-.accordion dd > a{
-  display: inline-block;
-  background:$teal;
-  color: white;
-}
-
-.accordion dd > a:hover{
-  display: inline-block;
-  background:$teal;
-  color: white;
-}
-
-#edit-gallery-button {
-  position: absolute;
-  top: 140px;
-  right: 80px;
-}
-
-.accordion dd.active a {
-background: $teal;
-}
-
-#createUpdate.button{
-    margin: 27px 15px 0 0;
-}
-
-.stat-chart{
-  margin-bottom: 20px;
-
-  h3{
-    margin: 10px 0;
-    color: $teal;
-  }
-  
-}
-
-.center{
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.sub-nav li.active a:hover{
-  background-color: $teal;
-}
-
-#donateModal, #editCharityModal, #editUpdateModal, #profileModal, #editGalleryModal{
-  h2{
-    color: $teal;
-    margin-bottom: 10px;
-  }
-
-  textarea{
-    height:150px;
-    margin-bottom: 25px;
-  }
-}
-
-#editCharityModal{
-  .shortDescText{
-    height:30px;
-  }
-}
-
-#profilePhoto{
-  margin-top: 100px;
-}
-
-.content{
+#profile-modal {
   .button{
     margin-top: 15px;
-    margin-right: 0px;
-  }
-
-  textarea{
-    height: 250px;
-  }
-
-  p{
-    margin-bottom: 0;
   }
 }
 
-.hide-comment{
-  height: 45px;
-  width: 130px;
+// --- Styles for tabs in charity page ---
+
+#panel2-1 {
+  .row{
+    margin: 15px 0;
+  }
 }
 
-.update{
-  margin-bottom: 25px;
-}
-
-.profile{
-  position: relative;
-
+.tabs dd.active {
+  z-index:1;
   a{
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
   }
 }
 
-#profileModal{
-  .button{
-    margin-top: 15px;
-  }
+.tabs-content > .content {
+  padding: 0;
 }
 
-label, legend{
-  font-family: $roboto;
-}
+// --- Create Fundraiser Date ---
 
-.logo{
-  margin-top: 10px;
-}
 .month {
   width:45%;
 }
+
 .day{
   width:20%;
 }
+
 .year {
   width:32%;
+}
+
+// --- JS Chart styles ---
+
+.donate-container, 
+.charity-status {
+  canvas {
+    position: relative;
+    top: -30px;
+    right: 3px;
+  }
+}
+
+.stat-chart {
+  margin-bottom: 20px;
+
+  h3 {
+    margin: 10px 0;
+    color: $teal;
+  }
+}
+
+// --- JS Orbit slider ---
+
+.example-orbit {
+  position:relative;
+}
+
+// --- JS Filter ---
+
+.sub-nav li.active a:hover {
+  background-color: $teal;
 }

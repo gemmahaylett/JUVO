@@ -14,116 +14,108 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
-  <div class="row">
-    <div class="large-3 columns">
-      <a href="index.html"><a href="index.html"><img src=
-            "http://placehold.it/400x100&amp;text=Logo"></a></a>
+    <!-- Start Header and Nav -->
+    <div class="row">
+      <div class="large-3 columns">
+        <a href="index.html"><a href="index.html"><img src=
+              "http://placehold.it/400x100&amp;text=Logo"></a></a>
+      </div>
+      <div class="large-9 columns">
+        <ul class="right button-group">
+        <li><a href="createFundraiser.html">Create a <br>FUNDRAISER</a></li>
+        <li><a href="browseCharities.html">Browse <br>CHARITIES</a></li>
+        <li><a href="index.html">Logout</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="large-9 columns">
-      <ul class="right button-group">
-      <li><a href="createFundraiser.html">Create a <br>FUNDRAISER</a></li>
-      <li><a href="browseCharities.html">Browse <br>CHARITIES</a></li>
-      <li><a href="index.html">Logout</a></li>
-      </ul>
-     </div>
-   </div>
-  
-<!-- End Header and Nav -->
+    <!-- End Header and Nav -->
 
-<!-- Charity Header -->
+    <!-- Create Profile Header -->
+    <div class="header">
+      <div class="row">
+        <div class="large-12 columns">
+          <h2>Create Profile</h2>
+        </div>
+      </div>
+    </div>
 
-<div class="header">
-   <div class="row">
+    <!-- Step 1 and Step 2 -->
+    <div class="row">
       <div class="large-12 columns">
-        <h2>Create Profile</h2>
-      </div>
-   </div>
- </div>
+        <div id="create-profile">
+          <div id="locationUser" class="left-container">
+            <span class="step-num">1</span>
+            <h5>Where are you from?</h5>
+            <div class="create-profile-content">
+              <input type="text" placeholder="Fremont, CA" />
+            </div>
+          </div>
+        
+          <div id="profile-desc" class="right-container">
+            <span class="step-num">2</span>
+            <h5>Tell us about yourself</h5>
+            <div class="create-profile-content">
+              <p>Your autobiography in 300 words or less</p>
+              <textarea placeholder="Say something"></textarea>
+            </div>
+          </div>
+        
+          <!-- Step 3 and Step 4 -->
+          <div id="sel-charity" class="left-container">
+            <span class="step-num">3</span>
+            <h5>Select Charity Preferences</h5>
+            <div class="create-profile-content">
+              <p>Enter the categories of charities you would be interested in donating to</p>
+              <input type="text" placeholder="Charity category" />
+            </div>
+          </div>
+        
+          <!-- Step 5 and Step 6 -->
+          <div id="birth-date" class="right-container">
+            <span class="step-num">4</span>
+            <h5>Enter in your birthdate</h5>
+            <div class="create-profile-content">
+              <div class="row">
+                <div class="large-6 large-centered columns">
+                  <input id="birth-date-combo" data-format="MM-DD-YYYY" data-template="MMM D YYYY" name="date" value="09-01-2013">
+                  <script>
+                   $('#birt-date-combo').combodate({
+                      minYear: 1900,
+                      maxYear: 2013
+                  });
+                  </script>
+                </div>
+              </div>
+            </div>
+          </div>
 
-   <!-- Step 1 and Step 2 -->
-
-
-<div class="row">
-  <div class="large-12 columns">
-  <div id="create-profile">
-   
-    <div id="locationUser" class="left-container">
-      <span class="stepNum">1</span>
+          <div id="profile-photo" class="left-container">
+            <span class="step-num">5</span>
+            <h5>Upload A Selfie</h5>
+            <div class="create-profile-content">
+              <p>This will be used for your profile picture</p>
+              <form action="/file-upload" class="dropzone" id="profile-gallery"></form>
+            </div>
+          </div>
       
-        <h5>Where are you from?</h5>
-        <div class="createProfileContent">
-        <input type="text" placeholder="Fremont, CA" />
-      </div>
-    </div>
-    
-    <div id="profileDesc" class="right-container">
-      <span class="stepNum">2</span>
-        <h5>Tell us about yourself</h5>
-        <div class="createProfileContent">
-        <p>Your autobiography in 300 words or less</p>
-        <textarea placeholder="Say something"></textarea>
-      </div>
-    </div>
-    
-    <!-- Step 3 and Step 4 -->
-    <div id="selCharity" class="left-container">
-      <span class="stepNum">3</span>
-     
-        <h5>Select Charity Preferences</h5>
-         <div class="createProfileContent">
-        <p>Enter the categories of charities you would be interested in donating to</p>
-        <input type="text" placeholder="Charity category" />
-      </div>
-    </div>
-    
-    <!-- Step 5 and Step 6 -->
-    <div id="birthDate" class="right-container">
-      <span class="stepNum">4</span>
-      <h5>Enter in your birthdate</h5>
+         <div class="row">
+          <div class="large-3 large-centered columns end">
+            <a href="dashboard.html" class="large button expand">FINISHED</a>
+          </div> 
+         </div> 
 
-      <div class="createProfileContent">
-        <div class="row">
-          <div class="large-6 large-centered columns">
-      <input id="birthDateCombo" data-format="MM-DD-YYYY" data-template="MMM D YYYY" name="date" value="09-01-2013">
-         <script>
-         $('#birthDateCombo').combodate({
-            minYear: 1900,
-            maxYear: 2013
-        });
-         </script>
-      </div>
-      </div>
-    </div>
-  </div>
+       </div> <!-- end create-profile -->
+     </div> <!-- end 12 large column -->
+    </div> <!-- end row -->
 
-  <div id="profilePhoto" class="left-container">
-
-    <span class="stepNum">5</span>
-      <h5>Upload A Selfie</h5>
-          <div class="createProfileContent">
-      <p>This will be used for your profile picture</p>
-    <form action="/file-upload" class="dropzone" id="profile-gallery"></form>
-    </div>
-  </div>
-    
-  
-   <div class="row">
-    <div class="large-3 large-centered columns end">
-   <a href="dashboard.html" class="large button expand">FINISHED</a>
-   </div> 
-   </div> 
- </div> <!-- end create-profile -->
- </div> <!-- end 12 large column -->
-   </div> <!-- end row -->
-
-<footer>
+    <footer>
       <p class="text-center">&copy; Made by Gemma Haylett.</p>
-  </footer>
+    </footer>
 
-   <script src="bower_components/foundation/js/foundation.min.js"></script>
-   <script src="js/jquery.mixitup.min.js"></script>
-   <script src="js/dropzone.js"></script>
-   <script src="js/app.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/dropzone.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
  

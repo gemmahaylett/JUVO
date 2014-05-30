@@ -7726,17 +7726,24 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 
-/* line 24, ../scss/_overrides.scss */
+/* line 38, ../scss/_overrides.scss */
 body {
   background-color: #f9f8f4;
 }
 
-/* line 28, ../scss/_overrides.scss */
-h2, h3, h4, h5, h6 {
+/* line 48, ../scss/_overrides.scss */
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
-/* line 32, ../scss/_overrides.scss */
+/* line 55, ../scss/_overrides.scss */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
@@ -7751,7 +7758,41 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* line 46, ../scss/_overrides.scss */
+/* line 69, ../scss/_overrides.scss */
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+/* line 77, ../scss/_overrides.scss */
+h4 {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 85, ../scss/_overrides.scss */
+p {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  color: #666666;
+  margin-bottom: 1.25rem;
+}
+
+/* line 92, ../scss/_overrides.scss */
+ul {
+  margin-bottom: 1.25rem;
+}
+
+/* line 98, ../scss/_overrides.scss */
+a:hover {
+  color: #32bfca;
+}
+
+/* line 102, ../scss/_overrides.scss */
 .button {
   text-transform: uppercase;
   font-weight: normal;
@@ -7762,7 +7803,7 @@ h1 {
   text-aligh: center;
   font-size: 15px;
   background-clip: padding-box;
-  box-shadow: 0 4px 0 rgba(38, 148, 150, 0.8);
+  box-shadow: 0px 4px 0px rgba(38, 148, 150, 0.8);
   background-color: #63bdbd;
   *zoom: 1;
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF63BDBD', endColorstr='#FF31BFCA');
@@ -7773,66 +7814,100 @@ h1 {
   background-image: linear-gradient(top, #63bdbd 0%, #31bfca 100%);
 }
 
-/* line 62, ../scss/_overrides.scss */
-a:hover {
-  color: #32bfca;
-}
-
-/* line 66, ../scss/_overrides.scss */
-h2 {
+/* line 118, ../scss/_overrides.scss */
+a {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
+  font-size: 16px;
   color: #666666;
-  text-transform: uppercase;
+  font-weight: thin;
 }
 
-/* line 74, ../scss/_overrides.scss */
-p {
-  font-family: "Roboto Slab", serif;
-  font-size: 24px;
-  color: #666666;
+/* line 127, ../scss/_overrides.scss */
+footer {
+  background-color: #32bfca;
+  padding: 20px 0;
 }
-
-/* line 80, ../scss/_overrides.scss */
-h4 {
-  font-size: 24px;
-  text-transform: uppercase;
+/* line 131, ../scss/_overrides.scss */
+footer p {
   color: white;
+  margin-bottom: 0;
 }
 
-/* line 86, ../scss/_overrides.scss */
+/* line 137, ../scss/_overrides.scss */
+.header {
+  background-color: #f4d130;
+  padding: 35px 0px;
+  margin-bottom: 20px;
+}
+/* line 142, ../scss/_overrides.scss */
+.header h2 {
+  color: white;
+  display: inline-block;
+}
+/* line 147, ../scss/_overrides.scss */
+.header p {
+  font-size: 20px;
+  font-weight: 100;
+  display: block;
+}
+/* line 153, ../scss/_overrides.scss */
+.header .button {
+  display: inline-block;
+}
+
+/* line 159, ../scss/_overrides.scss */
+label,
+legend {
+  font-family: "Roboto Slab", serif;
+}
+
+/* line 167, ../scss/_overrides.scss */
+.logo {
+  margin-top: 10px;
+}
+
+/* line 171, ../scss/_overrides.scss */
+.button-group li {
+  margin: 20px;
+}
+
+/* line 179, ../scss/_overrides.scss */
 .featured-fund {
   margin-bottom: 27px;
 }
-/* line 89, ../scss/_overrides.scss */
+/* line 182, ../scss/_overrides.scss */
 .featured-fund p {
   font-size: 15px;
   font-weight: thin;
   color: white;
 }
 
-/* line 96, ../scss/_overrides.scss */
+/* line 189, ../scss/_overrides.scss */
+.highlights {
+  margin: 90px 0px;
+}
+
+/* line 193, ../scss/_overrides.scss */
 .featured-fund-container {
   background-color: #f4d130;
   padding: 30px 0;
 }
-/* line 100, ../scss/_overrides.scss */
+/* line 197, ../scss/_overrides.scss */
 .featured-fund-container h2 {
   color: white;
 }
-/* line 104, ../scss/_overrides.scss */
+/* line 201, ../scss/_overrides.scss */
 .featured-fund-container figure {
   margin: 0px;
   position: relative;
 }
-/* line 107, ../scss/_overrides.scss */
+/* line 205, ../scss/_overrides.scss */
 .featured-fund-container figure img {
   max-width: 100%;
   display: block;
   position: relative;
 }
-/* line 113, ../scss/_overrides.scss */
+/* line 212, ../scss/_overrides.scss */
 .featured-fund-container figcaption {
   position: absolute;
   top: 0;
@@ -7841,13 +7916,13 @@ h4 {
   background: #361919;
   background: rgba(54, 25, 25, 0.4);
 }
-/* line 121, ../scss/_overrides.scss */
+/* line 220, ../scss/_overrides.scss */
 .featured-fund-container figcaption h4 {
   margin: 0;
   padding: 0;
   color: #fff;
 }
-/* line 127, ../scss/_overrides.scss */
+/* line 226, ../scss/_overrides.scss */
 .featured-fund-container figcaption a {
   text-align: center;
   padding: 5px 10px;
@@ -7857,75 +7932,681 @@ h4 {
   color: #fff;
 }
 
-/* line 143, ../scss/_overrides.scss */
+/* line 237, ../scss/_overrides.scss */
 .hero {
   height: 600px;
 }
 
-/* line 147, ../scss/_overrides.scss */
-a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+/* line 245, ../scss/_overrides.scss */
+.owner-dashboard {
+  background-color: white;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  height: 302px;
+  position: relative;
+}
+
+/* line 255, ../scss/_overrides.scss */
+.charity-owner,
+.comments {
   color: #666666;
-  font-weight: thin;
+  background-color: #eeeeee;
+  padding: 15px 15px 5px 25px;
+}
+/* line 260, ../scss/_overrides.scss */
+.charity-owner h3,
+.comments h3 {
+  color: #32bfca;
+  font-size: 40px;
 }
 
-/* line 154, ../scss/_overrides.scss */
-.button-group li {
+/* line 266, ../scss/_overrides.scss */
+.profile {
+  position: relative;
+}
+/* line 269, ../scss/_overrides.scss */
+.profile a {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+/* line 280, ../scss/_overrides.scss */
+.charity {
+  padding: 10px 35px;
+}
+
+/* line 284, ../scss/_overrides.scss */
+.charity-container {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 10px 10px 0px 10px;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  height: 500px;
+  position: relative;
+}
+/* line 293, ../scss/_overrides.scss */
+.charity-container h4 {
+  color: #32bfca;
+  font-size: 16px;
+  padding: 15px 0px 5px 0px;
+  margin: 0px;
+  font-weight: bold;
+}
+/* line 301, ../scss/_overrides.scss */
+.charity-container p {
+  padding: 5px 0px 15px 0px;
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+/* line 307, ../scss/_overrides.scss */
+.charity-container a {
+  margin: 0px 0px 10px 0px;
+  bottom: 8px;
+  position: absolute;
+}
+
+/* line 314, ../scss/_overrides.scss */
+.charity-status {
+  height: 0;
+}
+/* line 315, ../scss/_overrides.scss */
+.charity-status h2 {
+  position: absolute;
+  color: #32bfca;
+  top: 85px;
+  left: 87px;
+  font-size: 35px;
+}
+/* line 323, ../scss/_overrides.scss */
+.charity-status h4 {
+  position: absolute;
+  top: 240px;
+}
+
+/* line 331, ../scss/_overrides.scss */
+.donate-sum {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #f9f8f4;
+  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+/* line 338, ../scss/_overrides.scss */
+.donate-sum h2 {
+  color: white;
+  font-size: 72px;
+  line-height: 1;
+}
+/* line 344, ../scss/_overrides.scss */
+.donate-sum h3 {
+  font-size: 60px;
+  line-height: 1;
+  color: white;
   margin: 20px;
+  text-transform: uppercase;
+}
+/* line 352, ../scss/_overrides.scss */
+.donate-sum h5, .donate-sum h6 {
+  color: #666666;
+  line-height: 1;
+}
+/* line 357, ../scss/_overrides.scss */
+.donate-sum p {
+  color: #666666;
+  font-weight: 100;
 }
 
-/* line 158, ../scss/_overrides.scss */
-.raise-money, .donate-now {
-  margin: 90px 0;
+/* line 364, ../scss/_overrides.scss */
+.donate-container {
+  background-color: white;
+  padding: 10px 10px 2px 10px;
+  margin-bottom: 20px;
+  width: 230px;
+  height: 375px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+/* line 374, ../scss/_overrides.scss */
+.donate-container h2 {
+  position: absolute;
+  color: #32bfca;
+  top: 175px;
+  left: 81px;
+  font-size: 35px;
+}
+/* line 382, ../scss/_overrides.scss */
+.donate-container h4 {
+  top: 320px;
+  position: absolute;
+}
+/* line 387, ../scss/_overrides.scss */
+.donate-container .button {
+  margin-left: 3px;
 }
 
-/* line 162, ../scss/_overrides.scss */
-footer {
-  background-color: #32bfca;
-  padding: 20px 0;
+/* line 394, ../scss/_overrides.scss */
+.social .button {
+  box-shadow: none;
+  padding: 24px 25px;
+  margin: 0px;
 }
-/* line 166, ../scss/_overrides.scss */
-footer p {
+/* line 400, ../scss/_overrides.scss */
+.social .facebook {
+  background: url(../images/64-facebook.png) no-repeat;
+  background-size: 50px;
+}
+/* line 405, ../scss/_overrides.scss */
+.social .twitter {
+  background: url(../images/64-twitter.png) no-repeat;
+  background-size: 50px;
+}
+/* line 410, ../scss/_overrides.scss */
+.social .googleplus {
+  background: url(../images/64-googleplus.png) no-repeat;
+  background-size: 50px;
+}
+
+/* line 419, ../scss/_overrides.scss */
+#edit-gallery {
+  heigth: 255px;
+  margin-bottom: 20px;
+}
+
+/* line 427, ../scss/_overrides.scss */
+#profile-gallery,
+#edit-profile-gallery,
+#charity-gallery,
+#edit-gallery {
+  height: 355px;
+}
+/* line 431, ../scss/_overrides.scss */
+#profile-gallery .dz-error-mark span,
+#edit-profile-gallery .dz-error-mark span,
+#charity-gallery .dz-error-mark span,
+#edit-gallery .dz-error-mark span {
+  padding: 0px;
+}
+/* line 437, ../scss/_overrides.scss */
+#profile-gallery .dz-error-message span,
+#edit-profile-gallery .dz-error-message span,
+#charity-gallery .dz-error-message span,
+#edit-gallery .dz-error-message span {
+  font-size: 12px;
+  padding: 0px;
+}
+/* line 444, ../scss/_overrides.scss */
+#profile-gallery .dz-message span,
+#edit-profile-gallery .dz-message span,
+#charity-gallery .dz-message span,
+#edit-gallery .dz-message span {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  color: #666666;
+  padding-top: 140px;
+  font-family: "Roboto Slab", serif;
+}
+
+/* line 455, ../scss/_overrides.scss */
+.reveal-modal .deletePhoto {
+  right: 25px;
+  color: #666666;
+}
+
+/* line 461, ../scss/_overrides.scss */
+#edit-gallery-button {
+  position: absolute;
+  top: 140px;
+  right: 80px;
+}
+
+/* line 469, ../scss/_overrides.scss */
+.update {
+  margin-bottom: 25px;
+}
+
+/* line 476, ../scss/_overrides.scss */
+ul.pagination li.current a,
+.sub-nav li.active a {
+  background: #32bfca;
+}
+
+/* line 480, ../scss/_overrides.scss */
+.profile {
+  margin-bottom: 15px;
+}
+/* line 483, ../scss/_overrides.scss */
+.profile p {
+  font-size: 15px;
+}
+
+/* line 490, ../scss/_overrides.scss */
+.comments {
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  background-color: white;
+}
+/* line 495, ../scss/_overrides.scss */
+.comments img {
+  display: inline;
+  float: left;
+  width: 8em;
+  margin-right: 1em;
+}
+
+/* line 503, ../scss/_overrides.scss */
+.hide-comment {
+  height: 45px;
+  width: 130px;
+}
+
+/* line 510, ../scss/_overrides.scss */
+.accordion dd > a {
+  display: inline-block;
+  background: #32bfca;
   color: white;
 }
 
-/* line 171, ../scss/_overrides.scss */
+/* line 516, ../scss/_overrides.scss */
+.accordion dd > a:hover {
+  display: inline-block;
+  background: #32bfca;
+  color: white;
+}
+
+/* line 522, ../scss/_overrides.scss */
+.accordion dd.active a {
+  background: #32bfca;
+}
+
+/* line 526, ../scss/_overrides.scss */
+#create-update.button {
+  margin: 27px 15px 0px 0px;
+}
+
+/* line 532, ../scss/_overrides.scss */
+.dashboard h4,
+.charity h4 {
+  color: #666666;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 1;
+}
+/* line 539, ../scss/_overrides.scss */
+.dashboard p,
+.charity p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+/* line 550, ../scss/_overrides.scss */
+.odd {
+  background-color: #32bfca;
+}
+
+/* line 554, ../scss/_overrides.scss */
+.even {
+  background-color: #f4d130;
+}
+
+/* line 558, ../scss/_overrides.scss */
+#Grid .mix {
+  opacity: 0;
+  display: none;
+}
+
+/* line 564, ../scss/_overrides.scss */
+.tabs dd > a {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 571, ../scss/_overrides.scss */
+#create-fund,
+#create-profile {
+  margin-top: 25px;
+}
+/* line 574, ../scss/_overrides.scss */
+#create-fund h5,
+#create-profile h5 {
+  background: #32bfca;
+  color: white;
+  padding: 15px;
+  margin: 0px;
+}
+/* line 581, ../scss/_overrides.scss */
+#create-fund p,
+#create-profile p {
+  color: #666666;
+  font-weight: 100;
+  font-size: 15px;
+}
+/* line 589, ../scss/_overrides.scss */
+#create-fund .right-container span.step-num,
+#create-fund .left-container span.step-num,
+#create-profile .right-container span.step-num,
+#create-profile .left-container span.step-num {
+  padding: 22px 26px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  color: white;
+  display: inline-block;
+}
+
+/* line 603, ../scss/_overrides.scss */
+.left-container input[type="text"],
+.left-container select,
+.right-container input[type="text"],
+.right-container select {
+  margin: 0;
+}
+
+/* line 608, ../scss/_overrides.scss */
+.left-container {
+  width: 42%;
+  position: relative;
+  float: left;
+  background-color: white;
+  margin-bottom: 4em;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+
+/* line 618, ../scss/_overrides.scss */
+.left-container:after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: -10px;
+  border-style: solid;
+  border-width: 12px 0px 12px 12px;
+  border-color: transparent #32bfca;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+/* line 631, ../scss/_overrides.scss */
+.right-container {
+  position: relative;
+  float: right;
+  width: 42%;
+  background-color: white;
+  margin: 2em 0;
+  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
+  box-shadow: 1px 1px 5px 0px #C7C7C7;
+}
+
+/* line 641, ../scss/_overrides.scss */
+.right-container:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  border-style: solid;
+  border-width: 12px 12px 12px 0px;
+  border-color: transparent #32bfca;
+  display: block;
+  width: 0;
+  z-index: 1;
+}
+
+/* line 654, ../scss/_overrides.scss */
+.step-num {
+  right: 450px;
+  position: absolute;
+  cursor: pointer;
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin-left: -31px;
+  top: 5px;
+}
+
+/* line 665, ../scss/_overrides.scss */
+.left-container .step-num {
+  left: 490px;
+}
+
+/* line 669, ../scss/_overrides.scss */
+textarea {
+  margin: 0;
+}
+
+/* line 674, ../scss/_overrides.scss */
+#short-desc,
+#profile-desc {
+  margin-top: 100px;
+}
+
+/* line 679, ../scss/_overrides.scss */
+#fund-story textarea {
+  height: 250px;
+}
+
+/* line 685, ../scss/_overrides.scss */
+#profile-desc textarea {
+  height: 150px;
+}
+
+/* line 690, ../scss/_overrides.scss */
+#profile-photo {
+  margin-top: 100px;
+}
+
+/* line 695, ../scss/_overrides.scss */
+#create-fund:before,
+#create-profile:before {
+  position: absolute;
+  content: "";
+  background-color: #d9d9d9;
+  left: 50%;
+  top: 30px;
+  height: 95%;
+  width: 6px;
+  margin-left: 2px;
+}
+
+/* line 707, ../scss/_overrides.scss */
+.create-fund-content,
+.create-profile-content {
+  padding: 10px 15px 15px 15px;
+}
+
+/* line 712, ../scss/_overrides.scss */
+.content .button {
+  margin-top: 15px;
+  margin-right: 0px;
+}
+/* line 717, ../scss/_overrides.scss */
+.content textarea {
+  height: 250px;
+}
+/* line 721, ../scss/_overrides.scss */
+.content p {
+  margin-bottom: 0px;
+}
+
+/* line 732, ../scss/_overrides.scss */
 .slide-out-menu {
   background-color: #f4d130;
 }
-/* line 174, ../scss/_overrides.scss */
+/* line 735, ../scss/_overrides.scss */
 .slide-out-menu p {
   font-size: 20px;
   color: white;
   line-height: 1;
 }
-/* line 180, ../scss/_overrides.scss */
+/* line 741, ../scss/_overrides.scss */
 .slide-out-menu h2 {
   color: white;
 }
+/* line 745, ../scss/_overrides.scss */
+.slide-out-menu input[type="text"] {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 
-/* Caption Style 3 */
-/* line 186, ../scss/_overrides.scss */
+/* line 754, ../scss/_overrides.scss */
+.st-container,
+.st-pusher,
+.st-content {
+  height: 100%;
+}
+
+/* line 758, ../scss/_overrides.scss */
+.st-content {
+  overflow-y: scroll;
+  background: #f9f8f4;
+}
+
+/* line 764, ../scss/_overrides.scss */
+.st-content,
+.st-content-inner {
+  position: relative;
+}
+
+/* line 768, ../scss/_overrides.scss */
+.st-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 773, ../scss/_overrides.scss */
+.st-pusher {
+  position: relative;
+  left: 0;
+  z-index: 99;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 782, ../scss/_overrides.scss */
+.st-pusher::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* line 795, ../scss/_overrides.scss */
+.st-menu-open .st-pusher::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 803, ../scss/_overrides.scss */
+.st-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  visibility: hidden;
+  width: 400px;
+  height: 100%;
+  background: #f4d130;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 816, ../scss/_overrides.scss */
+.st-menu::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+/* line 829, ../scss/_overrides.scss */
+.st-menu-open .st-menu::after {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+/* line 839, ../scss/_overrides.scss */
+.st-effect-2.st-menu-open .st-pusher {
+  -webkit-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-400px, 0, 0);
+}
+
+/* line 844, ../scss/_overrides.scss */
+.st-effect-2.st-menu {
+  z-index: 1;
+}
+
+/* line 848, ../scss/_overrides.scss */
+.st-effect-2.st-menu-open .st-effect-2.st-menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 854, ../scss/_overrides.scss */
+.st-effect-2.st-menu::after {
+  display: none;
+}
+
+/* line 860, ../scss/_overrides.scss */
+.st-effect-3.st-menu-open .st-pusher {
+  -webkit-transform: translate3d(-400px, 0, 0);
+  transform: translate3d(-400px, 0, 0);
+}
+
+/* line 865, ../scss/_overrides.scss */
+.st-effect-3.st-menu {
+  z-index: 1;
+}
+
+/* line 869, ../scss/_overrides.scss */
+.st-effect-3.st-menu-open .st-effect-3.st-menu {
+  visibility: visible;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+/* line 875, ../scss/_overrides.scss */
+.st-effect-3.st-menu::after {
+  display: none;
+}
+
+/* line 881, ../scss/_overrides.scss */
 .cs-style-3 figure {
   overflow: hidden;
 }
 
-/* line 191, ../scss/_overrides.scss */
-#editGalleryModal .cs-style-3 figure {
-  overflow: hidden;
-  margin: 0;
-  position: relative;
-}
-
-/* line 198, ../scss/_overrides.scss */
+/* line 885, ../scss/_overrides.scss */
 .cs-style-3 figure img {
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 
-/* line 204, ../scss/_overrides.scss */
+/* line 891, ../scss/_overrides.scss */
 .cs-style-3 figcaption {
   height: 100%;
   width: 100%;
@@ -7941,7 +8622,7 @@ footer p {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-/* line 220, ../scss/_overrides.scss */
+/* line 907, ../scss/_overrides.scss */
 .no-touch .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
   opacity: 1;
@@ -7954,633 +8635,59 @@ footer p {
   transition: transform 0.4s, opacity 0.1s;
 }
 
-/* line 231, ../scss/_overrides.scss */
+/* line 918, ../scss/_overrides.scss */
 .cs-style-3 figcaption a {
   position: absolute;
   bottom: 20px;
   right: 20px;
 }
 
-/* line 239, ../scss/_overrides.scss */
-.st-container,
-.st-pusher,
-.st-content {
-  height: 100%;
-}
-
-/* line 243, ../scss/_overrides.scss */
-.st-content {
-  overflow-y: scroll;
-  background: #f9f8f4;
-}
-
-/* line 249, ../scss/_overrides.scss */
-.st-content,
-.st-content-inner {
-  position: relative;
-}
-
-/* line 253, ../scss/_overrides.scss */
-.st-container {
-  position: relative;
-  overflow: hidden;
-}
-
-/* line 258, ../scss/_overrides.scss */
-.st-pusher {
-  position: relative;
-  left: 0;
-  z-index: 99;
-  height: 100%;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-/* line 267, ../scss/_overrides.scss */
-.st-pusher::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
-  background: rgba(0, 0, 0, 0.2);
-  content: '';
-  opacity: 0;
-  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-}
-
-/* line 280, ../scss/_overrides.scss */
-.st-menu-open .st-pusher::after {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-/* line 288, ../scss/_overrides.scss */
-.st-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  visibility: hidden;
-  width: 400px;
-  height: 100%;
-  background: #f4d130;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-/* line 301, ../scss/_overrides.scss */
-.st-menu::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  content: '';
-  opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-}
-
-/* line 314, ../scss/_overrides.scss */
-.st-menu-open .st-menu::after {
-  width: 0;
-  height: 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-}
-
-/* Effect 2: Reveal */
-/* line 325, ../scss/_overrides.scss */
-.st-effect-2.st-menu-open .st-pusher {
-  -webkit-transform: translate3d(-400px, 0, 0);
-  transform: translate3d(-400px, 0, 0);
-}
-
-/* line 330, ../scss/_overrides.scss */
-.st-effect-2.st-menu {
-  z-index: 1;
-}
-
-/* line 334, ../scss/_overrides.scss */
-.st-effect-2.st-menu-open .st-effect-2.st-menu {
-  visibility: visible;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-/* line 340, ../scss/_overrides.scss */
-.st-effect-2.st-menu::after {
-  display: none;
-}
-
-/* Effect 3: Reveal */
-/* line 345, ../scss/_overrides.scss */
-.st-effect-3.st-menu-open .st-pusher {
-  -webkit-transform: translate3d(-400px, 0, 0);
-  transform: translate3d(-400px, 0, 0);
-}
-
-/* line 350, ../scss/_overrides.scss */
-.st-effect-3.st-menu {
-  z-index: 1;
-}
-
-/* line 354, ../scss/_overrides.scss */
-.st-effect-3.st-menu-open .st-effect-3.st-menu {
-  visibility: visible;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-}
-
-/* line 360, ../scss/_overrides.scss */
-.st-effect-3.st-menu::after {
-  display: none;
-}
-
-/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
-/* line 366, ../scss/_overrides.scss */
+/* line 927, ../scss/_overrides.scss */
 .no-csstransforms3d .st-pusher,
 .no-js .st-pusher {
   padding-left: 300px;
 }
 
-/* line 371, ../scss/_overrides.scss */
-.slide-out-menu input[type="text"] {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-/* line 378, ../scss/_overrides.scss */
-footer p {
-  margin-bottom: 0;
-}
-
-/* line 382, ../scss/_overrides.scss */
-.header {
-  background-color: #f4d130;
-  padding: 35px 0;
-  margin-bottom: 20px;
-}
-/* line 387, ../scss/_overrides.scss */
-.header h2 {
-  color: white;
-  display: inline-block;
-}
-/* line 392, ../scss/_overrides.scss */
-.header p {
-  font-size: 20px;
-  font-weight: 100;
-  display: block;
-}
-/* line 398, ../scss/_overrides.scss */
-.header .button {
-  display: inline-block;
-}
-
-/* line 403, ../scss/_overrides.scss */
-.charity-container {
-  background-color: white;
-  margin-bottom: 20px;
-  padding: 10px 10px 0 10px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-  height: 500px;
-  position: relative;
-}
-/* line 412, ../scss/_overrides.scss */
-.charity-container h4 {
+/* line 939, ../scss/_overrides.scss */
+#donate-modal h2,
+#edit-charity-modal h2,
+#edit-update-modal h2,
+#profile-modal h2,
+#edit-gallery-modal h2 {
   color: #32bfca;
-  font-size: 16px;
-  padding: 15px 0px 5px 0px;
-  margin-bottom: 0;
-  margin: 0;
-  font-weight: bold;
-}
-/* line 421, ../scss/_overrides.scss */
-.charity-container p {
-  padding: 5px 0px 15px 0px;
-  font-size: 12px;
-  margin-bottom: 0;
-}
-/* line 429, ../scss/_overrides.scss */
-.charity-container a {
-  margin: 0 0 10px 0px;
-  bottom: 8px;
-  position: absolute;
-}
-
-/* line 436, ../scss/_overrides.scss */
-ul.pagination li.current a, .sub-nav li.active a {
-  background: #32bfca;
-}
-
-/* line 440, ../scss/_overrides.scss */
-.profile {
-  margin-bottom: 15px;
-}
-/* line 443, ../scss/_overrides.scss */
-.profile p {
-  font-size: 15px;
-}
-
-/* line 450, ../scss/_overrides.scss */
-.dashboard h4, .charity h4 {
-  color: #666666;
-  text-transform: none;
-  font-size: 20px;
-  line-height: 1;
-}
-/* line 457, ../scss/_overrides.scss */
-.dashboard p, .charity p {
-  font-size: 17px;
-  font-weight: 100;
-}
-
-/* line 463, ../scss/_overrides.scss */
-.comments {
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-
-/* line 468, ../scss/_overrides.scss */
-.owner-dashboard {
-  background-color: white;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-  height: 302px;
-  position: relative;
-}
-
-/* line 477, ../scss/_overrides.scss */
-.charity {
-  padding: 10px 35px;
-}
-
-/* line 481, ../scss/_overrides.scss */
-.charity-owner, .comments {
-  color: #666666;
-  background-color: #eeeeee;
-  padding: 15px 15px 5px 25px;
-}
-/* line 486, ../scss/_overrides.scss */
-.charity-owner h3, .comments h3 {
-  color: #32bfca;
-  font-size: 40px;
-}
-
-/* line 492, ../scss/_overrides.scss */
-.charity-status {
-  height: 0;
-}
-/* line 494, ../scss/_overrides.scss */
-.charity-status h2 {
-  position: absolute;
-  color: #32bfca;
-  top: 85px;
-  left: 87px;
-  font-size: 35px;
-}
-/* line 502, ../scss/_overrides.scss */
-.charity-status h4 {
-  position: absolute;
-  top: 240px;
-}
-
-/* line 510, ../scss/_overrides.scss */
-.donate-sum {
-  padding: 20px;
-  margin-bottom: 20px;
-  color: #f9f8f4;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-/* line 518, ../scss/_overrides.scss */
-.donate-sum h2 {
-  color: white;
-  font-size: 72px;
-  line-height: 1;
-}
-/* line 524, ../scss/_overrides.scss */
-.donate-sum h3 {
-  font-size: 60px;
-  line-height: 1;
-  color: white;
-  margin: 20px;
-  text-transform: uppercase;
-}
-/* line 532, ../scss/_overrides.scss */
-.donate-sum h5, .donate-sum h6 {
-  color: #666666;
-  line-height: 1;
-}
-/* line 537, ../scss/_overrides.scss */
-.donate-sum p {
-  color: #666666;
-  font-weight: 100;
-}
-
-/* line 544, ../scss/_overrides.scss */
-.odd {
-  background-color: #32bfca;
-}
-
-/* line 548, ../scss/_overrides.scss */
-.even {
-  background-color: #f4d130;
-}
-
-/* line 552, ../scss/_overrides.scss */
-#Grid .mix {
-  opacity: 0;
-  display: none;
-}
-
-/* line 557, ../scss/_overrides.scss */
-.comments {
-  background-color: white;
-}
-
-/* line 562, ../scss/_overrides.scss */
-.tabs dd > a {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-}
-
-/* line 569, ../scss/_overrides.scss */
-#panel2-1 .row {
-  margin: 15px 0;
-}
-
-/* line 576, ../scss/_overrides.scss */
-.comments img {
-  display: inline;
-  float: left;
-  width: 8em;
-  margin-right: 1em;
-}
-
-/* line 585, ../scss/_overrides.scss */
-.tabs dd.active {
-  z-index: 1;
-}
-/* line 587, ../scss/_overrides.scss */
-.tabs dd.active a {
-  box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
-}
-
-/* line 591, ../scss/_overrides.scss */
-#create-fund, #create-profile {
-  margin-top: 25px;
-}
-/* line 595, ../scss/_overrides.scss */
-#create-fund h5, #create-profile h5 {
-  background: #32bfca;
-  color: white;
-  padding: 15px;
-  margin: 0;
-}
-/* line 602, ../scss/_overrides.scss */
-#create-fund p, #create-profile p {
-  color: #666666;
-  font-weight: 100;
-  font-size: 15px;
-}
-/* line 610, ../scss/_overrides.scss */
-#create-fund .right-container span.stepNum, #create-fund .left-container span.stepNum, #create-profile .right-container span.stepNum, #create-profile .left-container span.stepNum {
-  padding: 22px 26px;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: #d9d9d9;
-  color: white;
-  display: inline-block;
-}
-
-/* line 623, ../scss/_overrides.scss */
-.left-container {
-  width: 42%;
-  position: relative;
-  float: left;
-  background-color: white;
-  margin-bottom: 4em;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-
-/* line 635, ../scss/_overrides.scss */
-.left-container input[type="text"], .left-container select, .right-container input[type="text"], .right-container select {
-  margin: 0;
-}
-
-/* line 640, ../scss/_overrides.scss */
-.left-container:after {
-  content: "";
-  position: absolute;
-  top: 18px;
-  right: -10px;
-  border-style: solid;
-  border-width: 12px 0 12px 12px;
-  border-color: transparent #32bfca;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-/* line 654, ../scss/_overrides.scss */
-.right-container {
-  position: relative;
-  float: right;
-  width: 42%;
-  background-color: white;
-  margin: 2em 0;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-
-/* line 664, ../scss/_overrides.scss */
-.right-container:after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: -10px;
-  border-style: solid;
-  border-width: 12px 12px 12px 0;
-  border-color: transparent #32bfca;
-  display: block;
-  width: 0;
-  z-index: 1;
-}
-
-/* line 677, ../scss/_overrides.scss */
-.stepNum {
-  right: 450px;
-  position: absolute;
-  cursor: pointer;
-  width: 62px;
-  height: 62px;
-  display: block;
-  margin-left: -31px;
-  top: 5px;
-}
-
-/* line 688, ../scss/_overrides.scss */
-.left-container .stepNum {
-  left: 490px;
-}
-
-/* line 692, ../scss/_overrides.scss */
-textarea {
-  margin: 0;
-}
-
-/* line 696, ../scss/_overrides.scss */
-#shortDesc, #profileDesc {
-  margin-top: 100px;
-}
-
-/* line 701, ../scss/_overrides.scss */
-#fundStory textarea {
-  height: 250px;
-}
-
-/* line 707, ../scss/_overrides.scss */
-#profileDesc textarea {
-  height: 150px;
-}
-
-/* line 713, ../scss/_overrides.scss */
-#create-fund:before, #create-profile:before {
-  position: absolute;
-  content: "";
-  background-color: #d9d9d9;
-  left: 50%;
-  top: 30px;
-  height: 95%;
-  width: 6px;
-  margin-left: 2px;
-}
-
-/* line 724, ../scss/_overrides.scss */
-.createFundContent, .createProfileContent {
-  padding: 10px 15px 15px 15px;
-}
-
-/* line 728, ../scss/_overrides.scss */
-#profile-gallery, #edit-profile-gallery, #charity-gallery, #edit-gallery {
-  height: 355px;
-}
-/* line 732, ../scss/_overrides.scss */
-#profile-gallery .dz-error-mark span, #edit-profile-gallery .dz-error-mark span, #charity-gallery .dz-error-mark span, #edit-gallery .dz-error-mark span {
-  padding: 0;
-}
-/* line 738, ../scss/_overrides.scss */
-#profile-gallery .dz-error-message span, #edit-profile-gallery .dz-error-message span, #charity-gallery .dz-error-message span, #edit-gallery .dz-error-message span {
-  font-size: 12px;
-  padding: 0;
-}
-/* line 745, ../scss/_overrides.scss */
-#profile-gallery .dz-message span, #edit-profile-gallery .dz-message span, #charity-gallery .dz-message span, #edit-gallery .dz-message span {
-  font-size: 20px;
-  display: block;
-  text-align: center;
-  color: #666666;
-  padding-top: 140px;
-  font-family: "Roboto Slab", serif;
-}
-
-/* line 756, ../scss/_overrides.scss */
-#edit-gallery {
-  heigth: 255px;
-  margin-bottom: 20px;
-}
-
-/* line 762, ../scss/_overrides.scss */
-.donate-container canvas, .charity-status canvas {
-  position: relative;
-  top: -30px;
-  right: 3px;
-}
-
-/* line 769, ../scss/_overrides.scss */
-.donate-container {
-  background-color: white;
-  padding: 10px 10px 2px 10px;
-  margin-bottom: 20px;
-  width: 230px;
-  height: 375px;
-  position: relative;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
-}
-/* line 779, ../scss/_overrides.scss */
-.donate-container h2 {
-  position: absolute;
-  color: #32bfca;
-  top: 175px;
-  left: 81px;
-  font-size: 35px;
-}
-/* line 787, ../scss/_overrides.scss */
-.donate-container h4 {
-  top: 320px;
-  position: absolute;
-}
-/* line 792, ../scss/_overrides.scss */
-.donate-container .button {
-  margin-left: 3px;
-}
-
-/* line 797, ../scss/_overrides.scss */
-.tabs-content > .content {
-  padding: 0;
-}
-
-/* line 803, ../scss/_overrides.scss */
-.social .button {
-  box-shadow: none;
-  padding: 24px 25px;
-  margin: 0;
-}
-/* line 810, ../scss/_overrides.scss */
-.social .facebook {
-  background: url(../images/64-facebook.png) no-repeat;
-  background-size: 50px;
-}
-/* line 815, ../scss/_overrides.scss */
-.social .twitter {
-  background: url(../images/64-twitter.png) no-repeat;
-  background-size: 50px;
-}
-/* line 820, ../scss/_overrides.scss */
-.social .googleplus {
-  background: url(../images/64-googleplus.png) no-repeat;
-  background-size: 50px;
-}
-
-/* line 827, ../scss/_overrides.scss */
-.reveal-modal .deletePhoto {
-  right: 25px;
-  color: #666666;
-}
-
-/* line 835, ../scss/_overrides.scss */
-#editGalleryModal .button {
-  margin-top: 10px;
-}
-/* line 838, ../scss/_overrides.scss */
-#editGalleryModal img {
   margin-bottom: 10px;
 }
-/* line 842, ../scss/_overrides.scss */
-#editGalleryModal figcaption {
+/* line 944, ../scss/_overrides.scss */
+#donate-modal textarea,
+#edit-charity-modal textarea,
+#edit-update-modal textarea,
+#profile-modal textarea,
+#edit-gallery-modal textarea {
+  height: 150px;
+  margin-bottom: 25px;
+}
+
+/* line 951, ../scss/_overrides.scss */
+#edit-charity-modal .shortDescText {
+  height: 30px;
+}
+
+/* line 957, ../scss/_overrides.scss */
+#edit-gallery-modal .cs-style-3 figure {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+}
+/* line 963, ../scss/_overrides.scss */
+#edit-gallery-modal .button {
+  margin-top: 10px;
+}
+/* line 967, ../scss/_overrides.scss */
+#edit-gallery-modal img {
+  margin-bottom: 10px;
+}
+/* line 971, ../scss/_overrides.scss */
+#edit-gallery-modal figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -8588,8 +8695,8 @@ textarea {
   background: #361919;
   background: rgba(54, 25, 25, 0.4);
 }
-/* line 850, ../scss/_overrides.scss */
-#editGalleryModal figcaption a {
+/* line 979, ../scss/_overrides.scss */
+#edit-gallery-modal figcaption a {
   text-align: center;
   padding: 5px 10px;
   border-radius: 2px;
@@ -8598,146 +8705,69 @@ textarea {
   color: #fff;
 }
 
-/* line 861, ../scss/_overrides.scss */
-.example-orbit {
+/* line 991, ../scss/_overrides.scss */
+#profile-modal .button {
+  margin-top: 15px;
+}
+
+/* line 999, ../scss/_overrides.scss */
+#panel2-1 .row {
+  margin: 15px 0;
+}
+
+/* line 1004, ../scss/_overrides.scss */
+.tabs dd.active {
+  z-index: 1;
+}
+/* line 1006, ../scss/_overrides.scss */
+.tabs dd.active a {
+  box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
+}
+
+/* line 1011, ../scss/_overrides.scss */
+.tabs-content > .content {
+  padding: 0;
+}
+
+/* line 1017, ../scss/_overrides.scss */
+.month {
+  width: 45%;
+}
+
+/* line 1021, ../scss/_overrides.scss */
+.day {
+  width: 20%;
+}
+
+/* line 1025, ../scss/_overrides.scss */
+.year {
+  width: 32%;
+}
+
+/* line 1033, ../scss/_overrides.scss */
+.donate-container canvas,
+.charity-status canvas {
   position: relative;
+  top: -30px;
+  right: 3px;
 }
 
-/* line 865, ../scss/_overrides.scss */
-.accordion dd > a {
-  display: inline-block;
-  background: #32bfca;
-  color: white;
-}
-
-/* line 871, ../scss/_overrides.scss */
-.accordion dd > a:hover {
-  display: inline-block;
-  background: #32bfca;
-  color: white;
-}
-
-/* line 877, ../scss/_overrides.scss */
-#edit-gallery-button {
-  position: absolute;
-  top: 140px;
-  right: 80px;
-}
-
-/* line 883, ../scss/_overrides.scss */
-.accordion dd.active a {
-  background: #32bfca;
-}
-
-/* line 887, ../scss/_overrides.scss */
-#createUpdate.button {
-  margin: 27px 15px 0 0;
-}
-
-/* line 891, ../scss/_overrides.scss */
+/* line 1040, ../scss/_overrides.scss */
 .stat-chart {
   margin-bottom: 20px;
 }
-/* line 894, ../scss/_overrides.scss */
+/* line 1043, ../scss/_overrides.scss */
 .stat-chart h3 {
   margin: 10px 0;
   color: #32bfca;
 }
 
-/* line 901, ../scss/_overrides.scss */
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 906, ../scss/_overrides.scss */
-.sub-nav li.active a:hover {
-  background-color: #32bfca;
-}
-
-/* line 911, ../scss/_overrides.scss */
-#donateModal h2, #editCharityModal h2, #editUpdateModal h2, #profileModal h2, #editGalleryModal h2 {
-  color: #32bfca;
-  margin-bottom: 10px;
-}
-/* line 916, ../scss/_overrides.scss */
-#donateModal textarea, #editCharityModal textarea, #editUpdateModal textarea, #profileModal textarea, #editGalleryModal textarea {
-  height: 150px;
-  margin-bottom: 25px;
-}
-
-/* line 923, ../scss/_overrides.scss */
-#editCharityModal .shortDescText {
-  height: 30px;
-}
-
-/* line 928, ../scss/_overrides.scss */
-#profilePhoto {
-  margin-top: 100px;
-}
-
-/* line 933, ../scss/_overrides.scss */
-.content .button {
-  margin-top: 15px;
-  margin-right: 0px;
-}
-/* line 938, ../scss/_overrides.scss */
-.content textarea {
-  height: 250px;
-}
-/* line 942, ../scss/_overrides.scss */
-.content p {
-  margin-bottom: 0;
-}
-
-/* line 947, ../scss/_overrides.scss */
-.hide-comment {
-  height: 45px;
-  width: 130px;
-}
-
-/* line 952, ../scss/_overrides.scss */
-.update {
-  margin-bottom: 25px;
-}
-
-/* line 956, ../scss/_overrides.scss */
-.profile {
+/* line 1051, ../scss/_overrides.scss */
+.example-orbit {
   position: relative;
 }
-/* line 959, ../scss/_overrides.scss */
-.profile a {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
 
-/* line 967, ../scss/_overrides.scss */
-#profileModal .button {
-  margin-top: 15px;
-}
-
-/* line 972, ../scss/_overrides.scss */
-label, legend {
-  font-family: "Roboto Slab", serif;
-}
-
-/* line 976, ../scss/_overrides.scss */
-.logo {
-  margin-top: 10px;
-}
-
-/* line 979, ../scss/_overrides.scss */
-.month {
-  width: 45%;
-}
-
-/* line 982, ../scss/_overrides.scss */
-.day {
-  width: 20%;
-}
-
-/* line 985, ../scss/_overrides.scss */
-.year {
-  width: 32%;
+/* line 1057, ../scss/_overrides.scss */
+.sub-nav li.active a:hover {
+  background-color: #32bfca;
 }
