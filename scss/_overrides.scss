@@ -28,8 +28,12 @@ $text-typeface: $roboto;
 $primary-color: $teal;
 $secondary-header-color: $darkgrey;
 $secondary-color: $yellow;
-$lightness: $teal;
 $timeline-color: #d9d9d9;
+$button-gradient-light: #63BDBD;
+$button-gradient-dark: #31BFCA;
+$sec-button-gradient-light: #CEC71B;
+$sec-button-gradient-dark: #CEC71B;
+$container-grey: #C7C7C7;
 
 //-----------------------------------------------------------------------------------
 //  2.0 General Styles
@@ -110,9 +114,9 @@ a:hover {
   font-size: 15px;  
   background-clip: padding-box;
   box-shadow: 0px 4px 0px rgba(38,148,150,.8);
-  background-color: #63bdbd; // Old browsers
-  @include filter-gradient(#63bdbd, #31bfca, vertical); // IE6-9
-  @include background-image(linear-gradient(top, #63bdbd 0%,#31bfca 100%));
+  background-color: $button-gradient-light; // Old browsers
+  @include filter-gradient($button-gradient-light, $button-gradient-dark, vertical); // IE6-9
+  @include background-image(linear-gradient(top, $button-gradient-light 0%,$button-gradient-dark 100%));
 }
 
 a {
@@ -220,7 +224,7 @@ legend {
     h4 {
       margin: 0;
       padding: 0;
-      color: #fff;
+      color: $white;
     }
 
     a {
@@ -229,7 +233,7 @@ legend {
       border-radius: 2px;
       display: inline-block;
       background: $teal;
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -248,9 +252,9 @@ legend {
 
  .button{
   box-shadow: none;
-  background-color: $yellow; // Old browsers
-  @include filter-gradient($yellow, #31bfca, vertical); // IE6-9
-  @include background-image(linear-gradient(top, $yellow 0%,#CEC71B 100%));
+  background-color: $secondary-color; // Old browsers
+  @include filter-gradient($secondary-color, $sec-button-gradient-dark, vertical); // IE6-9
+  @include background-image(linear-gradient(top, $secondary-color 0%,$sec-button-gradient-dark 100%));
  }
 }
 
@@ -261,8 +265,8 @@ legend {
 .owner-dashboard {
   background-color: $white; 
   margin-bottom: 20px;
-  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0px $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey;
   height: 302px;
   position: relative;
 }
@@ -301,8 +305,8 @@ legend {
   background-color: $white; 
   margin-bottom: 20px;
   padding: 10px 10px 0px 10px;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0 #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0 $container-grey;
+  box-shadow: 1px 1px 5px 0 $container-grey;
   height: 500px;
   position: relative;
 
@@ -330,7 +334,7 @@ legend {
 .charity-status {
   h2 {
     position: absolute;
-    color: #32bfca;
+    color: $primary-color;
     top: 85px;
     left: 87px;
     font-size: 35px;
@@ -348,8 +352,8 @@ legend {
   padding: 20px;
   margin-bottom: 20px;
   color: $lightgrey;
-  -webkit-box-shadow: 1px 1px 5px 0 #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7; 
+  -webkit-box-shadow: 1px 1px 5px 0 $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey; 
 
   h2{
     color: white;
@@ -384,12 +388,12 @@ legend {
   width: 230px;
   height: 375px;
   position: relative;
-  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0px $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey;
 
   h2 {
     position: absolute;
-    color: #32bfca;
+    color: $primary-color;
     top: 175px;
     left: 81px;
     font-size: 35px;
@@ -504,8 +508,8 @@ ul.pagination li.current a,
 // Update & Comment Section
 
 .comments {
-  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0px $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey;
   background-color: $white;
 
   img {
@@ -568,7 +572,7 @@ ul.pagination li.current a,
 }
 
 .even {
-  background-color: $yellow;
+  background-color: $secondary-color;
 }
 
 #Grid .mix {
@@ -627,8 +631,8 @@ ul.pagination li.current a,
   float: left;
   background-color: white;
   margin-bottom:4em;
-  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0px $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey;
 }
 
 .left-container:after {
@@ -650,8 +654,8 @@ ul.pagination li.current a,
   width: 42%;
   background-color: white;
   margin:2em 0;
-  -webkit-box-shadow: 1px 1px 5px 0px #C7C7C7;
-  box-shadow: 1px 1px 5px 0px #C7C7C7;
+  -webkit-box-shadow: 1px 1px 5px 0px $container-grey;
+  box-shadow: 1px 1px 5px 0px $container-grey;
 }
 
 .right-container:after {
@@ -746,7 +750,7 @@ textarea {
 // --- Homepage Sign In/Sign Out Container ---
 
 .slide-out-menu {
-  background-color: $yellow;
+  background-color: $secondary-color;
 
   p {
     font-size: 20px;
@@ -824,7 +828,7 @@ textarea {
   visibility: hidden;
   width: 400px;
   height: 100%;
-  background: $yellow;
+  background: $secondary-color;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -998,7 +1002,7 @@ textarea {
       border-radius: 2px;
       display: inline-block;
       background: $teal;
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -1020,7 +1024,7 @@ textarea {
 .tabs dd.active {
   z-index:1;
   a{
-    box-shadow: 5px 0px 6px -5px #C7C7C7, -5px 0px 6px -6px #C7C7C7;
+    box-shadow: 5px 0px 6px -5px $container-grey, -5px 0px 6px -6px $container-grey;
   }
 }
 
