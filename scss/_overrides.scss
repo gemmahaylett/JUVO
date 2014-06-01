@@ -61,7 +61,7 @@ h1 {
   text-align: center;
   display: inline-block;
   clear: both;
-  margin-top: 200px;
+  margin-top: 100px;
   padding: 10px 20px;
   margin-bottom: 20px;
 }
@@ -235,7 +235,23 @@ legend {
 }
 
 .hero {
-  height: 600px;
+  height: 400px;
+}
+
+.search {
+  background-color: $teal;
+  padding-top: 20px;
+
+  label {
+    color: white;
+  }
+
+ .button{
+  box-shadow: none;
+  background-color: $yellow; // Old browsers
+  @include filter-gradient($yellow, #31bfca, vertical); // IE6-9
+  @include background-image(linear-gradient(top, $yellow 0%,#CEC71B 100%));
+ }
 }
 
 //-----------------------------------------------------------------------------------
